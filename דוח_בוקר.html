@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>דוח בוקר — מיקי עוז עסקים</title>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Heebo',sans-serif;background:#f0f2f5;color:#1a1a2e;padding:24px;max-width:1100px;margin:0 auto}
+.header{text-align:center;margin-bottom:28px}
+.header h1{font-size:26px;font-weight:800;letter-spacing:-0.5px}
+.header .date{font-size:15px;color:#5a5a7a;margin-top:4px}
+.header .utime{font-size:12px;color:#999;margin-top:2px}
+.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:28px}
+.card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 12px rgba(0,0,0,.06);border:1px solid #e2e4e9;text-align:center}
+.card .lbl{font-size:13px;color:#5a5a7a;font-weight:500;margin-bottom:6px}
+.card .val{font-size:26px;font-weight:700}
+.card .sub{font-size:12px;color:#5a5a7a;margin-top:4px}
+.card.s .val{color:#7030A0}.card.c .val{color:#c62828}.card.o .val{color:#e65100}
+.sec{background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.06);border:1px solid #e2e4e9;margin-bottom:24px;overflow:hidden}
+.sec-h{padding:16px 20px;border-bottom:1px solid #e2e4e9}
+.sec-h h2{font-size:18px;font-weight:700}
+.tabs{display:flex;border-bottom:2px solid #e2e4e9;background:#fafbfc}
+.tab{padding:12px 24px;cursor:pointer;font-size:14px;font-weight:600;color:#5a5a7a;border-bottom:3px solid transparent;margin-bottom:-2px;transition:.2s}
+.tab:hover{color:#1a1a2e;background:#f0f1f3}
+.tab.act{background:transparent}
+.tab.act[data-d="teva"]{border-bottom-color:#7030A0;color:#7030A0}
+.tab.act[data-d="sugar"]{border-bottom-color:#C55A11;color:#C55A11}
+.tab.act[data-d="salt"]{border-bottom-color:#548235;color:#548235}
+.tc{display:none}.tc.act{display:block}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{padding:10px 16px;background:#f7f8fa;font-weight:600;color:#5a5a7a;font-size:12px;border-bottom:2px solid #e2e4e9;white-space:nowrap;text-align:center}
+td{padding:10px 16px;border-bottom:1px solid #f0f1f3;text-align:center}
+th:first-child,td:first-child{text-align:right}
+tr:hover{background:#fafbfc}
+.pw{display:flex;align-items:center;gap:6px;justify-content:center}
+.pb{flex:1;height:8px;background:#eee;border-radius:4px;overflow:hidden;max-width:70px}
+.pf{height:100%;border-radius:4px}
+.pp{font-size:12px;font-weight:600;min-width:36px;text-align:left;direction:ltr}
+.pg{color:#2d8a4e}.pm{color:#e65100}.pl{color:#c62828}
+.fg{background:#2d8a4e}.fm{background:#e65100}.fl{background:#c62828}
+.dt td{font-weight:700;background:#f7f8fa;border-top:2px solid #e2e4e9}
+.cr{cursor:pointer;transition:.15s}.cr:hover{background:#f5f6f8}
+.ca{display:inline-block;transition:transform .2s;font-size:11px;margin-left:6px}
+.cr.op .ca{transform:rotate(90deg)}
+.id{display:none}.id.sh{display:table-row}
+.id td{padding:0;background:#fafbfc}
+.iw{padding:8px 20px 12px}
+.iw table{font-size:12px}.iw th{background:#f0f1f3;font-size:11px}.iw td{padding:7px 10px}
+.oh{color:#c62828;font-weight:700}.om{color:#e65100;font-weight:600}
+.oo{color:#c62828;font-weight:700}
+.note{padding:10px 20px;font-size:11px;color:#999;border-top:1px solid #e2e4e9}
+@media(max-width:768px){.summary{grid-template-columns:1fr}.tab{padding:10px 14px;font-size:13px}body{padding:12px}td,th{padding:8px 8px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>📊 דוח בוקר — מיקי עוז עסקים</h1>
+  <div class="date" id="rd"></div>
+  <div class="utime" id="ut"></div>
+</div>
+<div class="summary">
+  <div class="card s"><div class="lbl">מכירות נטו — החודש</div><div class="val" id="ts"></div><div class="sub" id="sb"></div></div>
+  <div class="card c"><div class="lbl">התראות גבייה</div><div class="val" id="tc"></div><div class="sub" id="cs"></div></div>
+  <div class="card o"><div class="lbl">חריגות אובליגו</div><div class="val" id="to"></div><div class="sub" id="os"></div></div>
+</div>
+<div class="sec">
+  <div class="sec-h"><h2>📈 התקדמות מכירות מול תכנון</h2></div>
+  <div class="tabs" id="stb"></div>
+  <div id="sc"></div>
+</div>
+<div class="sec">
+  <div class="sec-h"><h2>⚠️ התראות גבייה</h2></div>
+  <div style="padding:4px 20px 2px;font-size:12px;color:#999">לחץ על שורה לפירוט חשבוניות</div>
+  <table><thead><tr><th style="width:35%;text-align:right">לקוח</th><th style="width:20%">סה"כ חוב</th><th style="width:15%">חשבוניות</th><th style="width:15%">ימים מינ'</th><th style="width:15%">ימים מקס'</th></tr></thead>
+  <tbody id="cb"></tbody></table>
+</div>
+<div class="sec">
+  <div class="sec-h"><h2>🔴 חריגה מאובליגו</h2></div>
+  <table><thead><tr><th style="width:30%;text-align:right">לקוח</th><th style="width:20%">אובליגו מאושר</th><th style="width:20%">חשבוניות פתוחות</th><th style="width:15%">% ניצול</th><th style="width:15%">סכום חריגה</th></tr></thead>
+  <tbody id="ob"></tbody></table>
+  <div class="note">חשיפה = חשבוניות פתוחות בלבד</div>
+</div>
+<script>
+// ========== DATA — REPLACE ONLY THIS BLOCK ==========
+const D = {
+  date:"2026-05-07",time:"10:35",
+  sales:{
+    "טבע-עוז":[
+      {n:"תות שדה",q:52960,s:323531,pq:96000,ps:614400},
+      {n:"בננה",q:30800,s:216425,pq:72000,ps:504000},
+      {n:"אננס",q:15120,s:151043,pq:48000,ps:504000},
+      {n:"מנגו",q:17600,s:149360,pq:72000,ps:648000},
+      {n:"מיקס פירות",q:7680,s:110880,pq:20000,ps:300000},
+      {n:"כרובית",q:20000,s:105000,pq:18000,ps:94500},
+      {n:"פולי סויה (אדממה)",q:9100,s:52115,pq:10000,ps:62000},
+      {n:"פטל אדום",q:2160,s:49680,pq:10000,ps:225000},
+      {n:"דובדבן חמוץ",q:2040,s:47940,pq:4000,ps:96000},
+      {n:"אוכמניות כחולות",q:1910,s:28990,pq:4000,ps:50000},
+      {n:"דומדמניות אדומות",q:3030,s:27270,pq:3000,ps:36000},
+      {n:"אבוקדו ישראלי",q:1800,s:25650,pq:0,ps:0},
+      {n:"פסיפלורה",q:1800,s:21700,pq:22000,ps:292600},
+      {n:"אוכמניות בר",q:800,s:21200,pq:0,ps:0},
+      {n:"אחסנה + הובלה",q:38,s:20891,pq:0,ps:0},
+      {n:"פולי סויה ללא תרמיל",q:2660,s:18550,pq:3000,ps:24000},
+      {n:"הפרש כמות/מחיר",q:3030,s:10605,pq:0,ps:0},
+      {n:"פטל שחור",q:700,s:8400,pq:1000,ps:10500},
+      {n:"מלון",q:900,s:7200,pq:0,ps:0},
+      {n:"קיווי",q:690,s:6900,pq:4000,ps:42000},
+      {n:"פיטאייה",q:10,s:170,pq:800,ps:8800}
+    ],
+    "סוכר":[
+      {n:"סוכר כללי",q:388,s:801355,pq:450,ps:900000},
+      {n:"סוכר דמררה 1.4 ק\"ג",q:10080,s:60984,pq:10000,ps:60500},
+      {n:"סוכר 1 ק\"ג",q:21,s:54171,pq:90,ps:202500},
+      {n:"אבקת סוכר",q:6,s:27000,pq:0,ps:0},
+      {n:"סוכר דמררה 25 ק\"ג + BB",q:4,s:14875,pq:7,ps:24500},
+      {n:"סוכר חום 25 ק\"ג",q:2,s:10000,pq:8,ps:37600},
+      {n:"סוכר דמררה 1 ק\"ג",q:1,s:3787,pq:8,ps:32800}
+    ],
+    "מלח":[
+      {n:"מלח משחטות",q:780,s:422343,pq:2000,ps:1040000},
+      {n:"מלח מגזר ערבי",q:113,s:81709,pq:150,ps:84750},
+      {n:"מלח כללי",q:0,s:0,pq:200,ps:146000}
+    ]
+  },
+  coll:[
+    {n:"עוף טוב שאן בע\"מ",t:500041,c:21,mn:2,mx:2,iv:[
+      {u:"81797",d:"08/02/26",e:"05/05/26",a:28256,y:2},
+      {u:"81798",d:"08/02/26",e:"05/05/26",a:28178,y:2},
+      {u:"81803",d:"09/02/26",e:"05/05/26",a:25836,y:2},
+      {u:"81807",d:"09/02/26",e:"05/05/26",a:27735,y:2},
+      {u:"81808",d:"09/02/26",e:"05/05/26",a:28163,y:2},
+      {u:"81815",d:"09/02/26",e:"05/05/26",a:27849,y:2},
+      {u:"81934",d:"19/02/26",e:"05/05/26",a:1,y:2},
+      {u:"81935",d:"19/02/26",e:"05/05/26",a:27764,y:2},
+      {u:"81936",d:"19/02/26",e:"05/05/26",a:28063,y:2},
+      {u:"81937",d:"19/02/26",e:"05/05/26",a:28121,y:2},
+      {u:"81938",d:"19/02/26",e:"05/05/26",a:28021,y:2},
+      {u:"81860",d:"12/02/26",e:"05/05/26",a:27935,y:2},
+      {u:"81861",d:"12/02/26",e:"05/05/26",a:28078,y:2},
+      {u:"81862",d:"12/02/26",e:"05/05/26",a:1,y:2},
+      {u:"81863",d:"12/02/26",e:"05/05/26",a:1,y:2},
+      {u:"81971",d:"25/02/26",e:"05/05/26",a:28021,y:2},
+      {u:"81972",d:"25/02/26",e:"05/05/26",a:27007,y:2},
+      {u:"81973",d:"25/02/26",e:"05/05/26",a:27692,y:2},
+      {u:"81977",d:"25/02/26",e:"05/05/26",a:28035,y:2},
+      {u:"81986",d:"26/02/26",e:"05/05/26",a:27549,y:2},
+      {u:"81991",d:"26/02/26",e:"05/05/26",a:27735,y:2}
+    ]},
+    {n:"Hatta Company for ice cream &food",t:381272,c:7,mn:4,mx:142,iv:[
+      {u:"361",d:"16/12/25",e:"16/12/25",a:1225,y:142},
+      {u:"365",d:"08/02/26",e:"08/02/26",a:51802,y:88},
+      {u:"366",d:"19/02/26",e:"19/02/26",a:104430,y:77},
+      {u:"369",d:"19/03/26",e:"19/03/26",a:89538,y:49},
+      {u:"372",d:"31/03/26",e:"31/03/26",a:23513,y:37},
+      {u:"375",d:"13/04/26",e:"13/04/26",a:54053,y:24},
+      {u:"376",d:"03/05/26",e:"03/05/26",a:56711,y:4}
+    ]},
+    {n:"מכוורת הר מירון עלם מנל ע\"מ",t:336000,c:1,mn:147,mx:147,iv:[
+      {u:"81190",d:"11/12/25",e:"11/12/25",a:336000,y:147}
+    ]},
+    {n:"קפוא-זן (2024) בע\"מ",t:327096,c:2,mn:21,mx:22,iv:[
+      {u:"82414",d:"15/04/26",e:"15/04/26",a:148680,y:22},
+      {u:"82433",d:"16/04/26",e:"16/04/26",a:178416,y:21}
+    ]},
+    {n:"jala food company",t:168003,c:2,mn:2,mx:191,iv:[
+      {u:"352",d:"28/10/25",e:"28/10/25",a:94365,y:191},
+      {u:"377",d:"05/05/26",e:"05/05/26",a:73638,y:2}
+    ]},
+    {n:"א.נ.א פתרונות מזון ועוד בע\"מ",t:157460,c:7,mn:7,mx:66,iv:[
+      {u:"81043",d:"01/12/25",e:"02/03/26",a:3068,y:66},
+      {u:"81064",d:"01/12/25",e:"02/03/26",a:40852,y:66},
+      {u:"81601",d:"19/01/26",e:"02/04/26",a:6679,y:35},
+      {u:"81610",d:"20/01/26",e:"02/04/26",a:32922,y:35},
+      {u:"81877",d:"15/02/26",e:"30/04/26",a:61714,y:7},
+      {u:"81959",d:"23/02/26",e:"30/04/26",a:8260,y:7},
+      {u:"81990",d:"26/02/26",e:"30/04/26",a:3965,y:7}
+    ]},
+    {n:"פוליבה בע\"מ",t:157371,c:8,mn:4,mx:60,iv:[
+      {u:"82037",d:"08/03/26",e:"08/03/26",a:26055,y:60},
+      {u:"82150",d:"15/03/26",e:"15/03/26",a:9440,y:53},
+      {u:"82248",d:"25/03/26",e:"25/03/26",a:14160,y:43},
+      {u:"82252",d:"25/03/26",e:"25/03/26",a:27357,y:43},
+      {u:"82403",d:"14/04/26",e:"14/04/26",a:16373,y:23},
+      {u:"82451",d:"19/04/26",e:"19/04/26",a:14160,y:18},
+      {u:"82472",d:"20/04/26",e:"20/04/26",a:33453,y:17},
+      {u:"82572",d:"03/05/26",e:"03/05/26",a:16373,y:4}
+    ]},
+    {n:"ס.א.א אלעודה גרופ בע\"מ",t:138750,c:2,mn:122,mx:122,iv:[
+      {u:"81439",d:"05/01/26",e:"05/01/26",a:72251,y:122},
+      {u:"81445",d:"05/01/26",e:"05/01/26",a:66499,y:122}
+    ]},
+    {n:"ביכורי כל בע\"מ",t:128376,c:1,mn:1,mx:1,iv:[
+      {u:"82689",d:"06/05/26",e:"06/05/26",a:128376,y:1}
+    ]},
+    {n:"odai awaissa",t:118000,c:1,mn:51,mx:51,iv:[
+      {u:"367",d:"17/03/26",e:"17/03/26",a:118000,y:51}
+    ]},
+    {n:"י.א מזרחי עסקי מזון 2025 בע\"מ",t:93598,c:2,mn:7,mx:7,iv:[
+      {u:"81719",d:"01/02/26",e:"30/04/26",a:68761,y:7},
+      {u:"81821",d:"09/02/26",e:"30/04/26",a:24837,y:7}
+    ]},
+    {n:"אניטה פרי בע\"מ",t:92452,c:4,mn:7,mx:7,iv:[
+      {u:"82062",d:"09/03/26",e:"30/04/26",a:16803,y:7},
+      {u:"82156",d:"16/03/26",e:"30/04/26",a:18502,y:7},
+      {u:"82169",d:"17/03/26",e:"30/04/26",a:17629,y:7},
+      {u:"82230",d:"24/03/26",e:"30/04/26",a:39518,y:7}
+    ]},
+    {n:"יוסי פאר",t:75948,c:2,mn:4,mx:118,iv:[
+      {u:"80835",d:"10/11/25",e:"09/01/26",a:42200,y:118},
+      {u:"82028",d:"04/03/26",e:"03/05/26",a:33748,y:4}
+    ]},
+    {n:"מלח הארץ אילת בע\"מ",t:75520,c:2,mn:3,mx:37,iv:[
+      {u:"82287",d:"31/03/26",e:"31/03/26",a:53100,y:37},
+      {u:"82654",d:"04/05/26",e:"04/05/26",a:22420,y:3}
+    ]},
+    {n:"Islam Alshelleh&partners company",t:71234,c:4,mn:280,mx:310,iv:[
+      {u:"324",d:"25/05/25",e:"01/07/25",a:17809,y:310},
+      {u:"325",d:"27/05/25",e:"01/07/25",a:17809,y:310},
+      {u:"326",d:"28/05/25",e:"01/07/25",a:17809,y:310},
+      {u:"328",d:"03/06/25",e:"31/07/25",a:17809,y:280}
+    ]},
+    {n:"המרכז המשולב למסחר (איי.טי.סי.) בע\"מ",t:71166,c:1,mn:77,mx:77,iv:[
+      {u:"81939",d:"19/02/26",e:"19/02/26",a:71166,y:77}
+    ]}
+  ],
+  obl:[
+    {n:"אקסטספיד בע\"מ",cr:50000,oi:76512},
+    {n:"מ.ח מרכז המזון בע\"מ",cr:300000,oi:387975},
+    {n:"אייס פרי בע\"מ",cr:40000,oi:41191}
+  ]
+};
+// ========== END DATA ==========
+
+const f=n=>Math.round(n).toLocaleString('he-IL');
+const fk=n=>n>=1e6?(n/1e6).toFixed(1)+'M':n>=1e3?Math.round(n/1e3)+'K':f(n);
+function bar(p){const c=p>=70?'g':p>=30?'m':'l';return `<div class="pw"><div class="pb"><div class="pf f${c}" style="width:${Math.min(p,100)}%"></div></div><span class="pp p${c}">${p.toFixed(0)}%</span></div>`;}
+const dp=D.date.split('-');
+document.getElementById('rd').textContent=`${dp[2]}/${dp[1]}/${dp[0]}`;
+document.getElementById('ut').textContent='עודכן '+D.time;
+const depts=Object.keys(D.sales);let gt=0;const dt={};
+depts.forEach(d=>{const t=D.sales[d].reduce((s,i)=>s+i.s,0);dt[d]=t;gt+=t});
+document.getElementById('ts').textContent='₪'+f(gt);
+document.getElementById('sb').textContent=depts.map(d=>d+': ₪'+fk(dt[d])).join(' | ');
+const ct=D.coll.reduce((s,c)=>s+c.t,0);
+document.getElementById('tc').textContent=D.coll.length+' לקוחות';
+document.getElementById('cs').textContent='סה"כ ₪'+f(ct);
+document.getElementById('to').textContent=D.obl.length+' חורגים';
+document.getElementById('os').textContent='סה"כ חריגה ₪'+f(D.obl.reduce((s,o)=>s+(o.oi-o.cr),0));
+const stb=document.getElementById('stb'),sc=document.getElementById('sc');
+const dm={"טבע-עוז":"teva","סוכר":"sugar","מלח":"salt"};
+depts.forEach((dept,i)=>{
+  const tab=document.createElement('div');tab.className='tab'+(i===0?' act':'');tab.dataset.d=dm[dept];tab.textContent=dept;
+  tab.onclick=()=>{document.querySelectorAll('.tab').forEach(t=>t.classList.remove('act'));document.querySelectorAll('.tc').forEach(t=>t.classList.remove('act'));tab.classList.add('act');document.getElementById('s'+i).classList.add('act')};
+  stb.appendChild(tab);
+  const div=document.createElement('div');div.className='tc'+(i===0?' act':'');div.id='s'+i;
+  let h=`<table><thead><tr><th style="width:20%;text-align:right">מוצר</th><th style="width:10%">כמות ביצוע</th><th style="width:10%">כמות תכנון</th><th style="width:13%">% כמות</th><th style="width:12%">כספי ביצוע</th><th style="width:12%">כספי תכנון</th><th style="width:13%">% כספי</th><th style="width:10%">מחיר ממוצע</th></tr></thead><tbody>`;
+  let tpq=0,taq=0,tps=0,tas=0;
+  D.sales[dept].forEach(item=>{const qp=item.pq>0?(item.q/item.pq*100):0;const sp=item.ps>0?(item.s/item.ps*100):0;const ap=item.q>0?(item.s/item.q):0;tpq+=item.pq;taq+=item.q;tps+=item.ps;tas+=item.s;
+    h+=`<tr><td style="text-align:right">${item.n}</td><td>${f(item.q)}</td><td>${f(item.pq)}</td><td>${item.pq>0?bar(qp):'—'}</td><td>₪${f(item.s)}</td><td>₪${f(item.ps)}</td><td>${item.ps>0?bar(sp):'—'}</td><td>₪${ap.toFixed(1)}</td></tr>`});
+  h+=`<tr class="dt"><td style="text-align:right">סה"כ ${dept}</td><td>${f(taq)}</td><td>${f(tpq)}</td><td>${tpq>0?bar(taq/tpq*100):'—'}</td><td>₪${f(tas)}</td><td>₪${f(tps)}</td><td>${tps>0?bar(tas/tps*100):'—'}</td><td></td></tr></tbody></table>`;
+  div.innerHTML=h;sc.appendChild(div)});
+const cbEl=document.getElementById('cb');
+D.coll.forEach((c,i)=>{const ms=c.mx>=90?'oh':c.mx>=30?'om':'';const row=document.createElement('tr');row.className='cr';
+  row.onclick=()=>{row.classList.toggle('op');document.getElementById('i'+i).classList.toggle('sh')};
+  row.innerHTML=`<td style="text-align:right"><span class="ca">▸</span> ${c.n}</td><td>₪${f(c.t)}</td><td>${c.c}</td><td>${c.mn}</td><td class="${ms}">${c.mx}</td>`;cbEl.appendChild(row);
+  const dr=document.createElement('tr');dr.className='id';dr.id='i'+i;
+  let ih='<td colspan="5"><div class="iw"><table><thead><tr><th>חשבונית</th><th>תאריך</th><th>פירעון</th><th>יתרה</th><th>ימים</th></tr></thead><tbody>';
+  c.iv.forEach(v=>{const ds=v.y>=90?'oh':v.y>=30?'om':'';ih+=`<tr><td>${v.u}</td><td>${v.d}</td><td>${v.e}</td><td>₪${f(v.a)}</td><td class="${ds}">${v.y}</td></tr>`});
+  ih+='</tbody></table></div></td>';dr.innerHTML=ih;cbEl.appendChild(dr)});
+const obEl=document.getElementById('ob');
+[...D.obl].sort((a,b)=>(b.oi/b.cr)-(a.oi/a.cr)).forEach(o=>{const p=(o.oi/o.cr*100),ov=o.oi-o.cr;
+  obEl.innerHTML+=`<tr><td style="text-align:right">${o.n}</td><td>₪${f(o.cr)}</td><td>₪${f(o.oi)}</td><td class="oo">${p.toFixed(0)}%</td><td class="oo">₪${f(ov)}</td></tr>`});
+</script>
+</body>
+</html>
