@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
 <meta charset="UTF-8">
@@ -328,7 +328,7 @@ D.coll.forEach((c,i)=>{
 
 // Obligo
 const obEl=document.getElementById('ob');
-[...D.obl].sort((a,b)=>{const pa=a.cr>0?a.oi/a.cr:9999;const pb=b.cr>0?b.oi/b.cr:9999;return pb-pa}).forEach(o=>{
+[...D.obl].sort((a,b)=>{return (b.cr>0?(b.oi-b.cr):b.oi)-(a.cr>0?(a.oi-a.cr):a.oi)}).forEach(o=>{
   const p=o.cr>0?(o.oi/o.cr*100):0,ov=o.cr>0?(o.oi-o.cr):o.oi;
   const pctStr=o.cr>0?p.toFixed(0)+'%':'-';
   obEl.innerHTML+=`<tr><td style="text-align:right">${o.n}</td>
