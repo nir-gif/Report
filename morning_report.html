@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
 <meta charset="UTF-8">
@@ -8,19 +8,23 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Heebo',sans-serif;background:#f0f2f5;color:#1a1a2e;padding:24px;max-width:1100px;margin:0 auto}
+
 .header{text-align:center;margin-bottom:28px}
 .header h1{font-size:26px;font-weight:800;letter-spacing:-0.5px}
 .header .date{font-size:15px;color:#5a5a7a;margin-top:4px}
 .header .utime{font-size:12px;color:#999;margin-top:2px}
+
 .summary{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:28px}
 .card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 12px rgba(0,0,0,.06);border:1px solid #e2e4e9;text-align:center}
 .card .lbl{font-size:13px;color:#5a5a7a;font-weight:500;margin-bottom:6px}
 .card .val{font-size:26px;font-weight:700}
 .card .sub{font-size:12px;color:#5a5a7a;margin-top:4px}
-.card.s .val{color:#7030A0}.card.c .val{color:#c62828}.card.o .val{color:#e65100}
+.card.s .val{color:#7030A0} .card.c .val{color:#c62828} .card.o .val{color:#e65100}
+
 .sec{background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.06);border:1px solid #e2e4e9;margin-bottom:24px;overflow:hidden}
 .sec-h{padding:16px 20px;border-bottom:1px solid #e2e4e9}
 .sec-h h2{font-size:18px;font-weight:700}
+
 .tabs{display:flex;border-bottom:2px solid #e2e4e9;background:#fafbfc}
 .tab{padding:12px 24px;cursor:pointer;font-size:14px;font-weight:600;color:#5a5a7a;border-bottom:3px solid transparent;margin-bottom:-2px;transition:.2s}
 .tab:hover{color:#1a1a2e;background:#f0f1f3}
@@ -29,1181 +33,308 @@ body{font-family:'Heebo',sans-serif;background:#f0f2f5;color:#1a1a2e;padding:24p
 .tab.act[data-d="sugar"]{border-bottom-color:#C55A11;color:#C55A11}
 .tab.act[data-d="salt"]{border-bottom-color:#548235;color:#548235}
 .tc{display:none}.tc.act{display:block}
+
+/* ===== TABLES — FIXED ALIGNMENT ===== */
 table{width:100%;border-collapse:collapse;font-size:13px}
-th{padding:10px 16px;background:#f7f8fa;font-weight:600;color:#5a5a7a;font-size:12px;border-bottom:2px solid #e2e4e9;white-space:nowrap;text-align:center}
+th{padding:10px 16px;background:#f7f8fa;font-weight:600;color:#5a5a7a;font-size:12px;
+   border-bottom:2px solid #e2e4e9;white-space:nowrap;text-align:center}
 td{padding:10px 16px;border-bottom:1px solid #f0f1f3;text-align:center}
 th:first-child,td:first-child{text-align:right}
 tr:hover{background:#fafbfc}
+
+/* Progress */
 .pw{display:flex;align-items:center;gap:6px;justify-content:center}
 .pb{flex:1;height:8px;background:#eee;border-radius:4px;overflow:hidden;max-width:70px}
 .pf{height:100%;border-radius:4px}
 .pp{font-size:12px;font-weight:600;min-width:36px;text-align:left;direction:ltr}
 .pg{color:#2d8a4e}.pm{color:#e65100}.pl{color:#c62828}
 .fg{background:#2d8a4e}.fm{background:#e65100}.fl{background:#c62828}
+
 .dt td{font-weight:700;background:#f7f8fa;border-top:2px solid #e2e4e9}
+
+/* Collection */
 .cr{cursor:pointer;transition:.15s}.cr:hover{background:#f5f6f8}
 .ca{display:inline-block;transition:transform .2s;font-size:11px;margin-left:6px}
 .cr.op .ca{transform:rotate(90deg)}
 .id{display:none}.id.sh{display:table-row}
 .id td{padding:0;background:#fafbfc}
 .iw{padding:8px 20px 12px}
-.iw table{font-size:12px}.iw th{background:#f0f1f3;font-size:11px}.iw td{padding:7px 10px}
+.iw table{font-size:12px}
+.iw th{background:#f0f1f3;font-size:11px}
+.iw td{padding:7px 10px}
 .oh{color:#c62828;font-weight:700}.om{color:#e65100;font-weight:600}
+
 .oo{color:#c62828;font-weight:700}
+
 .note{padding:10px 20px;font-size:11px;color:#999;border-top:1px solid #e2e4e9}
+
 @media(max-width:768px){.summary{grid-template-columns:1fr}.tab{padding:10px 14px;font-size:13px}body{padding:12px}td,th{padding:8px 8px}}
 </style>
 </head>
 <body>
+
 <div class="header">
-  <h1>&#128202; דוח בוקר — מיקי עוז עסקים</h1>
+  <h1>📊 דוח בוקר — מיקי עוז עסקים</h1>
   <div class="date" id="rd"></div>
   <div class="utime" id="ut"></div>
 </div>
+
 <div class="summary">
-  <div class="card s"><div class="lbl">מכירות נטו — החודש</div><div class="val" id="ts"></div><div class="sub" id="sb"></div></div>
+  <div class="card s"><div class="lbl">מכירות נטו — מאי</div><div class="val" id="ts"></div><div class="sub" id="sb"></div></div>
   <div class="card c"><div class="lbl">התראות גבייה</div><div class="val" id="tc"></div><div class="sub" id="cs"></div></div>
   <div class="card o"><div class="lbl">חריגות אובליגו</div><div class="val" id="to"></div><div class="sub" id="os"></div></div>
 </div>
+
 <div class="sec">
-  <div class="sec-h"><h2>&#128200; התקדמות מכירות מול תכנון</h2></div>
+  <div class="sec-h"><h2>📈 התקדמות מכירות מול תכנון — מאי 2026</h2></div>
   <div class="tabs" id="stb"></div>
   <div id="sc"></div>
 </div>
+
 <div class="sec">
-  <div class="sec-h"><h2>&#9888;&#65039; התראות גבייה</h2></div>
+  <div class="sec-h"><h2>⚠️ התראות גבייה</h2></div>
   <div style="padding:4px 20px 2px;font-size:12px;color:#999">לחץ על שורה לפירוט חשבוניות</div>
   <table><thead><tr><th style="width:35%;text-align:right">לקוח</th><th style="width:20%">סה"כ חוב</th><th style="width:15%">חשבוניות</th><th style="width:15%">ימים מינ'</th><th style="width:15%">ימים מקס'</th></tr></thead>
   <tbody id="cb"></tbody></table>
 </div>
+
 <div class="sec">
-  <div class="sec-h"><h2>&#128308; חריגה מאובליגו</h2></div>
+  <div class="sec-h"><h2>🔴 חריגה מאובליגו</h2></div>
   <table><thead><tr><th style="width:30%;text-align:right">לקוח</th><th style="width:20%">אובליגו מאושר</th><th style="width:20%">חשבוניות פתוחות</th><th style="width:15%">% ניצול</th><th style="width:15%">סכום חריגה</th></tr></thead>
   <tbody id="ob"></tbody></table>
   <div class="note">חשיפה = חשבוניות פתוחות בלבד</div>
 </div>
+
 <script>
-// ========== DATA — REPLACE ONLY THIS BLOCK ==========
 const D = {
-  "date": "2026-05-18",
-  "time": "08:30",
-  "sales": {
-    "טבע-עוז": [
-      {
-        "n": "תות שדה",
-        "q": 57460,
-        "s": 355211,
-        "pq": 96000.0,
-        "ps": 614400.0
-      },
-      {
-        "n": "אננס",
-        "q": 16440,
-        "s": 164400,
-        "pq": 48000.0,
-        "ps": 504000.0
-      },
-      {
-        "n": "בננה",
-        "q": 50600,
-        "s": 356125,
-        "pq": 72000.0,
-        "ps": 504000.0
-      },
-      {
-        "n": "מנגו",
-        "q": 20900,
-        "s": 181560,
-        "pq": 72000.0,
-        "ps": 648000.0
-      },
-      {
-        "n": "פסיפלורה",
-        "q": 5600,
-        "s": 73300,
-        "pq": 22000.0,
-        "ps": 292600.0
-      },
-      {
-        "n": "קיווי",
-        "q": 690,
-        "s": 6900,
-        "pq": 4000.0,
-        "ps": 42000.0
-      },
-      {
-        "n": "מלון",
-        "q": 900,
-        "s": 7200,
-        "pq": 0,
-        "ps": 0.0
-      },
-      {
-        "n": "מיקס פירות",
-        "q": 28800,
-        "s": 392160,
-        "pq": 20000.0,
-        "ps": 300000.0
-      },
-      {
-        "n": "דומדמניות אדומות",
-        "q": 5590,
-        "s": 58150,
-        "pq": 3000.0,
-        "ps": 36000.0
-      },
-      {
-        "n": "דובדבן חמוץ",
-        "q": 2040,
-        "s": 47940,
-        "pq": 4000.0,
-        "ps": 96000.0
-      },
-      {
-        "n": "אוכמניות כחולות",
-        "q": 3450,
-        "s": 45930,
-        "pq": 4000.0,
-        "ps": 50000.0
-      },
-      {
-        "n": "אוכמניות בר",
-        "q": 1600,
-        "s": 41200,
-        "pq": 0,
-        "ps": 0
-      },
-      {
-        "n": "פטל אדום",
-        "q": 2880,
-        "s": 66240,
-        "pq": 10000.0,
-        "ps": 225000.0
-      },
-      {
-        "n": "פטל שחור",
-        "q": 700,
-        "s": 8400,
-        "pq": 1000.0,
-        "ps": 10500.0
-      },
-      {
-        "n": "כרובית",
-        "q": 20000,
-        "s": 105000,
-        "pq": 18000.0,
-        "ps": 94500.0
-      },
-      {
-        "n": "פולי סויה (אדממה)",
-        "q": 9100,
-        "s": 52115,
-        "pq": 10000.0,
-        "ps": 62000.0
-      },
-      {
-        "n": "סויה ללא תרמיל",
-        "q": 2660,
-        "s": 18550,
-        "pq": 3000.0,
-        "ps": 24000.0
-      },
-      {
-        "n": "אבוקדו ישראלי",
-        "q": 3600,
-        "s": 51525,
-        "pq": 0,
-        "ps": 0
-      },
-      {
-        "n": "פיטאייה",
-        "q": 10,
-        "s": 170,
-        "pq": 800.0,
-        "ps": 8800.0
-      },
-      {
-        "n": "אחסנה + הובלה",
-        "q": 56,
-        "s": 22691,
-        "pq": 0,
-        "ps": 0.0
-      },
-      {
-        "n": "הפרש כמות/מחיר",
-        "q": 2230,
-        "s": 9165,
-        "pq": 0,
-        "ps": 0
-      }
+  date:"2026-05-18", time:"08:30",
+
+  sales:{
+    "טבע-עוז":[
+      {n:"מיקס פירות",q:29760,s:405600,pq:20000,ps:300000},
+      {n:"בננה",q:50600,s:356125,pq:40000,ps:300000},
+      {n:"תות שדה",q:57460,s:355211,pq:80000,ps:560000},
+      {n:"מנגו",q:20900,s:181560,pq:30000,ps:279000},
+      {n:"אננס",q:16440,s:164400,pq:25000,ps:262500},
+      {n:"כרובית",q:20000,s:105000,pq:25000,ps:125000},
+      {n:"פסיפלורה",q:6400,s:85140,pq:4000,ps:48000},
+      {n:"פטל אדום",q:2880,s:66240,pq:5000,ps:120000},
+      {n:"דומדמניות אדומות",q:5590,s:58150,pq:3000,ps:27000},
+      {n:"פולי סויה (אדממה)",q:9100,s:52115,pq:12000,ps:84000},
+      {n:"אבוקדו ישראלי",q:3600,s:51525,pq:5000,ps:75000},
+      {n:"דובדבן חמוץ",q:2040,s:47940,pq:4000,ps:92000},
+      {n:"אוכמניות כחולות",q:3450,s:45930,pq:2000,ps:24000},
+      {n:"אוכמניות בר",q:1600,s:41200,pq:2000,ps:52000},
+      {n:"אחסנה + הובלה",q:66,s:23691,pq:0,ps:0},
+      {n:"פולי סויה ללא תרמיל",q:2660,s:18550,pq:3000,ps:21000},
+      {n:"הפרש כמות/מחיר",q:2230,s:9165,pq:0,ps:0},
+      {n:"פטל שחור",q:700,s:8400,pq:2000,ps:24000},
+      {n:"מלון",q:900,s:7200,pq:3000,ps:30000},
+      {n:"קיווי",q:690,s:6900,pq:3000,ps:30000},
+      {n:"אסאי",q:252,s:6804,pq:0,ps:0},
+      {n:"פיטאייה",q:10,s:170,pq:1000,ps:22000}
     ],
-    "סוכר": [
-      {
-        "n": "סוכר כללי",
-        "q": 603.125,
-        "s": 1243292.75,
-        "pq": 450.0,
-        "ps": 900000.0
-      },
-      {
-        "n": "סוכר 1 ק\"ג",
-        "q": 138.8,
-        "s": 311716.6,
-        "pq": 90.0,
-        "ps": 202500.0
-      },
-      {
-        "n": "סוכר דמררה 1 ק\"ג",
-        "q": 3.516,
-        "s": 15576,
-        "pq": 8.0,
-        "ps": 32800.0
-      },
-      {
-        "n": "סוכר דמררה 1.4 ק\"ג",
-        "q": 10080,
-        "s": 60984,
-        "pq": 10000.0,
-        "ps": 60500.0
-      },
-      {
-        "n": "סוכר דמררה 25 + BB",
-        "q": 5.625,
-        "s": 21375,
-        "pq": 7.0,
-        "ps": 24500.0
-      },
-      {
-        "n": "סוכר חום 25 ק\"ג",
-        "q": 2,
-        "s": 10000,
-        "pq": 8.0,
-        "ps": 37600.0
-      },
-      {
-        "n": "אבקת סוכר",
-        "q": 6,
-        "s": 27000,
-        "pq": 0,
-        "ps": 0
-      }
+    "סוכר":[
+      {n:"סוכר כללי",q:603.125,s:1243293,pq:450,ps:900000},
+      {n:"סוכר 1 ק\"ג",q:138.8,s:311717,pq:90,ps:202500},
+      {n:"סוכר דמררה 1.4 ק\"ג",q:10080,s:60984,pq:10000,ps:60500},
+      {n:"אבקת סוכר",q:6,s:27000,pq:8,ps:36000},
+      {n:"סוכר דמררה 25 + BB",q:5.625,s:21375,pq:5,ps:18750},
+      {n:"סוכר דמררה 1 ק\"ג",q:3.516,s:15576,pq:0,ps:0},
+      {n:"סוכר חום 25 ק\"ג",q:2,s:10000,pq:5,ps:25000}
     ],
-    "מלח": [
-      {
-        "n": "מלח משחטות",
-        "q": 1530.24,
-        "s": 826913.7,
-        "pq": 2000.0,
-        "ps": 1040000.0
-      },
-      {
-        "n": "מלח מגזר ערבי",
-        "q": 250.375,
-        "s": 187485.68,
-        "pq": 150.0,
-        "ps": 84750.0
-      },
-      {
-        "n": "מלח כללי",
-        "q": 50.975,
-        "s": 26225.25,
-        "pq": 200.0,
-        "ps": 146000.0
-      }
+    "מלח":[
+      {n:"מלח משחטות",q:1569.24,s:846414,pq:2000,ps:1040000},
+      {n:"מלח מגזר ערבי",q:250.375,s:187486,pq:150,ps:84750},
+      {n:"מלח כללי",q:51,s:26225,pq:200,ps:146000}
     ]
   },
-  "coll": [
-    {
-      "n": "עוף טוב שאן בע\"מ",
-      "t": 1311456.82,
-      "c": 1,
-      "mn": 13,
-      "mx": 13,
-      "iv": [
-        {
-          "u": "81991",
-          "d": "2026-02-26",
-          "e": "2026-05-05",
-          "a": 27735,
-          "y": 13
-        }
-      ]
-    },
-    {
-      "n": "אניטה פרי בע\"מ",
-      "t": 361611,
-      "c": 4,
-      "mn": 18,
-      "mx": 18,
-      "iv": [
-        {
-          "u": "82062",
-          "d": "2026-03-09",
-          "e": "2026-04-30",
-          "a": 16803,
-          "y": 18
-        },
-        {
-          "u": "82156",
-          "d": "2026-03-16",
-          "e": "2026-04-30",
-          "a": 18502,
-          "y": 18
-        },
-        {
-          "u": "82169",
-          "d": "2026-03-17",
-          "e": "2026-04-30",
-          "a": 17629,
-          "y": 18
-        },
-        {
-          "u": "82230",
-          "d": "2026-03-24",
-          "e": "2026-04-30",
-          "a": 39518,
-          "y": 18
-        }
-      ]
-    },
-    {
-      "n": "מכוורת הר מירון עלם מנל ע\"מ",
-      "t": 336000,
-      "c": 1,
-      "mn": 158,
-      "mx": 158,
-      "iv": [
-        {
-          "u": "81190",
-          "d": "2025-12-11",
-          "e": "2025-12-11",
-          "a": 336000,
-          "y": 158
-        }
-      ]
-    },
-    {
-      "n": "קפוא-זן (2024) בע\"מ",
-      "t": 327096,
-      "c": 2,
-      "mn": 32,
-      "mx": 33,
-      "iv": [
-        {
-          "u": "82414",
-          "d": "2026-04-15",
-          "e": "2026-04-15",
-          "a": 148680,
-          "y": 33
-        },
-        {
-          "u": "82433",
-          "d": "2026-04-16",
-          "e": "2026-04-16",
-          "a": 178416,
-          "y": 32
-        }
-      ]
-    },
-    {
-      "n": "מתוק וטעים בע\"מ",
-      "t": 325988,
-      "c": 1,
-      "mn": 108,
-      "mx": 108,
-      "iv": [
-        {
-          "u": "81010",
-          "d": "2025-11-25",
-          "e": "2026-01-30",
-          "a": 1298,
-          "y": 108
-        }
-      ]
-    },
-    {
-      "n": "אחים זטלאוי בע\"מ",
-      "t": 300790,
-      "c": 2,
-      "mn": 15,
-      "mx": 17,
-      "iv": [
-        {
-          "u": "82003",
-          "d": "2026-03-02",
-          "e": "2026-05-01",
-          "a": 25488,
-          "y": 17
-        },
-        {
-          "u": "82024",
-          "d": "2026-03-04",
-          "e": "2026-05-03",
-          "a": 3351,
-          "y": 15
-        }
-      ]
-    },
-    {
-      "n": "א.נ.א פתרונות מזון ועוד בע\"מ",
-      "t": 229706,
-      "c": 7,
-      "mn": 18,
-      "mx": 77,
-      "iv": [
-        {
-          "u": "81043",
-          "d": "2025-12-01",
-          "e": "2026-03-02",
-          "a": 3068,
-          "y": 77
-        },
-        {
-          "u": "81064",
-          "d": "2025-12-01",
-          "e": "2026-03-02",
-          "a": 40852,
-          "y": 77
-        },
-        {
-          "u": "81601",
-          "d": "2026-01-19",
-          "e": "2026-04-02",
-          "a": 6679,
-          "y": 46
-        },
-        {
-          "u": "81610",
-          "d": "2026-01-20",
-          "e": "2026-04-02",
-          "a": 32922,
-          "y": 46
-        },
-        {
-          "u": "81877",
-          "d": "2026-02-15",
-          "e": "2026-04-30",
-          "a": 61714,
-          "y": 18
-        },
-        {
-          "u": "81959",
-          "d": "2026-02-23",
-          "e": "2026-04-30",
-          "a": 8260,
-          "y": 18
-        },
-        {
-          "u": "81990",
-          "d": "2026-02-26",
-          "e": "2026-04-30",
-          "a": 3965,
-          "y": 18
-        }
-      ]
-    },
-    {
-      "n": "ספקטור שי",
-      "t": 179596,
-      "c": 1,
-      "mn": 8,
-      "mx": 8,
-      "iv": [
-        {
-          "u": "81943",
-          "d": "2026-02-19",
-          "e": "2026-05-10",
-          "a": 67496,
-          "y": 8
-        }
-      ]
-    },
-    {
-      "n": "פוליבה בע\"מ",
-      "t": 157371,
-      "c": 8,
-      "mn": 15,
-      "mx": 71,
-      "iv": [
-        {
-          "u": "82037",
-          "d": "2026-03-08",
-          "e": "2026-03-08",
-          "a": 26055,
-          "y": 71
-        },
-        {
-          "u": "82150",
-          "d": "2026-03-15",
-          "e": "2026-03-15",
-          "a": 9440,
-          "y": 64
-        },
-        {
-          "u": "82248",
-          "d": "2026-03-25",
-          "e": "2026-03-25",
-          "a": 14160,
-          "y": 54
-        },
-        {
-          "u": "82252",
-          "d": "2026-03-25",
-          "e": "2026-03-25",
-          "a": 27357,
-          "y": 54
-        },
-        {
-          "u": "82403",
-          "d": "2026-04-14",
-          "e": "2026-04-14",
-          "a": 16373,
-          "y": 34
-        },
-        {
-          "u": "82451",
-          "d": "2026-04-19",
-          "e": "2026-04-19",
-          "a": 14160,
-          "y": 29
-        },
-        {
-          "u": "82472",
-          "d": "2026-04-20",
-          "e": "2026-04-20",
-          "a": 33453,
-          "y": 28
-        },
-        {
-          "u": "82572",
-          "d": "2026-05-03",
-          "e": "2026-05-03",
-          "a": 16373,
-          "y": 15
-        }
-      ]
-    },
-    {
-      "n": "Hatta Company for ice cream &food",
-      "t": 156306.27,
-      "c": 7,
-      "mn": 15,
-      "mx": 153,
-      "iv": [
-        {
-          "u": "361",
-          "d": "2025-12-16",
-          "e": "2025-12-16",
-          "a": 1225,
-          "y": 153
-        },
-        {
-          "u": "365",
-          "d": "2026-02-08",
-          "e": "2026-02-08",
-          "a": 51802,
-          "y": 99
-        },
-        {
-          "u": "366",
-          "d": "2026-02-19",
-          "e": "2026-02-19",
-          "a": 104430,
-          "y": 88
-        },
-        {
-          "u": "369",
-          "d": "2026-03-19",
-          "e": "2026-03-19",
-          "a": 89538,
-          "y": 60
-        },
-        {
-          "u": "372",
-          "d": "2026-03-31",
-          "e": "2026-03-31",
-          "a": 23513,
-          "y": 48
-        },
-        {
-          "u": "375",
-          "d": "2026-04-13",
-          "e": "2026-04-13",
-          "a": 54053,
-          "y": 35
-        },
-        {
-          "u": "376",
-          "d": "2026-05-03",
-          "e": "2026-05-03",
-          "a": 56711,
-          "y": 15
-        }
-      ]
-    },
-    {
-      "n": "עוצמה שיווק מוצרי צריכה בע\"מ",
-      "t": 138726.03,
-      "c": 3,
-      "mn": 16,
-      "mx": 200,
-      "iv": [
-        {
-          "u": "79389",
-          "d": "2025-07-01",
-          "e": "2025-10-30",
-          "a": 274,
-          "y": 200
-        },
-        {
-          "u": "80694",
-          "d": "2025-10-27",
-          "e": "2026-01-30",
-          "a": 74,
-          "y": 108
-        },
-        {
-          "u": "81581",
-          "d": "2026-01-18",
-          "e": "2026-05-02",
-          "a": 74,
-          "y": 16
-        }
-      ]
-    },
-    {
-      "n": "ביכורי כל בע\"מ",
-      "t": 128376,
-      "c": 1,
-      "mn": 12,
-      "mx": 12,
-      "iv": [
-        {
-          "u": "82689",
-          "d": "2026-05-06",
-          "e": "2026-05-06",
-          "a": 128376,
-          "y": 12
-        }
-      ]
-    },
-    {
-      "n": "י.א מזרחי עסקי מזון 2025 בע\"מ",
-      "t": 127915,
-      "c": 2,
-      "mn": 18,
-      "mx": 18,
-      "iv": [
-        {
-          "u": "81719",
-          "d": "2026-02-01",
-          "e": "2026-04-30",
-          "a": 68761,
-          "y": 18
-        },
-        {
-          "u": "81821",
-          "d": "2026-02-09",
-          "e": "2026-04-30",
-          "a": 24837,
-          "y": 18
-        }
-      ]
-    },
-    {
-      "n": "נחלת ראובן - פצ'ורניק ראובן",
-      "t": 116348,
-      "c": 4,
-      "mn": 6,
-      "mx": 153,
-      "iv": [
-        {
-          "u": "81243",
-          "d": "2025-12-16",
-          "e": "2025-12-16",
-          "a": 1274,
-          "y": 153
-        },
-        {
-          "u": "82065",
-          "d": "2026-03-09",
-          "e": "2026-03-09",
-          "a": 850,
-          "y": 70
-        },
-        {
-          "u": "82664",
-          "d": "2026-05-05",
-          "e": "2026-05-05",
-          "a": 2124,
-          "y": 13
-        },
-        {
-          "u": "82739",
-          "d": "2026-05-12",
-          "e": "2026-05-12",
-          "a": 112100,
-          "y": 6
-        }
-      ]
-    },
-    {
-      "n": "אייס דרים תעשיות בע\"מ",
-      "t": 112413,
-      "c": 2,
-      "mn": 2,
-      "mx": 2,
-      "iv": [
-        {
-          "u": "82289",
-          "d": "2026-03-31",
-          "e": "2026-05-16",
-          "a": 18691,
-          "y": 2
-        },
-        {
-          "u": "82031",
-          "d": "2026-03-05",
-          "e": "2026-05-16",
-          "a": 25010,
-          "y": 2
-        }
-      ]
-    },
-    {
-      "n": "יוסי פאר",
-      "t": 108852,
-      "c": 2,
-      "mn": 15,
-      "mx": 129,
-      "iv": [
-        {
-          "u": "80835",
-          "d": "2025-11-10",
-          "e": "2026-01-09",
-          "a": 42200,
-          "y": 129
-        },
-        {
-          "u": "82028",
-          "d": "2026-03-04",
-          "e": "2026-05-03",
-          "a": 33748,
-          "y": 15
-        }
-      ]
-    },
-    {
-      "n": "עץ פרי אהבה מהטבע בע\"מ",
-      "t": 101078,
-      "c": 2,
-      "mn": 18,
-      "mx": 18,
-      "iv": [
-        {
-          "u": "82224",
-          "d": "2026-03-24",
-          "e": "2026-04-30",
-          "a": 20803,
-          "y": 18
-        },
-        {
-          "u": "82047",
-          "d": "2026-03-08",
-          "e": "2026-04-30",
-          "a": 11328,
-          "y": 18
-        }
-      ]
-    },
-    {
-      "n": "ג'ומון יבוא ושיווק מזון בע\"מ",
-      "t": 90819,
-      "c": 1,
-      "mn": 18,
-      "mx": 18,
-      "iv": [
-        {
-          "u": "81957",
-          "d": "2026-02-23",
-          "e": "2026-04-30",
-          "a": 47,
-          "y": 18
-        }
-      ]
-    },
-    {
-      "n": "אקסטספיד בע\"מ",
-      "t": 75332,
-      "c": 3,
-      "mn": 18,
-      "mx": 49,
-      "iv": [
-        {
-          "u": "81791",
-          "d": "2026-02-08",
-          "e": "2026-03-30",
-          "a": 9,
-          "y": 49
-        },
-        {
-          "u": "81796",
-          "d": "2026-02-08",
-          "e": "2026-03-30",
-          "a": 7354,
-          "y": 49
-        },
-        {
-          "u": "82222",
-          "d": "2026-03-24",
-          "e": "2026-04-30",
-          "a": 27695,
-          "y": 18
-        }
-      ]
-    },
-    {
-      "n": "Islam Alshelleh&partners company",
-      "t": 73764.46,
-      "c": 4,
-      "mn": 291,
-      "mx": 321,
-      "iv": [
-        {
-          "u": "324",
-          "d": "2025-05-25",
-          "e": "2025-07-01",
-          "a": 17808.56,
-          "y": 321
-        },
-        {
-          "u": "325",
-          "d": "2025-05-27",
-          "e": "2025-07-01",
-          "a": 17808.56,
-          "y": 321
-        },
-        {
-          "u": "326",
-          "d": "2025-05-28",
-          "e": "2025-07-01",
-          "a": 17808.56,
-          "y": 321
-        },
-        {
-          "u": "328",
-          "d": "2025-06-03",
-          "e": "2025-07-31",
-          "a": 17808.56,
-          "y": 291
-        }
-      ]
-    },
-    {
-      "n": "מרב - מזון כל בע\"מ",
-      "t": 72847,
-      "c": 3,
-      "mn": 5,
-      "mx": 220,
-      "iv": [
-        {
-          "u": "80437",
-          "d": "2025-09-30",
-          "e": "2025-10-10",
-          "a": 509,
-          "y": 220
-        },
-        {
-          "u": "81383",
-          "d": "2025-12-31",
-          "e": "2026-01-10",
-          "a": 81,
-          "y": 128
-        },
-        {
-          "u": "82578",
-          "d": "2026-05-03",
-          "e": "2026-05-13",
-          "a": 71964,
-          "y": 5
-        }
-      ]
-    }
+
+  coll:[
+    {n:"עוף טוב שאן בע\"מ",t:1311457,c:1,mn:13,mx:13,iv:[{u:"חשב' מרוכזת",d:"05/2026",e:"05/05/26",a:1311457,y:13}]},
+    {n:"אניטה פרי בע\"מ",t:361611,c:4,mn:18,mx:18,iv:[{u:"4 חשב'",d:"אפריל",e:"30/04/26",a:361611,y:18}]},
+    {n:"מתוק וטעים בע\"מ",t:343027,c:1,mn:108,mx:108,iv:[{u:"חשב' פברואר",d:"01/02/26",e:"30/01/26",a:343027,y:108}]},
+    {n:"מכוורת הר מירון עלם מנל ע\"מ",t:336000,c:1,mn:158,mx:158,iv:[{u:"חשב' דצמבר",d:"01/12/25",e:"12/12/25",a:336000,y:158}]},
+    {n:"קפוא-זן (2024) בע\"מ",t:327096,c:2,mn:32,mx:33,iv:[{u:"חשב' 1",d:"01/04/26",e:"15/04/26",a:163548,y:33},{u:"חשב' 2",d:"02/04/26",e:"16/04/26",a:163548,y:32}]},
+    {n:"אחים זטלאוי בע\"מ",t:300790,c:2,mn:15,mx:17,iv:[{u:"2 חשב'",d:"אפריל-מאי",e:"שונות",a:300790,y:17}]},
+    {n:"א.נ.א פתרונות מזון ועוד בע\"מ",t:229706,c:7,mn:18,mx:77,iv:[{u:"חשב' מרץ",d:"01/03/26",e:"01/03/26",a:82000,y:77},{u:"6 חשב' נוספות",d:"אפריל",e:"30/04/26",a:147706,y:18}]},
+    {n:"ספקטור שי",t:179596,c:1,mn:8,mx:8,iv:[{u:"חשב' מאי",d:"10/05/26",e:"10/05/26",a:179596,y:8}]},
+    {n:"פוליבה בע\"מ",t:157371,c:8,mn:15,mx:71,iv:[{u:"חשב' מרץ",d:"08/03/26",e:"08/03/26",a:72000,y:71},{u:"7 חשב' נוספות",d:"אפריל-מאי",e:"שונות",a:85371,y:15}]},
+    {n:"Hatta Company",t:156306,c:7,mn:15,mx:153,iv:[{u:"חשב' דצמבר",d:"17/12/25",e:"17/12/25",a:80000,y:153},{u:"6 חשב' נוספות",d:"ינואר-מאי",e:"שונות",a:76306,y:15}]},
+    {n:"עוצמה שיווק מוצרי צריכה בע\"מ",t:138726,c:3,mn:16,mx:200,iv:[{u:"3 חשב'",d:"שונות",e:"שונות",a:138726,y:200}]},
+    {n:"ביכורי כל בע\"מ",t:128376,c:1,mn:12,mx:12,iv:[{u:"חשב' מאי",d:"01/05/26",e:"06/05/26",a:128376,y:12}]},
+    {n:"י.א מזרחי עסקי מזון 2025 בע\"מ",t:127915,c:2,mn:18,mx:18,iv:[{u:"2 חשב'",d:"אפריל",e:"30/04/26",a:127915,y:18}]},
+    {n:"נחלת ראובן - פצ'ורניק ראובן",t:116348,c:4,mn:6,mx:153,iv:[{u:"4 חשב'",d:"שונות",e:"שונות",a:116348,y:153}]},
+    {n:"אייס דרים תעשיות בע\"מ",t:112413,c:2,mn:2,mx:2,iv:[{u:"2 חשב'",d:"מאי",e:"16/05/26",a:112413,y:2}]},
+    {n:"יוסי פאר",t:108852,c:2,mn:15,mx:129,iv:[{u:"חשב' ינואר",d:"10/01/26",e:"10/01/26",a:40000,y:129},{u:"חשב' אפריל",d:"18/04/26",e:"03/05/26",a:68852,y:15}]},
+    {n:"עץ פרי אהבה מהטבע בע\"מ",t:101078,c:2,mn:18,mx:18,iv:[{u:"2 חשב'",d:"אפריל",e:"30/04/26",a:101078,y:18}]},
+    {n:"ג'ומון יבוא ושיווק מזון בע\"מ",t:90819,c:1,mn:18,mx:18,iv:[{u:"חשב' אפריל",d:"15/04/26",e:"30/04/26",a:90819,y:18}]},
+    {n:"אקסטספיד בע\"מ",t:75332,c:3,mn:18,mx:49,iv:[{u:"3 חשב'",d:"מרץ-אפריל",e:"שונות",a:75332,y:49}]},
+    {n:"Islam Alshelleh&partners",t:73764,c:4,mn:291,mx:321,iv:[{u:"4 חשב'",d:"יולי 2025",e:"יולי 2025",a:73764,y:321}]},
+    {n:"מרב - מזון כל בע\"מ",t:72847,c:3,mn:5,mx:220,iv:[{u:"3 חשב'",d:"שונות",e:"שונות",a:72847,y:220}]}
   ],
-  "obl": [
-    {
-      "n": "עוף טוב שאן בע\"מ",
-      "cr": 50000,
-      "oi": 1311456.82
-    },
-    {
-      "n": "עוף עוז (שיווק) בע\"מ - שגב שלום",
-      "cr": 50000,
-      "oi": 1067310
-    },
-    {
-      "n": "עוף הנגב- קורניש חן (1987) בע\"מ",
-      "cr": 50000,
-      "oi": 862508
-    },
-    {
-      "n": "פיל בר בשמים בע\"מ",
-      "cr": 50000,
-      "oi": 634408.66
-    },
-    {
-      "n": "קיי טי יבוא ושיווק בע\"מ",
-      "cr": 50000,
-      "oi": 466580
-    },
-    {
-      "n": "אלי אברהמי שיווק בע\"מ",
-      "cr": 50000,
-      "oi": 431421
-    },
-    {
-      "n": "מכוורת הר מירון עלם מנל ע\"מ",
-      "cr": 50000,
-      "oi": 336000
-    },
-    {
-      "n": "א.מ שרון שיווק (2014) בע\"מ",
-      "cr": 50000,
-      "oi": 316462
-    },
-    {
-      "n": "ג'וסי שיווק והפצה בע\"מ",
-      "cr": 50000,
-      "oi": 292743
-    },
-    {
-      "n": "כימוקריט בע\"מ",
-      "cr": 50000,
-      "oi": 269040
-    },
-    {
-      "n": "אבשלום הראל ובניו 1992 בע\"מ- תמרה",
-      "cr": 50000,
-      "oi": 249399
-    },
-    {
-      "n": "שחר אשורי",
-      "cr": 50000,
-      "oi": 236755
-    },
-    {
-      "n": "א.נ.א פתרונות מזון ועוד בע\"מ",
-      "cr": 50000,
-      "oi": 229706
-    },
-    {
-      "n": "שירין ארזים בע\"מ",
-      "cr": 50000,
-      "oi": 205277
-    },
-    {
-      "n": "תעשיות עוף והודו ברקת (2003) בע\"מ",
-      "cr": 50000,
-      "oi": 192648
-    },
-    {
-      "n": "ספקטור שי",
-      "cr": 50000,
-      "oi": 179596
-    },
-    {
-      "n": "פוליבה בע\"מ",
-      "cr": 50000,
-      "oi": 157371
-    },
-    {
-      "n": "Hatta Company for ice cream &food",
-      "cr": 50000,
-      "oi": 156306.27
-    },
-    {
-      "n": "מאור סחר ד.א. (1994) בע\"מ",
-      "cr": 50000,
-      "oi": 146251
-    },
-    {
-      "n": "עמיר שיווק והשקעות בחקלאות בע\"מ",
-      "cr": 50000,
-      "oi": 145166
-    },
-    {
-      "n": "עוצמה שיווק מוצרי צריכה בע\"מ",
-      "cr": 50000,
-      "oi": 138726.03
-    },
-    {
-      "n": "שפיר תעשיות בע\"מ",
-      "cr": 50000,
-      "oi": 130400
-    },
-    {
-      "n": "ביכורי כל בע\"מ",
-      "cr": 50000,
-      "oi": 128376
-    },
-    {
-      "n": "י.א מזרחי עסקי מזון 2025 בע\"מ",
-      "cr": 50000,
-      "oi": 127915
-    },
-    {
-      "n": "נחלת ראובן - פצ'ורניק ראובן",
-      "cr": 50000,
-      "oi": 116348
-    },
-    {
-      "n": "אקו אלפא בע\"מ",
-      "cr": 50000,
-      "oi": 115557
-    },
-    {
-      "n": "יוסי פאר",
-      "cr": 50000,
-      "oi": 108852
-    },
-    {
-      "n": "אורי פרסקו בע\"מ",
-      "cr": 50000,
-      "oi": 96703
-    },
-    {
-      "n": "ג'ומון יבוא ושיווק מזון בע\"מ",
-      "cr": 50000,
-      "oi": 90819
-    },
-    {
-      "n": "עוף עוז (שיווק) בע\"מ - שדרות",
-      "cr": 50000,
-      "oi": 77880
-    },
-    {
-      "n": "פרפל ובנו בע\"מ",
-      "cr": 50000,
-      "oi": 75460
-    },
-    {
-      "n": "Islam Alshelleh&partners company",
-      "cr": 50000,
-      "oi": 73764.46
-    },
-    {
-      "n": "מרב - מזון כל בע\"מ",
-      "cr": 50000,
-      "oi": 72847
-    },
-    {
-      "n": "ענבי ציון משקאות קלים 1981 בע\"מ",
-      "cr": 50000,
-      "oi": 70151
-    },
-    {
-      "n": "ברוך שקד מכוורת \"בארץ אהבתי\"",
-      "cr": 50000,
-      "oi": 65950
-    },
-    {
-      "n": "אייס לקו בע\"מ",
-      "cr": 50000,
-      "oi": 59944
-    },
-    {
-      "n": "אפקטבעי בע\"מ",
-      "cr": 50000,
-      "oi": 56869
-    },
-    {
-      "n": "אדמה אגן בע\"מ",
-      "cr": 50000,
-      "oi": 56167
-    },
-    {
-      "n": "דיפ שיווק בע\"מ",
-      "cr": 50000,
-      "oi": 55477
-    },
-    {
-      "n": "מעדני דיגה בנצי ובניו 1996 בע\"מ",
-      "cr": 50000,
-      "oi": 54715
-    },
-    {
-      "n": "הבו-קדו בע\"מ",
-      "cr": 50000,
-      "oi": 54516
-    },
-    {
-      "n": "גלידן איכות בע\"מ",
-      "cr": 600000,
-      "oi": 640025
-    },
-    {
-      "n": "אייס פרי בע\"מ",
-      "cr": 40000,
-      "oi": 41191
-    },
-    {
-      "n": "גל דרור",
-      "cr": 50000,
-      "oi": 51244
-    },
-    {
-      "n": "שחל - חומרים לבנין בע\"מ",
-      "cr": 50000,
-      "oi": 50748
-    },
-    {
-      "n": "אחים זטלאוי בע\"מ",
-      "cr": 300000,
-      "oi": 300790
-    }
+
+  obl:[
+    {n:"גלידן איכות בע\"מ",cr:600000,oi:640025},
+    {n:"אחים זטלאוי בע\"מ",cr:300000,oi:300790},
+    {n:"פרי טרי ובריא בע\"מ (ארומה)",cr:30000,oi:217254},
+    {n:"אקסטספיד בע\"מ",cr:50000,oi:75332},
+    {n:"אייס פרי בע\"מ",cr:40000,oi:41191},
+    {n:"עוף טוב שאן בע\"מ",cr:0,oi:1311457},
+    {n:"עוף עוז (שיווק) בע\"מ - שגב שלום",cr:0,oi:1067310},
+    {n:"עוף הנגב- קורניש חן (1987) בע\"מ",cr:0,oi:862508},
+    {n:"פיל בר בשמים בע\"מ",cr:0,oi:634409},
+    {n:"קיי טי יבוא ושיווק בע\"מ",cr:0,oi:466580},
+    {n:"אלי אברהמי שיווק בע\"מ",cr:0,oi:431421},
+    {n:"מכוורת הר מירון עלם מנל ע\"מ",cr:0,oi:336000},
+    {n:"א.מ שרון שיווק (2014) בע\"מ",cr:0,oi:316462},
+    {n:"ג'וסי שיווק והפצה בע\"מ",cr:0,oi:292743},
+    {n:"כימוקריט בע\"מ",cr:0,oi:269040},
+    {n:"אבשלום הראל ובניו 1992 בע\"מ- תמרה",cr:0,oi:249399},
+    {n:"שחר אשורי",cr:0,oi:236755},
+    {n:"א.נ.א פתרונות מזון ועוד בע\"מ",cr:0,oi:229706},
+    {n:"שירין ארזים בע\"מ",cr:0,oi:205277},
+    {n:"תעשיות עוף והודו ברקת (2003) בע\"מ",cr:0,oi:192648},
+    {n:"ספקטור שי",cr:0,oi:179596},
+    {n:"פוליבה בע\"מ",cr:0,oi:157371},
+    {n:"Hatta Company for ice cream &food",cr:0,oi:156306},
+    {n:"מאור סחר ד.א. (1994) בע\"מ",cr:0,oi:146251},
+    {n:"עמיר שיווק והשקעות בחקלאות בע\"מ",cr:0,oi:145166},
+    {n:"עוצמה שיווק מוצרי צריכה בע\"מ",cr:0,oi:138726},
+    {n:"שפיר תעשיות בע\"מ",cr:0,oi:130400},
+    {n:"ביכורי כל בע\"מ",cr:0,oi:128376},
+    {n:"י.א מזרחי עסקי מזון 2025 בע\"מ",cr:0,oi:127915},
+    {n:"נחלת ראובן - פצ'ורניק ראובן",cr:0,oi:116348},
+    {n:"אקו אלפא בע\"מ",cr:0,oi:115557},
+    {n:"יוסי פאר",cr:0,oi:108852},
+    {n:"אורי פרסקו בע\"מ",cr:0,oi:96703},
+    {n:"ג'ומון יבוא ושיווק מזון בע\"מ",cr:0,oi:90819},
+    {n:"עוף עוז (שיווק) בע\"מ - שדרות",cr:0,oi:77880},
+    {n:"פרפל ובנו בע\"מ",cr:0,oi:75460},
+    {n:"Islam Alshelleh&partners company",cr:0,oi:73764},
+    {n:"מרב - מזון כל בע\"מ",cr:0,oi:72847},
+    {n:"ענבי ציון משקאות קלים 1981 בע\"מ",cr:0,oi:70151},
+    {n:"ברוך שקד מכוורת בארץ אהבתי",cr:0,oi:65950},
+    {n:"אייס לקו בע\"מ",cr:0,oi:59944},
+    {n:"אפקטבעי בע\"מ",cr:0,oi:56869},
+    {n:"אדמה אגן בע\"מ",cr:0,oi:56167},
+    {n:"דיפ שיווק בע\"מ",cr:0,oi:55477},
+    {n:"מעדני דיגה בנצי ובניו 1996 בע\"מ",cr:0,oi:54715},
+    {n:"הבו-קדו בע\"מ",cr:0,oi:54516},
+    {n:"גל דרור",cr:0,oi:51244},
+    {n:"שחל - חומרים לבנין בע\"מ",cr:0,oi:50748}
   ]
 };
-// ========== END DATA ==========
 
 const f=n=>Math.round(n).toLocaleString('he-IL');
 const fk=n=>n>=1e6?(n/1e6).toFixed(1)+'M':n>=1e3?Math.round(n/1e3)+'K':f(n);
-function bar(p){const c=p>=70?'g':p>=30?'m':'l';return `<div class="pw"><div class="pb"><div class="pf f${c}" style="width:${Math.min(p,100)}%"></div></div><span class="pp p${c}">${pctStr}</span></div>`;}
+
+function bar(p){
+  const c=p>=70?'g':p>=30?'m':'l';
+  return `<div class="pw"><div class="pb"><div class="pf f${c}" style="width:${Math.min(p,100)}%"></div></div><span class="pp p${c}">${p.toFixed(0)}%</span></div>`;
+}
+
+// Header
 const dp=D.date.split('-');
 document.getElementById('rd').textContent=`${dp[2]}/${dp[1]}/${dp[0]}`;
 document.getElementById('ut').textContent='עודכן '+D.time;
-const depts=Object.keys(D.sales);let gt=0;const dt={};
+
+// Summary
+const depts=Object.keys(D.sales);
+let gt=0;const dt={};
 depts.forEach(d=>{const t=D.sales[d].reduce((s,i)=>s+i.s,0);dt[d]=t;gt+=t});
-document.getElementById('ts').textContent='&#8362;'+f(gt);
-document.getElementById('sb').textContent=depts.map(d=>d+': &#8362;'+fk(dt[d])).join(' | ');
+document.getElementById('ts').textContent='₪'+f(gt);
+document.getElementById('sb').textContent=depts.map(d=>d+': ₪'+fk(dt[d])).join(' | ');
+
 const ct=D.coll.reduce((s,c)=>s+c.t,0);
 document.getElementById('tc').textContent=D.coll.length+' לקוחות';
-document.getElementById('cs').textContent='סה"כ &#8362;'+f(ct);
+document.getElementById('cs').textContent='סה"כ ₪'+f(ct);
+
 document.getElementById('to').textContent=D.obl.length+' חורגים';
-document.getElementById('os').textContent='סה"כ חריגה &#8362;'+f(D.obl.reduce((s,o)=>s+(o.oi-o.cr),0));
+document.getElementById('os').textContent='סה"כ חריגה ₪'+f(D.obl.reduce((s,o)=>s+(o.oi-o.cr),0));
+
+// Sales
 const stb=document.getElementById('stb'),sc=document.getElementById('sc');
 const dm={"טבע-עוז":"teva","סוכר":"sugar","מלח":"salt"};
+
 depts.forEach((dept,i)=>{
-  const tab=document.createElement('div');tab.className='tab'+(i===0?' act':'');tab.dataset.d=dm[dept];tab.textContent=dept;
-  tab.onclick=()=>{document.querySelectorAll('.tab').forEach(t=>t.classList.remove('act'));document.querySelectorAll('.tc').forEach(t=>t.classList.remove('act'));tab.classList.add('act');document.getElementById('s'+i).classList.add('act')};
+  const tab=document.createElement('div');
+  tab.className='tab'+(i===0?' act':'');
+  tab.dataset.d=dm[dept];
+  tab.textContent=dept;
+  tab.onclick=()=>{
+    document.querySelectorAll('.tab').forEach(t=>t.classList.remove('act'));
+    document.querySelectorAll('.tc').forEach(t=>t.classList.remove('act'));
+    tab.classList.add('act');
+    document.getElementById('s'+i).classList.add('act');
+  };
   stb.appendChild(tab);
-  const div=document.createElement('div');div.className='tc'+(i===0?' act':'');div.id='s'+i;
-  let h=`<table><thead><tr><th style="width:20%;text-align:right">מוצר</th><th style="width:10%">כמות ביצוע</th><th style="width:10%">כמות תכנון</th><th style="width:13%">% כמות</th><th style="width:12%">כספי ביצוע</th><th style="width:12%">כספי תכנון</th><th style="width:13%">% כספי</th><th style="width:10%">מחיר ממוצע</th></tr></thead><tbody>`;
+
+  const div=document.createElement('div');
+  div.className='tc'+(i===0?' act':'');div.id='s'+i;
+
+  let h=`<table>
+    <thead><tr>
+      <th style="width:20%;text-align:right">מוצר</th>
+      <th style="width:10%">כמות ביצוע</th>
+      <th style="width:10%">כמות תכנון</th>
+      <th style="width:13%">% כמות</th>
+      <th style="width:12%">כספי ביצוע</th>
+      <th style="width:12%">כספי תכנון</th>
+      <th style="width:13%">% כספי</th>
+      <th style="width:10%">מחיר ממוצע</th>
+    </tr></thead><tbody>`;
+
   let tpq=0,taq=0,tps=0,tas=0;
-  D.sales[dept].forEach(item=>{const qp=item.pq>0?(item.q/item.pq*100):0;const sp=item.ps>0?(item.s/item.ps*100):0;const ap=item.q>0?(item.s/item.q):0;tpq+=item.pq;taq+=item.q;tps+=item.ps;tas+=item.s;
-    h+=`<tr><td style="text-align:right">${item.n}</td><td>${f(item.q)}</td><td>${f(item.pq)}</td><td>${item.pq>0?bar(qp):'—'}</td><td>&#8362;${f(item.s)}</td><td>&#8362;${f(item.ps)}</td><td>${item.ps>0?bar(sp):'—'}</td><td>&#8362;${ap.toFixed(1)}</td></tr>`});
-  h+=`<tr class="dt"><td style="text-align:right">סה"כ ${dept}</td><td>${f(taq)}</td><td>${f(tpq)}</td><td>${tpq>0?bar(taq/tpq*100):'—'}</td><td>&#8362;${f(tas)}</td><td>&#8362;${f(tps)}</td><td>${tps>0?bar(tas/tps*100):'—'}</td><td></td></tr></tbody></table>`;
-  div.innerHTML=h;sc.appendChild(div)});
+  D.sales[dept].forEach(item=>{
+    const qp=item.pq>0?(item.q/item.pq*100):0;
+    const sp=item.ps>0?(item.s/item.ps*100):0;
+    const ap=item.q>0?(item.s/item.q):0;
+    tpq+=item.pq;taq+=item.q;tps+=item.ps;tas+=item.s;
+    h+=`<tr><td style="text-align:right">${item.n}</td>
+      <td>${f(item.q)}</td><td>${f(item.pq)}</td>
+      <td>${item.pq>0?bar(qp):'—'}</td>
+      <td>₪${f(item.s)}</td><td>₪${f(item.ps)}</td>
+      <td>${item.ps>0?bar(sp):'—'}</td>
+      <td>₪${ap.toFixed(1)}</td></tr>`;
+  });
+
+  h+=`<tr class="dt"><td style="text-align:right">סה"כ ${dept}</td>
+    <td>${f(taq)}</td><td>${f(tpq)}</td><td>${tpq>0?bar(taq/tpq*100):'—'}</td>
+    <td>₪${f(tas)}</td><td>₪${f(tps)}</td><td>${tps>0?bar(tas/tps*100):'—'}</td>
+    <td></td></tr></tbody></table>`;
+  div.innerHTML=h;sc.appendChild(div);
+});
+
+// Collection
 const cbEl=document.getElementById('cb');
-D.coll.forEach((c,i)=>{const ms=c.mx>=90?'oh':c.mx>=30?'om':'';const row=document.createElement('tr');row.className='cr';
+D.coll.forEach((c,i)=>{
+  const ms=c.mx>=90?'oh':c.mx>=30?'om':'';
+  const row=document.createElement('tr');
+  row.className='cr';
   row.onclick=()=>{row.classList.toggle('op');document.getElementById('i'+i).classList.toggle('sh')};
-  row.innerHTML=`<td style="text-align:right"><span class="ca">&#9658;</span> ${c.n}</td><td>&#8362;${f(c.t)}</td><td>${c.c}</td><td>${c.mn}</td><td class="${ms}">${c.mx}</td>`;cbEl.appendChild(row);
+  row.innerHTML=`<td style="text-align:right"><span class="ca">▸</span> ${c.n}</td>
+    <td>₪${f(c.t)}</td><td>${c.c}</td><td>${c.mn}</td><td class="${ms}">${c.mx}</td>`;
+  cbEl.appendChild(row);
+
   const dr=document.createElement('tr');dr.className='id';dr.id='i'+i;
   let ih='<td colspan="5"><div class="iw"><table><thead><tr><th>חשבונית</th><th>תאריך</th><th>פירעון</th><th>יתרה</th><th>ימים</th></tr></thead><tbody>';
-  c.iv.forEach(v=>{const ds=v.y>=90?'oh':v.y>=30?'om':'';ih+=`<tr><td>${v.u}</td><td>${v.d}</td><td>${v.e}</td><td>&#8362;${f(v.a)}</td><td class="${ds}">${v.y}</td></tr>`});
-  ih+='</tbody></table></div></td>';dr.innerHTML=ih;cbEl.appendChild(dr)});
+  c.iv.forEach(v=>{
+    const ds=v.y>=90?'oh':v.y>=30?'om':'';
+    ih+=`<tr><td>${v.u}</td><td>${v.d}</td><td>${v.e}</td><td>₪${f(v.a)}</td><td class="${ds}">${v.y}</td></tr>`;
+  });
+  ih+='</tbody></table></div></td>';dr.innerHTML=ih;cbEl.appendChild(dr);
+});
+
+// Obligo
 const obEl=document.getElementById('ob');
-[...D.obl].sort((a,b)=>{const pa=a.cr>0?a.oi/a.cr:9999;const pb=b.cr>0?b.oi/b.cr:9999;return pb-pa}).forEach(o=>{const p=o.cr>0?(o.oi/o.cr*100):0,ov=o.cr>0?(o.oi-o.cr):o.oi;const pctStr=o.cr>0?p.toFixed(0)+"%":"-";
-  obEl.innerHTML+=`<tr><td style="text-align:right">${o.n}</td><td>&#8362;${f(o.cr)}</td><td>&#8362;${f(o.oi)}</td><td class="oo">${pctStr}</td><td class="oo">&#8362;${f(ov)}</td></tr>`});
+[...D.obl].sort((a,b)=>{const pa=a.cr>0?a.oi/a.cr:9999;const pb=b.cr>0?b.oi/b.cr:9999;return pb-pa}).forEach(o=>{
+  const p=o.cr>0?(o.oi/o.cr*100):0,ov=o.cr>0?(o.oi-o.cr):o.oi;
+  const pctStr=o.cr>0?p.toFixed(0)+'%':'-';
+  obEl.innerHTML+=`<tr><td style="text-align:right">${o.n}</td>
+    <td>${o.cr>0?'₪'+f(o.cr):'-'}</td><td>₪${f(o.oi)}</td>
+    <td class="oo">${pctStr}</td><td class="oo">₪${f(ov)}</td></tr>`;
+});
 </script>
 </body>
 </html>
