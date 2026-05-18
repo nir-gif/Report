@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
 <meta charset="UTF-8">
@@ -1167,7 +1167,7 @@ const D = {
 
 const f=n=>Math.round(n).toLocaleString('he-IL');
 const fk=n=>n>=1e6?(n/1e6).toFixed(1)+'M':n>=1e3?Math.round(n/1e3)+'K':f(n);
-function bar(p){const c=p>=70?'g':p>=30?'m':'l';return `<div class="pw"><div class="pb"><div class="pf f${c}" style="width:${Math.min(p,100)}%"></div></div><span class="pp p${c}">${p.toFixed(0)}%</span></div>`;}
+function bar(p){const c=p>=70?'g':p>=30?'m':'l';return `<div class="pw"><div class="pb"><div class="pf f${c}" style="width:${Math.min(p,100)}%"></div></div><span class="pp p${c}">${pctStr}</span></div>`;}
 const dp=D.date.split('-');
 document.getElementById('rd').textContent=`${dp[2]}/${dp[1]}/${dp[0]}`;
 document.getElementById('ut').textContent='עודכן '+D.time;
@@ -1202,8 +1202,8 @@ D.coll.forEach((c,i)=>{const ms=c.mx>=90?'oh':c.mx>=30?'om':'';const row=documen
   c.iv.forEach(v=>{const ds=v.y>=90?'oh':v.y>=30?'om':'';ih+=`<tr><td>${v.u}</td><td>${v.d}</td><td>${v.e}</td><td>&#8362;${f(v.a)}</td><td class="${ds}">${v.y}</td></tr>`});
   ih+='</tbody></table></div></td>';dr.innerHTML=ih;cbEl.appendChild(dr)});
 const obEl=document.getElementById('ob');
-[...D.obl].sort((a,b)=>(b.oi/b.cr)-(a.oi/a.cr)).forEach(o=>{const p=(o.oi/o.cr*100),ov=o.oi-o.cr;
-  obEl.innerHTML+=`<tr><td style="text-align:right">${o.n}</td><td>&#8362;${f(o.cr)}</td><td>&#8362;${f(o.oi)}</td><td class="oo">${p.toFixed(0)}%</td><td class="oo">&#8362;${f(ov)}</td></tr>`});
+[...D.obl].sort((a,b)=>{const pa=a.cr>0?a.oi/a.cr:9999;const pb=b.cr>0?b.oi/b.cr:9999;return pb-pa}).forEach(o=>{const p=o.cr>0?(o.oi/o.cr*100):0,ov=o.cr>0?(o.oi-o.cr):o.oi;const pctStr=o.cr>0?p.toFixed(0)+"%":"-";
+  obEl.innerHTML+=`<tr><td style="text-align:right">${o.n}</td><td>&#8362;${f(o.cr)}</td><td>&#8362;${f(o.oi)}</td><td class="oo">${pctStr}</td><td class="oo">&#8362;${f(ov)}</td></tr>`});
 </script>
 </body>
 </html>
