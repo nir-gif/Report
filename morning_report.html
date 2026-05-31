@@ -12,6 +12,9 @@ body{font-family:'Heebo',sans-serif;background:#f0f2f5;color:#1a1a2e;padding:24p
 .header h1{font-size:26px;font-weight:800;letter-spacing:-0.5px}
 .header .date{font-size:15px;color:#5a5a7a;margin-top:4px}
 .header .utime{font-size:12px;color:#999;margin-top:2px}
+.month-select{text-align:center;margin-bottom:20px}
+.month-select select{font-family:'Heebo',sans-serif;font-size:16px;font-weight:600;padding:8px 16px;border-radius:8px;border:2px solid #e2e4e9;background:#fff;color:#1a1a2e;cursor:pointer;direction:rtl}
+.month-select select:focus{outline:none;border-color:#7030A0}
 .summary{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:28px}
 .card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 12px rgba(0,0,0,.06);border:1px solid #e2e4e9;text-align:center}
 .card .lbl{font-size:13px;color:#5a5a7a;font-weight:500;margin-bottom:6px}
@@ -52,7 +55,7 @@ tr:hover{background:#fafbfc}
 .oo{color:#c62828;font-weight:700}
 .note{padding:10px 20px;font-size:11px;color:#999;border-top:1px solid #e2e4e9}
 .loading{text-align:center;padding:60px;font-size:18px;color:#999}
-@media(max-width:768px){.summary{grid-template-columns:1fr}.tab{padding:10px 14px;font-size:13px}body{padding:12px}td,th{padding:8px 8px}}
+@media(max-width:768px){.summary{grid-template-columns:1fr}.tab{padding:10px 14px;font-size:13px}body{padding:12px}td,th{padding:8px 8px}.month-select select{font-size:14px}}
 </style>
 </head>
 <body>
@@ -61,13 +64,18 @@ tr:hover{background:#fafbfc}
   <div class="date" id="rd"></div>
   <div class="utime" id="ut"></div>
 </div>
+
+<div class="month-select">
+  <select id="monthPicker"></select>
+</div>
+
 <div class="summary">
-  <div class="card s"><div class="lbl">מכירות נטו — החודש</div><div class="val" id="ts"></div><div class="sub" id="sb"></div></div>
+  <div class="card s"><div class="lbl" id="salesLabel">מכירות נטו — החודש</div><div class="val" id="ts"></div><div class="sub" id="sb"></div></div>
   <div class="card c"><div class="lbl">התראות גבייה</div><div class="val" id="tc"></div><div class="sub" id="cs"></div></div>
   <div class="card o"><div class="lbl">חריגות אובליגו</div><div class="val" id="to"></div><div class="sub" id="os"></div></div>
 </div>
 <div class="sec">
-  <div class="sec-h"><h2>📈 התקדמות מכירות מול תכנון</h2></div>
+  <div class="sec-h"><h2 id="salesHeader">📈 התקדמות מכירות מול תכנון</h2></div>
   <div class="tabs" id="stb"></div>
   <div id="sc"></div>
 </div>
@@ -84,21 +92,44 @@ tr:hover{background:#fafbfc}
   <div class="note">חשיפה = חשבוניות פתוחות בלבד</div>
 </div>
 <div class="loading" id="loadMsg">טוען נתונים...</div>
+
 <script>
+const MONTHS_HE=['','ינואר','פברואר','מרץ','אפריל','מאי','יוני','יולי','אוגוסט','ספטמבר','אוקטובר','נובמבר','דצמבר'];
 const f=n=>Math.round(n).toLocaleString('he-IL');
 const fk=n=>n>=1e6?(n/1e6).toFixed(1)+'M':n>=1e3?Math.round(n/1e3)+'K':f(n);
 function bar(p){const c=p>=70?'g':p>=30?'m':'l';return '<div class="pw"><div class="pb"><div class="pf f'+c+'" style="width:'+Math.min(p,100)+'%"></div></div><span class="pp p'+c+'">'+p.toFixed(0)+'%</span></div>';}
 
-fetch('data.json?t='+Date.now())
-.then(r=>r.json())
-.then(D=>{
+// Discover available months
+async function findMonths(){
+  const months=[];
+  const now=new Date();
+  const startYear=2026, startMonth=1;
+  for(let y=startYear;y<=now.getFullYear();y++){
+    const maxM=(y===now.getFullYear())?now.getMonth()+1:12;
+    const minM=(y===startYear)?startMonth:1;
+    for(let m=minM;m<=maxM;m++){
+      const key=y+'_'+String(m).padStart(2,'0');
+      try{
+        const r=await fetch('data_'+key+'.json?t='+Date.now(),{method:'HEAD'});
+        if(r.ok) months.push(key);
+      }catch(e){}
+    }
+  }
+  return months;
+}
+
+function renderReport(D){
   document.getElementById('loadMsg').style.display='none';
   const excl=(D.exclude||[]).map(s=>s.trim().toLowerCase());
   const isX=name=>excl.some(e=>name.toLowerCase().includes(e));
 
   const dp=D.date.split('-');
+  const monthNum=parseInt(dp[1]);
+  const monthName=MONTHS_HE[monthNum]||'';
   document.getElementById('rd').textContent=dp[2]+'/'+dp[1]+'/'+dp[0];
-  document.getElementById('ut').textContent='עודכן '+D.time;
+  document.getElementById('ut').textContent='\u05E2\u05D5\u05D3\u05DB\u05DF '+D.time;
+  document.getElementById('salesLabel').textContent='\u05DE\u05DB\u05D9\u05E8\u05D5\u05EA \u05E0\u05D8\u05D5 \u2014 '+monthName+' '+dp[0];
+  document.getElementById('salesHeader').textContent='\uD83D\uDCC8 \u05D4\u05EA\u05E7\u05D3\u05DE\u05D5\u05EA \u05DE\u05DB\u05D9\u05E8\u05D5\u05EA \u05DE\u05D5\u05DC \u05EA\u05DB\u05E0\u05D5\u05DF \u2014 '+monthName+' '+dp[0];
 
   const depts=Object.keys(D.sales);
   let gt=0;const dt={};
@@ -107,44 +138,87 @@ fetch('data.json?t='+Date.now())
   document.getElementById('sb').textContent=depts.map(d=>d+': \u20AA'+fk(dt[d])).join(' | ');
 
   const fColl=D.coll.filter(c=>!isX(c.n));
-  document.getElementById('tc').textContent=fColl.length+' לקוחות';
-  document.getElementById('cs').textContent='סה"כ \u20AA'+f(fColl.reduce((s,c)=>s+c.t,0));
+  document.getElementById('tc').textContent=fColl.length+' \u05DC\u05E7\u05D5\u05D7\u05D5\u05EA';
+  document.getElementById('cs').textContent='\u05E1\u05D4"\u05DB \u20AA'+f(fColl.reduce((s,c)=>s+c.t,0));
 
   const fObl=D.obl.filter(o=>!isX(o.n));
-  document.getElementById('to').textContent=fObl.length+' חורגים';
-  document.getElementById('os').textContent='סה"כ חריגה \u20AA'+f(fObl.reduce((s,o)=>s+(o.cr>0?(o.oi-o.cr):o.oi),0));
+  document.getElementById('to').textContent=fObl.length+' \u05D7\u05D5\u05E8\u05D2\u05D9\u05DD';
+  document.getElementById('os').textContent='\u05E1\u05D4"\u05DB \u05D7\u05E8\u05D9\u05D2\u05D4 \u20AA'+f(fObl.reduce((s,o)=>s+(o.cr>0?(o.oi-o.cr):o.oi),0));
 
-  const stb=document.getElementById('stb'),sc=document.getElementById('sc');
+  // Sales tabs
+  const stb=document.getElementById('stb');stb.innerHTML='';
+  const sc=document.getElementById('sc');sc.innerHTML='';
   const dm={'טבע-עוז':'teva','סוכר':'sugar','מלח':'salt'};
   depts.forEach((dept,i)=>{
     const tab=document.createElement('div');tab.className='tab'+(i===0?' act':'');tab.dataset.d=dm[dept];tab.textContent=dept;
     tab.onclick=()=>{document.querySelectorAll('.tab').forEach(t=>t.classList.remove('act'));document.querySelectorAll('.tc').forEach(t=>t.classList.remove('act'));tab.classList.add('act');document.getElementById('s'+i).classList.add('act')};
     stb.appendChild(tab);
     const div=document.createElement('div');div.className='tc'+(i===0?' act':'');div.id='s'+i;
-    let h='<table><thead><tr><th style="width:20%;text-align:right">מוצר</th><th style="width:10%">כמות ביצוע</th><th style="width:10%">כמות תכנון</th><th style="width:13%">% כמות</th><th style="width:12%">כספי ביצוע</th><th style="width:12%">כספי תכנון</th><th style="width:13%">% כספי</th><th style="width:10%">מחיר ממוצע</th></tr></thead><tbody>';
+    let h='<table><thead><tr><th style="width:20%;text-align:right">\u05DE\u05D5\u05E6\u05E8</th><th style="width:10%">\u05DB\u05DE\u05D5\u05EA \u05D1\u05D9\u05E6\u05D5\u05E2</th><th style="width:10%">\u05DB\u05DE\u05D5\u05EA \u05EA\u05DB\u05E0\u05D5\u05DF</th><th style="width:13%">% \u05DB\u05DE\u05D5\u05EA</th><th style="width:12%">\u05DB\u05E1\u05E4\u05D9 \u05D1\u05D9\u05E6\u05D5\u05E2</th><th style="width:12%">\u05DB\u05E1\u05E4\u05D9 \u05EA\u05DB\u05E0\u05D5\u05DF</th><th style="width:13%">% \u05DB\u05E1\u05E4\u05D9</th><th style="width:10%">\u05DE\u05D7\u05D9\u05E8 \u05DE\u05DE\u05D5\u05E6\u05E2</th></tr></thead><tbody>';
     let tpq=0,taq=0,tps=0,tas=0;
     D.sales[dept].forEach(item=>{const qp=item.pq>0?(item.q/item.pq*100):0;const sp=item.ps>0?(item.s/item.ps*100):0;const ap=item.q>0?(item.s/item.q):0;tpq+=item.pq;taq+=item.q;tps+=item.ps;tas+=item.s;
       h+='<tr><td style="text-align:right">'+item.n+'</td><td>'+f(item.q)+'</td><td>'+f(item.pq)+'</td><td>'+(item.pq>0?bar(qp):'\u2014')+'</td><td>\u20AA'+f(item.s)+'</td><td>\u20AA'+f(item.ps)+'</td><td>'+(item.ps>0?bar(sp):'\u2014')+'</td><td>\u20AA'+ap.toFixed(1)+'</td></tr>'});
-    h+='<tr class="dt"><td style="text-align:right">סה"כ '+dept+'</td><td>'+f(taq)+'</td><td>'+f(tpq)+'</td><td>'+(tpq>0?bar(taq/tpq*100):'\u2014')+'</td><td>\u20AA'+f(tas)+'</td><td>\u20AA'+f(tps)+'</td><td>'+(tps>0?bar(tas/tps*100):'\u2014')+'</td><td></td></tr></tbody></table>';
+    h+='<tr class="dt"><td style="text-align:right">\u05E1\u05D4"\u05DB '+dept+'</td><td>'+f(taq)+'</td><td>'+f(tpq)+'</td><td>'+(tpq>0?bar(taq/tpq*100):'\u2014')+'</td><td>\u20AA'+f(tas)+'</td><td>\u20AA'+f(tps)+'</td><td>'+(tps>0?bar(tas/tps*100):'\u2014')+'</td><td></td></tr></tbody></table>';
     div.innerHTML=h;sc.appendChild(div)});
 
-  const cbEl=document.getElementById('cb');
+  // Collection
+  const cbEl=document.getElementById('cb');cbEl.innerHTML='';
   fColl.forEach((c,i)=>{const ms=c.mx>=90?'oh':c.mx>=30?'om':'';const row=document.createElement('tr');row.className='cr';
     row.onclick=()=>{row.classList.toggle('op');document.getElementById('i'+i).classList.toggle('sh')};
     row.innerHTML='<td style="text-align:right"><span class="ca">\u25B8</span> '+c.n+'</td><td>\u20AA'+f(c.t)+'</td><td>'+c.c+'</td><td>'+c.mn+'</td><td class="'+ms+'">'+c.mx+'</td>';cbEl.appendChild(row);
     const dr=document.createElement('tr');dr.className='id';dr.id='i'+i;
-    let ih='<td colspan="5"><div class="iw"><table><thead><tr><th>חשבונית</th><th>תאריך</th><th>פירעון</th><th>יתרה</th><th>ימים</th></tr></thead><tbody>';
+    let ih='<td colspan="5"><div class="iw"><table><thead><tr><th>\u05D7\u05E9\u05D1\u05D5\u05E0\u05D9\u05EA</th><th>\u05EA\u05D0\u05E8\u05D9\u05DA</th><th>\u05E4\u05D9\u05E8\u05E2\u05D5\u05DF</th><th>\u05D9\u05EA\u05E8\u05D4</th><th>\u05D9\u05DE\u05D9\u05DD</th></tr></thead><tbody>';
     c.iv.forEach(v=>{const ds=v.y>=90?'oh':v.y>=30?'om':'';ih+='<tr><td>'+v.u+'</td><td>'+v.d+'</td><td>'+v.e+'</td><td>\u20AA'+f(v.a)+'</td><td class="'+ds+'">'+v.y+'</td></tr>'});
     ih+='</tbody></table></div></td>';dr.innerHTML=ih;cbEl.appendChild(dr)});
 
-  const obEl=document.getElementById('ob');
+  // Obligo
+  const obEl=document.getElementById('ob');obEl.innerHTML='';
   fObl.sort((a,b)=>{const oa=a.cr>0?(a.oi-a.cr):a.oi;const ob2=b.cr>0?(b.oi-b.cr):b.oi;return ob2-oa}).forEach(o=>{
     const pctStr=o.cr>0?(o.oi/o.cr*100).toFixed(0)+'%':'-';
     const crStr=o.cr>0?'\u20AA'+f(o.cr):'-';
     const ov=o.cr>0?(o.oi-o.cr):o.oi;
     obEl.innerHTML+='<tr><td style="text-align:right">'+o.n+'</td><td>'+crStr+'</td><td>\u20AA'+f(o.oi)+'</td><td class="oo">'+pctStr+'</td><td class="oo">\u20AA'+f(ov)+'</td></tr>'});
-})
-.catch(e=>{document.getElementById('loadMsg').textContent='\u05E9\u05D2\u05D9\u05D0\u05D4: '+e.message});
+}
+
+// Init
+async function init(){
+  const picker=document.getElementById('monthPicker');
+  const months=await findMonths();
+  
+  if(months.length===0){
+    document.getElementById('loadMsg').textContent='\u05DC\u05D0 \u05E0\u05DE\u05E6\u05D0\u05D5 \u05E0\u05EA\u05D5\u05E0\u05D9\u05DD';
+    return;
+  }
+
+  months.forEach(key=>{
+    const parts=key.split('_');
+    const y=parts[0],m=parseInt(parts[1]);
+    const opt=document.createElement('option');
+    opt.value=key;
+    opt.textContent=MONTHS_HE[m]+' '+y;
+    picker.appendChild(opt);
+  });
+
+  // Default to latest month
+  picker.value=months[months.length-1];
+
+  picker.onchange=()=>loadMonth(picker.value);
+  loadMonth(picker.value);
+}
+
+async function loadMonth(key){
+  document.getElementById('loadMsg').style.display='block';
+  document.getElementById('loadMsg').textContent='\u05D8\u05D5\u05E2\u05DF \u05E0\u05EA\u05D5\u05E0\u05D9\u05DD...';
+  try{
+    const r=await fetch('data_'+key+'.json?t='+Date.now());
+    const D=await r.json();
+    renderReport(D);
+  }catch(e){
+    document.getElementById('loadMsg').textContent='\u05E9\u05D2\u05D9\u05D0\u05D4: '+e.message;
+  }
+}
+
+init();
 </script>
 </body>
 </html>
