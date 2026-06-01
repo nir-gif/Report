@@ -51,6 +51,14 @@ tr:hover{background:#fafbfc}
 .id td{padding:0;background:#fafbfc}
 .iw{padding:8px 20px 12px}
 .iw table{font-size:12px}.iw th{background:#f0f1f3;font-size:11px}.iw td{padding:7px 10px}
+.mr{cursor:pointer;background:#f5f6f8;transition:.15s}.mr:hover{background:#eef0f3}
+.mr td{font-weight:600;font-size:12px;padding:8px 16px;border-bottom:1px solid #e8e9ec}
+.mr .ca{color:#7030A0}
+.mr.op .ca{transform:rotate(90deg)}
+.iv-row{display:none}.iv-row.sh{display:table-row}
+.iv-row td{padding:0;background:#fff}
+.iv-wrap{padding:4px 30px 8px}
+.iv-wrap table{font-size:11px}.iv-wrap th{background:#f8f9fb;font-size:10px}.iv-wrap td{padding:5px 8px}
 .oh{color:#c62828;font-weight:700}.om{color:#e65100;font-weight:600}
 .oo{color:#c62828;font-weight:700}
 .note{padding:10px 20px;font-size:11px;color:#999;border-top:1px solid #e2e4e9}
@@ -81,7 +89,7 @@ tr:hover{background:#fafbfc}
 </div>
 <div class="sec">
   <div class="sec-h"><h2>⚠️ התראות גבייה</h2></div>
-  <div style="padding:4px 20px 2px;font-size:12px;color:#999">לחץ על שורה לפירוט חשבוניות</div>
+  <div style="padding:4px 20px 2px;font-size:12px;color:#999">לחץ על לקוח לפירוט חודשי, ועל חודש לפירוט חשבוניות</div>
   <table><thead><tr><th style="width:35%;text-align:right">לקוח</th><th style="width:20%">סה"כ חוב</th><th style="width:15%">חשבוניות</th><th style="width:15%">ימים מינ'</th><th style="width:15%">ימים מקס'</th></tr></thead>
   <tbody id="cb"></tbody></table>
 </div>
@@ -161,15 +169,54 @@ function renderReport(D){
     h+='<tr class="dt"><td style="text-align:right">\u05E1\u05D4"\u05DB '+dept+'</td><td>'+f(taq)+'</td><td>'+f(tpq)+'</td><td>'+(tpq>0?bar(taq/tpq*100):'\u2014')+'</td><td>\u20AA'+f(tas)+'</td><td>\u20AA'+f(tps)+'</td><td>'+(tps>0?bar(tas/tps*100):'\u2014')+'</td><td></td></tr></tbody></table>';
     div.innerHTML=h;sc.appendChild(div)});
 
-  // Collection
+  // Collection — 3 level drill-down: customer > month > invoices
   const cbEl=document.getElementById('cb');cbEl.innerHTML='';
-  fColl.forEach((c,i)=>{const ms=c.mx>=90?'oh':c.mx>=30?'om':'';const row=document.createElement('tr');row.className='cr';
-    row.onclick=()=>{row.classList.toggle('op');document.getElementById('i'+i).classList.toggle('sh')};
-    row.innerHTML='<td style="text-align:right"><span class="ca">\u25B8</span> '+c.n+'</td><td>\u20AA'+f(c.t)+'</td><td>'+c.c+'</td><td>'+c.mn+'</td><td class="'+ms+'">'+c.mx+'</td>';cbEl.appendChild(row);
-    const dr=document.createElement('tr');dr.className='id';dr.id='i'+i;
-    let ih='<td colspan="5"><div class="iw"><table><thead><tr><th>\u05D7\u05E9\u05D1\u05D5\u05E0\u05D9\u05EA</th><th>\u05EA\u05D0\u05E8\u05D9\u05DA</th><th>\u05E4\u05D9\u05E8\u05E2\u05D5\u05DF</th><th>\u05D9\u05EA\u05E8\u05D4</th><th>\u05D9\u05DE\u05D9\u05DD</th></tr></thead><tbody>';
-    c.iv.forEach(v=>{const ds=v.y>=90?'oh':v.y>=30?'om':'';ih+='<tr><td>'+v.u+'</td><td>'+v.d+'</td><td>'+v.e+'</td><td>\u20AA'+f(v.a)+'</td><td class="'+ds+'">'+v.y+'</td></tr>'});
-    ih+='</tbody></table></div></td>';dr.innerHTML=ih;cbEl.appendChild(dr)});
+  let uid=0;
+  fColl.forEach((c,i)=>{
+    const ms=c.mx>=90?'oh':c.mx>=30?'om':'';
+    const row=document.createElement('tr');row.className='cr';
+    const custId='c'+i;
+    row.onclick=()=>{
+      row.classList.toggle('op');
+      document.querySelectorAll('.'+custId).forEach(el=>el.classList.toggle('sh'));
+    };
+    row.innerHTML='<td style="text-align:right"><span class="ca">\u25B8</span> '+c.n+'</td><td>\u20AA'+f(c.t)+'</td><td>'+c.c+'</td><td>'+c.mn+'</td><td class="'+ms+'">'+c.mx+'</td>';
+    cbEl.appendChild(row);
+
+    // Check if new format (months) or old format (iv)
+    if(c.months && c.months.length>0){
+      c.months.forEach((mon,j)=>{
+        const monId='m'+i+'_'+j;
+        // Month summary row
+        const mRow=document.createElement('tr');mRow.className='id mr '+custId;
+        mRow.onclick=e=>{
+          e.stopPropagation();
+          mRow.classList.toggle('op');
+          document.querySelectorAll('.'+monId).forEach(el=>el.classList.toggle('sh'));
+        };
+        const mms=mon.mx>=90?'oh':mon.mx>=30?'om':'';
+        mRow.innerHTML='<td style="text-align:right;padding-right:32px"><span class="ca">\u25B8</span> '+mon.m+'</td><td>\u20AA'+f(mon.t)+'</td><td>'+mon.c+'</td><td>'+(mon.mn||'')+'</td><td class="'+mms+'">'+(mon.mx||'')+'</td>';
+        cbEl.appendChild(mRow);
+
+        // Invoice detail row for this month
+        const ivRow=document.createElement('tr');ivRow.className='iv-row '+monId;
+        let ih='<td colspan="5"><div class="iv-wrap"><table><thead><tr><th>\u05D7\u05E9\u05D1\u05D5\u05E0\u05D9\u05EA</th><th>\u05EA\u05D0\u05E8\u05D9\u05DA</th><th>\u05E4\u05D9\u05E8\u05E2\u05D5\u05DF</th><th>\u05D9\u05EA\u05E8\u05D4</th><th>\u05D9\u05DE\u05D9\u05DD</th></tr></thead><tbody>';
+        (mon.iv||[]).forEach(v=>{
+          const ds=v.y>=90?'oh':v.y>=30?'om':'';
+          ih+='<tr><td>'+v.u+'</td><td>'+v.d+'</td><td>'+v.e+'</td><td>\u20AA'+f(v.a)+'</td><td class="'+ds+'">'+v.y+'</td></tr>';
+        });
+        ih+='</tbody></table></div></td>';
+        ivRow.innerHTML=ih;
+        cbEl.appendChild(ivRow);
+      });
+    } else if(c.iv){
+      // Old format — flat invoice list (backward compatible)
+      const dr=document.createElement('tr');dr.className='id '+custId;
+      let ih='<td colspan="5"><div class="iw"><table><thead><tr><th>\u05D7\u05E9\u05D1\u05D5\u05E0\u05D9\u05EA</th><th>\u05EA\u05D0\u05E8\u05D9\u05DA</th><th>\u05E4\u05D9\u05E8\u05E2\u05D5\u05DF</th><th>\u05D9\u05EA\u05E8\u05D4</th><th>\u05D9\u05DE\u05D9\u05DD</th></tr></thead><tbody>';
+      c.iv.forEach(v=>{const ds=v.y>=90?'oh':v.y>=30?'om':'';ih+='<tr><td>'+v.u+'</td><td>'+v.d+'</td><td>'+v.e+'</td><td>\u20AA'+f(v.a)+'</td><td class="'+ds+'">'+v.y+'</td></tr>'});
+      ih+='</tbody></table></div></td>';dr.innerHTML=ih;cbEl.appendChild(dr);
+    }
+  });
 
   // Obligo
   const obEl=document.getElementById('ob');obEl.innerHTML='';
