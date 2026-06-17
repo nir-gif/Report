@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-17 11:41",
+  "generated_at": "2026-06-17 13:25",
   "months": [
     {
       "key": "2026-06",
       "label": "יוני 26",
-      "sales": 4123188,
-      "collected": 328031,
+      "sales": 4374052,
+      "collected": 451931,
       "pending_checks": 360603,
-      "open": 3434554,
+      "open": 3561518,
       "open_invoices": [
         {
           "customer": "ביכורי כל בע\"מ",
-          "doc": 82984,
-          "date": "04/06/26",
+          "doc": 83126,
+          "date": "17/06/26",
           "total": 123900,
           "open": 123900
         },
@@ -66,15 +66,15 @@
           "open": 69146
         }
       ],
-      "open_invoices_more": 168
+      "open_invoices_more": 175
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 1274728,
-      "pending_checks": 1040980,
-      "open": 5963080,
+      "collected": 1280835,
+      "pending_checks": 1063614,
+      "open": 5934339,
       "open_invoices": [
         {
           "customer": "גלידן איכות בע\"מ",
@@ -133,15 +133,15 @@
           "open": 85857
         }
       ],
-      "open_invoices_more": 247
+      "open_invoices_more": 241
     },
     {
       "key": "2026-04",
       "label": "אפריל 26",
       "sales": 4990973,
-      "collected": 1338776,
+      "collected": 1348399,
       "pending_checks": 580857,
-      "open": 3071340,
+      "open": 3061717,
       "open_invoices": [
         {
           "customer": "קפוא-זן (2024) בע\"מ",
@@ -200,15 +200,15 @@
           "open": 44392
         }
       ],
-      "open_invoices_more": 156
+      "open_invoices_more": 154
     },
     {
       "key": "2026-03",
       "label": "מרץ 26",
       "sales": 5651517,
-      "collected": 4382049,
+      "collected": 4433527,
       "pending_checks": 459912,
-      "open": 809556,
+      "open": 758078,
       "open_invoices": [
         {
           "customer": "odai awaissa",
@@ -239,13 +239,6 @@
           "open": 53808
         },
         {
-          "customer": "פרוטרום בע\"מ",
-          "doc": 82087,
-          "date": "10/03/26",
-          "total": 37099,
-          "open": 37099
-        },
-        {
           "customer": "Hatta Company for ice cream &food",
           "doc": 372,
           "date": "31/03/26",
@@ -265,9 +258,16 @@
           "date": "09/03/26",
           "total": 18904,
           "open": 18904
+        },
+        {
+          "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
+          "doc": 82076,
+          "date": "09/03/26",
+          "total": 18904,
+          "open": 18904
         }
       ],
-      "open_invoices_more": 39
+      "open_invoices_more": 36
     },
     {
       "key": "2026-02",
