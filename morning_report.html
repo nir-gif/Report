@@ -63,6 +63,13 @@ tr:hover{background:#fafbfc}
 .oo{color:#c62828;font-weight:700}
 .note{padding:10px 20px;font-size:11px;color:#999;border-top:1px solid #e2e4e9}
 .loading{text-align:center;padding:60px;font-size:18px;color:#999}
+.cvs-note{padding:6px 20px 2px;font-size:12px;color:#999}
+.cvs-arch{padding:10px 20px;border-top:1px solid #e2e4e9;display:flex;align-items:center;gap:8px}
+.cvs-arch span{font-size:12px;color:#5a5a7a;font-weight:500}
+.cvs-arch select{font-family:'Heebo',sans-serif;font-size:13px;padding:5px 12px;border-radius:6px;border:1px solid #e2e4e9;background:#fff;color:#1a1a2e;cursor:pointer;direction:rtl}
+.cvs-arch select:focus{outline:none;border-color:#7030A0}
+.cvs-mr{cursor:pointer;transition:.15s}.cvs-mr:hover{background:#f5f6f8}
+.cvs-mr.op .ca{transform:rotate(90deg)}
 @media(max-width:768px){.summary{grid-template-columns:1fr}.tab{padding:10px 14px;font-size:13px}body{padding:12px}td,th{padding:8px 8px}.month-select select{font-size:14px}}
 </style>
 </head>
@@ -81,6 +88,25 @@ tr:hover{background:#fafbfc}
   <div class="card s"><div class="lbl" id="salesLabel">מכירות נטו — החודש</div><div class="val" id="ts"></div><div class="sub" id="sb"></div></div>
   <div class="card c"><div class="lbl">התראות גבייה</div><div class="val" id="tc"></div><div class="sub" id="cs"></div></div>
   <div class="card o"><div class="lbl">חריגות אובליגו</div><div class="val" id="to"></div><div class="sub" id="os"></div></div>
+</div>
+<div class="sec">
+  <div class="sec-h"><h2>💰 גבייה מול מכירות</h2></div>
+  <div class="cvs-note">סכומים באלפי ₪ · לחץ על חודש לפירוט החשבוניות הפתוחות</div>
+  <table>
+    <thead><tr>
+      <th style="width:20%;text-align:right">חודש</th>
+      <th style="width:20%">סך מכירות</th>
+      <th style="width:20%">סכום שנגבה</th>
+      <th style="width:20%">צ׳קים דחויים במערכת</th>
+      <th style="width:20%">יתרה פתוחה</th>
+    </tr></thead>
+    <tbody id="cvsBody"></tbody>
+    <tbody id="cvsArchBody"></tbody>
+  </table>
+  <div class="cvs-arch">
+    <span>ארכיון:</span>
+    <select id="cvsArch"></select>
+  </div>
 </div>
 <div class="sec">
   <div class="sec-h"><h2 id="salesHeader">📈 התקדמות מכירות מול תכנון</h2></div>
@@ -227,6 +253,61 @@ function renderReport(D){
     obEl.innerHTML+='<tr><td style="text-align:right">'+o.n+'</td><td>'+crStr+'</td><td>\u20AA'+f(o.oi)+'</td><td class="oo">'+pctStr+'</td><td class="oo">\u20AA'+f(ov)+'</td></tr>'});
 }
 
+// ===== Collection vs Sales indicator (independent of month picker) =====
+let COLL_DATA=null, cvsUid=0;
+const cvsK=n=>Math.round(n/1000).toLocaleString('he-IL');
+
+function cvsAppendMonth(tb,m){
+  const id='cvs'+(cvsUid++);
+  const expandable=m.open_invoices && m.open_invoices.length>0;
+  const openCls=m.open>0?'oo':'';
+  const row=document.createElement('tr');
+  row.className=expandable?'cvs-mr':'';
+  row.innerHTML='<td style="text-align:right">'+(expandable?'<span class="ca">\u25B8</span> ':'')+m.label+'</td>'
+    +'<td>'+cvsK(m.sales)+'</td>'
+    +'<td>'+cvsK(m.collected)+'</td>'
+    +'<td>'+cvsK(m.pending_checks)+'</td>'
+    +'<td class="'+openCls+'">'+cvsK(m.open)+'</td>';
+  tb.appendChild(row);
+  const dr=document.createElement('tr');dr.className='iv-row';dr.id=id+'d';
+  let ih='<td colspan="5"><div class="iv-wrap"><table><thead><tr><th style="text-align:right">\u05DC\u05E7\u05D5\u05D7</th><th>\u05D7\u05E9\u05D1\u05D5\u05E0\u05D9\u05EA</th><th>\u05EA\u05D0\u05E8\u05D9\u05DA</th><th>\u05D9\u05EA\u05E8\u05D4 \u05E4\u05EA\u05D5\u05D7\u05D4</th></tr></thead><tbody>';
+  (m.open_invoices||[]).forEach(v=>{
+    ih+='<tr><td style="text-align:right">'+(v.customer||'')+'</td><td>'+(v.doc||'')+'</td><td>'+(v.date||'')+'</td><td class="oo">\u20AA'+f(v.open)+'</td></tr>';
+  });
+  if(m.open_invoices_more>0){
+    ih+='<tr><td colspan="4" style="text-align:right;color:#999">\u05D5\u05E2\u05D5\u05D3 '+m.open_invoices_more+' \u05D7\u05E9\u05D1\u05D5\u05E0\u05D9\u05D5\u05EA \u05E4\u05EA\u05D5\u05D7\u05D5\u05EA\u2026</td></tr>';
+  }
+  ih+='</tbody></table></div></td>';
+  dr.innerHTML=ih;
+  tb.appendChild(dr);
+  if(expandable){row.onclick=()=>{row.classList.toggle('op');dr.classList.toggle('sh')};}
+}
+
+function renderCollection(){
+  if(!COLL_DATA||!COLL_DATA.months)return;
+  const months=COLL_DATA.months;
+  const recent=months.slice(0,5);
+  const archived=months.slice(5);
+  const tb=document.getElementById('cvsBody');tb.innerHTML='';cvsUid=0;
+  recent.forEach(m=>cvsAppendMonth(tb,m));
+  const sel=document.getElementById('cvsArch');
+  sel.innerHTML='<option value="">\u2014 \u05D1\u05D7\u05E8 \u05D7\u05D5\u05D3\u05E9 \u2014</option>'+archived.map((m,i)=>'<option value="'+i+'">'+m.label+'</option>').join('');
+  sel.onchange=()=>{
+    const ab=document.getElementById('cvsArchBody');ab.innerHTML='';
+    if(sel.value==='')return;
+    cvsAppendMonth(ab,archived[+sel.value]);
+  };
+}
+
+async function loadCollection(){
+  try{
+    const r=await fetch('collection.json?t='+Date.now());
+    if(!r.ok)return;
+    COLL_DATA=await r.json();
+    renderCollection();
+  }catch(e){}
+}
+
 // Init
 async function init(){
   const picker=document.getElementById('monthPicker');
@@ -251,6 +332,7 @@ async function init(){
 
   picker.onchange=()=>loadMonth(picker.value);
   loadMonth(picker.value);
+  loadCollection();
 }
 
 async function loadMonth(key){
