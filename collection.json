@@ -1,0 +1,769 @@
+{
+  "generated_at": "2026-06-16 16:26",
+  "months": [
+    {
+      "key": "2026-06",
+      "label": "יוני 26",
+      "sales": 4123188,
+      "collected": 328031,
+      "pending_checks": 360603,
+      "open": 3434554,
+      "open_invoices": [
+        {
+          "customer": "ביכורי כל בע\"מ",
+          "doc": 82984,
+          "date": "04/06/26",
+          "total": 123900,
+          "open": 123900
+        },
+        {
+          "customer": "פרו פרי עיבוד פרי וירק בע\"מ",
+          "doc": 82985,
+          "date": "04/06/26",
+          "total": 101400,
+          "open": 101400
+        },
+        {
+          "customer": "אלי אברהמי שיווק בע\"מ",
+          "doc": 82924,
+          "date": "01/06/26",
+          "total": 70900,
+          "open": 70900
+        },
+        {
+          "customer": "קיי טי יבוא ושיווק בע\"מ",
+          "doc": 83050,
+          "date": "10/06/26",
+          "total": 69146,
+          "open": 69146
+        },
+        {
+          "customer": "קיי טי יבוא ושיווק בע\"מ",
+          "doc": 83058,
+          "date": "10/06/26",
+          "total": 69146,
+          "open": 69146
+        },
+        {
+          "customer": "קיי טי יבוא ושיווק בע\"מ",
+          "doc": 83077,
+          "date": "14/06/26",
+          "total": 69146,
+          "open": 69146
+        },
+        {
+          "customer": "קיי טי יבוא ושיווק בע\"מ",
+          "doc": 83090,
+          "date": "14/06/26",
+          "total": 69146,
+          "open": 69146
+        },
+        {
+          "customer": "קיי טי יבוא ושיווק בע\"מ",
+          "doc": 83095,
+          "date": "15/06/26",
+          "total": 69146,
+          "open": 69146
+        }
+      ],
+      "open_invoices_more": 164
+    },
+    {
+      "key": "2026-05",
+      "label": "מאי 26",
+      "sales": 8278788,
+      "collected": 1274728,
+      "pending_checks": 1040980,
+      "open": 5963080,
+      "open_invoices": [
+        {
+          "customer": "גלידן איכות בע\"מ",
+          "doc": 82727,
+          "date": "11/05/26",
+          "total": 279802,
+          "open": 279802
+        },
+        {
+          "customer": "שחר אשורי",
+          "doc": 82593,
+          "date": "03/05/26",
+          "total": 224200,
+          "open": 224200
+        },
+        {
+          "customer": "טנדט אריה",
+          "doc": 82815,
+          "date": "18/05/26",
+          "total": 132967,
+          "open": 132967
+        },
+        {
+          "customer": "נחלת ראובן - פצ'ורניק ראובן",
+          "doc": 82739,
+          "date": "12/05/26",
+          "total": 112100,
+          "open": 112100
+        },
+        {
+          "customer": "ספקטור שי",
+          "doc": 82592,
+          "date": "03/05/26",
+          "total": 112100,
+          "open": 112100
+        },
+        {
+          "customer": "אקו אלפא בע\"מ",
+          "doc": 82657,
+          "date": "05/05/26",
+          "total": 105728,
+          "open": 105728
+        },
+        {
+          "customer": "גל דרור",
+          "doc": 82885,
+          "date": "25/05/26",
+          "total": 92996,
+          "open": 92996
+        },
+        {
+          "customer": "עבודי פירות קפואים",
+          "doc": 82595,
+          "date": "03/05/26",
+          "total": 85857,
+          "open": 85857
+        }
+      ],
+      "open_invoices_more": 247
+    },
+    {
+      "key": "2026-04",
+      "label": "אפריל 26",
+      "sales": 4990973,
+      "collected": 1338776,
+      "pending_checks": 580857,
+      "open": 3071340,
+      "open_invoices": [
+        {
+          "customer": "קפוא-זן (2024) בע\"מ",
+          "doc": 82433,
+          "date": "16/04/26",
+          "total": 178416,
+          "open": 178416
+        },
+        {
+          "customer": "קפוא-זן (2024) בע\"מ",
+          "doc": 82414,
+          "date": "15/04/26",
+          "total": 148680,
+          "open": 148680
+        },
+        {
+          "customer": "עבודי פירות קפואים",
+          "doc": 82359,
+          "date": "12/04/26",
+          "total": 64068,
+          "open": 64068
+        },
+        {
+          "customer": "אבשלום הראל ובניו 1992 בע\"מ- תמרה",
+          "doc": 82415,
+          "date": "15/04/26",
+          "total": 62074,
+          "open": 62074
+        },
+        {
+          "customer": "עבודי פירות קפואים",
+          "doc": 82543,
+          "date": "28/04/26",
+          "total": 54280,
+          "open": 54280
+        },
+        {
+          "customer": "Hatta Company for ice cream &food",
+          "doc": 375,
+          "date": "13/04/26",
+          "total": 54053,
+          "open": 54053
+        },
+        {
+          "customer": "עבודי פירות קפואים",
+          "doc": 82349,
+          "date": "12/04/26",
+          "total": 53478,
+          "open": 53478
+        },
+        {
+          "customer": "עבודי פירות קפואים",
+          "doc": 82316,
+          "date": "09/04/26",
+          "total": 44392,
+          "open": 44392
+        }
+      ],
+      "open_invoices_more": 156
+    },
+    {
+      "key": "2026-03",
+      "label": "מרץ 26",
+      "sales": 5651517,
+      "collected": 4382049,
+      "pending_checks": 459912,
+      "open": 809556,
+      "open_invoices": [
+        {
+          "customer": "odai awaissa",
+          "doc": 367,
+          "date": "17/03/26",
+          "total": 118000,
+          "open": 118000
+        },
+        {
+          "customer": "Hatta Company for ice cream &food",
+          "doc": 369,
+          "date": "19/03/26",
+          "total": 89538,
+          "open": 89538
+        },
+        {
+          "customer": "כימוקריט בע\"מ",
+          "doc": 82165,
+          "date": "16/03/26",
+          "total": 53808,
+          "open": 53808
+        },
+        {
+          "customer": "כימוקריט בע\"מ",
+          "doc": 82266,
+          "date": "29/03/26",
+          "total": 53808,
+          "open": 53808
+        },
+        {
+          "customer": "פרוטרום בע\"מ",
+          "doc": 82087,
+          "date": "10/03/26",
+          "total": 37099,
+          "open": 37099
+        },
+        {
+          "customer": "Hatta Company for ice cream &food",
+          "doc": 372,
+          "date": "31/03/26",
+          "total": 23513,
+          "open": 23513
+        },
+        {
+          "customer": "מוחמד אחמד עבד זערור",
+          "doc": 370,
+          "date": "22/03/26",
+          "total": 22174,
+          "open": 22174
+        },
+        {
+          "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
+          "doc": 82074,
+          "date": "09/03/26",
+          "total": 18904,
+          "open": 18904
+        }
+      ],
+      "open_invoices_more": 39
+    },
+    {
+      "key": "2026-02",
+      "label": "פברואר 26",
+      "sales": 6140925,
+      "collected": 5449953,
+      "pending_checks": 177901,
+      "open": 513071,
+      "open_invoices": [
+        {
+          "customer": "Hatta Company for ice cream &food",
+          "doc": 366,
+          "date": "19/02/26",
+          "total": 104430,
+          "open": 104430
+        },
+        {
+          "customer": "המרכז המשולב למסחר (איי.טי.סי.) בע\"מ",
+          "doc": 81939,
+          "date": "19/02/26",
+          "total": 71166,
+          "open": 71166
+        },
+        {
+          "customer": "ספקטור שי",
+          "doc": 81943,
+          "date": "19/02/26",
+          "total": 67496,
+          "open": 67496
+        },
+        {
+          "customer": "א.נ.א פתרונות מזון ועוד בע\"מ",
+          "doc": 81877,
+          "date": "15/02/26",
+          "total": 61714,
+          "open": 61714
+        },
+        {
+          "customer": "Hatta Company for ice cream &food",
+          "doc": 365,
+          "date": "08/02/26",
+          "total": 51802,
+          "open": 51802
+        },
+        {
+          "customer": "אינפיניט גרין בע\"מ",
+          "doc": 81966,
+          "date": "24/02/26",
+          "total": 34592,
+          "open": 34592
+        },
+        {
+          "customer": "עוף טוב שאן בע\"מ",
+          "doc": 81991,
+          "date": "26/02/26",
+          "total": 27842,
+          "open": 27735
+        },
+        {
+          "customer": "אברהם בלוי",
+          "doc": 81771,
+          "date": "05/02/26",
+          "total": 26054,
+          "open": 26054
+        }
+      ],
+      "open_invoices_more": 9
+    },
+    {
+      "key": "2026-01",
+      "label": "ינואר 26",
+      "sales": 5436727,
+      "collected": 5214785,
+      "pending_checks": 1743,
+      "open": 220199,
+      "open_invoices": [
+        {
+          "customer": "ס.א.א אלעודה גרופ בע\"מ",
+          "doc": 81439,
+          "date": "05/01/26",
+          "total": 72251,
+          "open": 72251
+        },
+        {
+          "customer": "ס.א.א אלעודה גרופ בע\"מ",
+          "doc": 81445,
+          "date": "05/01/26",
+          "total": 66499,
+          "open": 66499
+        },
+        {
+          "customer": "אריס תעשיות מזון",
+          "doc": 81672,
+          "date": "27/01/26",
+          "total": 33984,
+          "open": 33984
+        },
+        {
+          "customer": "א.נ.א פתרונות מזון ועוד בע\"מ",
+          "doc": 81610,
+          "date": "20/01/26",
+          "total": 32922,
+          "open": 32922
+        },
+        {
+          "customer": "א.נ.א פתרונות מזון ועוד בע\"מ",
+          "doc": 81601,
+          "date": "19/01/26",
+          "total": 6679,
+          "open": 6679
+        },
+        {
+          "customer": "צייזי שיווק והפצה בע\"מ",
+          "doc": 81652,
+          "date": "25/01/26",
+          "total": 4248,
+          "open": 4248
+        },
+        {
+          "customer": "אברהם מרדכי",
+          "doc": 81670,
+          "date": "27/01/26",
+          "total": 8177,
+          "open": 2177
+        },
+        {
+          "customer": "גדרון תעשיות בע\"מ",
+          "doc": 81531,
+          "date": "12/01/26",
+          "total": 1156,
+          "open": 1156
+        }
+      ],
+      "open_invoices_more": 1
+    },
+    {
+      "key": "2025-12",
+      "label": "דצמבר 25",
+      "sales": 7610386,
+      "collected": 7171471,
+      "pending_checks": 26349,
+      "open": 412566,
+      "open_invoices": [
+        {
+          "customer": "מכוורת הר מירון עלם מנל ע\"מ",
+          "doc": 81190,
+          "date": "11/12/25",
+          "total": 396480,
+          "open": 336000
+        },
+        {
+          "customer": "א.נ.א פתרונות מזון ועוד בע\"מ",
+          "doc": 81064,
+          "date": "01/12/25",
+          "total": 40852,
+          "open": 40852
+        },
+        {
+          "customer": "פיראס אל האנא",
+          "doc": 360,
+          "date": "15/12/25",
+          "total": 16520,
+          "open": 16520
+        },
+        {
+          "customer": "פלומה ים המלח בע\"מ",
+          "doc": 81215,
+          "date": "14/12/25",
+          "total": 8631,
+          "open": 8631
+        },
+        {
+          "customer": "פלומה ים המלח בע\"מ",
+          "doc": 81204,
+          "date": "11/12/25",
+          "total": 4915,
+          "open": 4915
+        },
+        {
+          "customer": "א.נ.א פתרונות מזון ועוד בע\"מ",
+          "doc": 81043,
+          "date": "01/12/25",
+          "total": 3068,
+          "open": 3068
+        },
+        {
+          "customer": "נחלת ראובן - פצ'ורניק ראובן",
+          "doc": 81243,
+          "date": "16/12/25",
+          "total": 1274,
+          "open": 1274
+        },
+        {
+          "customer": "Hatta Company for ice cream &food",
+          "doc": 361,
+          "date": "16/12/25",
+          "total": 83225,
+          "open": 1225
+        }
+      ],
+      "open_invoices_more": 1
+    },
+    {
+      "key": "2025-11",
+      "label": "נובמבר 25",
+      "sales": 6826331,
+      "collected": 6772087,
+      "pending_checks": 0,
+      "open": 54244,
+      "open_invoices": [
+        {
+          "customer": "גל דרור",
+          "doc": 81016,
+          "date": "26/11/25",
+          "total": 101244,
+          "open": 51244
+        },
+        {
+          "customer": "המטהר - הנדסה וטיהור מים",
+          "doc": 80774,
+          "date": "03/11/25",
+          "total": 4626,
+          "open": 3000
+        }
+      ],
+      "open_invoices_more": 0
+    },
+    {
+      "key": "2025-10",
+      "label": "אוקטובר 25",
+      "sales": 7377027,
+      "collected": 7275632,
+      "pending_checks": 0,
+      "open": 101395,
+      "open_invoices": [
+        {
+          "customer": "jala food company",
+          "doc": 352,
+          "date": "28/10/25",
+          "total": 94365,
+          "open": 94365
+        },
+        {
+          "customer": "בית הפיצה ק.א בע\"מ",
+          "doc": 80510,
+          "date": "15/10/25",
+          "total": 7030,
+          "open": 7030
+        }
+      ],
+      "open_invoices_more": 0
+    },
+    {
+      "key": "2025-09",
+      "label": "ספטמבר 25",
+      "sales": 12617008,
+      "collected": 12603389,
+      "pending_checks": 0,
+      "open": 13619,
+      "open_invoices": [
+        {
+          "customer": "בית הפיצה ק.א בע\"מ",
+          "doc": 80298,
+          "date": "14/09/25",
+          "total": 6903,
+          "open": 6892
+        },
+        {
+          "customer": "בית הפיצה ק.א בע\"מ",
+          "doc": 80419,
+          "date": "28/09/25",
+          "total": 6018,
+          "open": 6018
+        },
+        {
+          "customer": "מרב - מזון כל בע\"מ",
+          "doc": 80437,
+          "date": "30/09/25",
+          "total": 119921,
+          "open": 509
+        },
+        {
+          "customer": "פסטה ביגה",
+          "doc": 80281,
+          "date": "14/09/25",
+          "total": 5900,
+          "open": 180
+        },
+        {
+          "customer": "קלית סיטבון א.ס בע\"מ",
+          "doc": 80424,
+          "date": "29/09/25",
+          "total": 6620,
+          "open": 20
+        }
+      ],
+      "open_invoices_more": 0
+    },
+    {
+      "key": "2025-08",
+      "label": "אוגוסט 25",
+      "sales": 9782448,
+      "collected": 9767319,
+      "pending_checks": 0,
+      "open": 15129,
+      "open_invoices": [
+        {
+          "customer": "Tareq & Saleem Caramel Company",
+          "doc": 345,
+          "date": "27/08/25",
+          "total": 14160,
+          "open": 14160
+        },
+        {
+          "customer": "פלומה ים המלח בע\"מ",
+          "doc": 80074,
+          "date": "27/08/25",
+          "total": 7372,
+          "open": 969
+        }
+      ],
+      "open_invoices_more": 0
+    },
+    {
+      "key": "2025-07",
+      "label": "יולי 25",
+      "sales": 7961123,
+      "collected": 7961123,
+      "pending_checks": 0,
+      "open": 0,
+      "open_invoices": [],
+      "open_invoices_more": 0
+    },
+    {
+      "key": "2025-06",
+      "label": "יוני 25",
+      "sales": 7314532,
+      "collected": 7296706,
+      "pending_checks": 0,
+      "open": 17827,
+      "open_invoices": [
+        {
+          "customer": "Islam Alshelleh&partners company",
+          "doc": 328,
+          "date": "03/06/25",
+          "total": 17809,
+          "open": 17809
+        },
+        {
+          "customer": "לוטום - בנין ופיתוח (1997) בע\"מ",
+          "doc": 79169,
+          "date": "10/06/25",
+          "total": 1347,
+          "open": 18
+        }
+      ],
+      "open_invoices_more": 0
+    },
+    {
+      "key": "2025-05",
+      "label": "מאי 25",
+      "sales": 7894593,
+      "collected": 7782460,
+      "pending_checks": 0,
+      "open": 112134,
+      "open_invoices": [
+        {
+          "customer": "Sharekat AlDiyar Lil Tabea Wal Tagleef",
+          "doc": 321,
+          "date": "15/05/25",
+          "total": 19470,
+          "open": 19470
+        },
+        {
+          "customer": "Sharekat AlDiyar Lil Tabea Wal Tagleef",
+          "doc": 322,
+          "date": "20/05/25",
+          "total": 19470,
+          "open": 19470
+        },
+        {
+          "customer": "Sharekat AlDiyar Lil Tabea Wal Tagleef",
+          "doc": 323,
+          "date": "21/05/25",
+          "total": 19470,
+          "open": 19470
+        },
+        {
+          "customer": "Islam Alshelleh&partners company",
+          "doc": 324,
+          "date": "25/05/25",
+          "total": 17809,
+          "open": 17809
+        },
+        {
+          "customer": "Islam Alshelleh&partners company",
+          "doc": 325,
+          "date": "27/05/25",
+          "total": 17809,
+          "open": 17809
+        },
+        {
+          "customer": "Islam Alshelleh&partners company",
+          "doc": 326,
+          "date": "28/05/25",
+          "total": 17809,
+          "open": 17809
+        },
+        {
+          "customer": "מילועוף אינטגרצית פטם אגודה שיתופית חקלאית בע\"מ",
+          "doc": 78914,
+          "date": "18/05/25",
+          "total": 25276,
+          "open": 298
+        }
+      ],
+      "open_invoices_more": 0
+    },
+    {
+      "key": "2025-04",
+      "label": "אפריל 25",
+      "sales": 6858253,
+      "collected": 6856397,
+      "pending_checks": 1845,
+      "open": 10,
+      "open_invoices": [
+        {
+          "customer": "מחלבת טל העמקים בע\"מ",
+          "doc": 78459,
+          "date": "08/04/25",
+          "total": 1210,
+          "open": 10
+        }
+      ],
+      "open_invoices_more": 0
+    },
+    {
+      "key": "2025-03",
+      "label": "מרץ 25",
+      "sales": 7586096,
+      "collected": 7525951,
+      "pending_checks": 5629,
+      "open": 54516,
+      "open_invoices": [
+        {
+          "customer": "געשמאק בע\"מ",
+          "doc": 78296,
+          "date": "27/03/25",
+          "total": 31152,
+          "open": 31152
+        },
+        {
+          "customer": "געשמאק בע\"מ",
+          "doc": 78213,
+          "date": "19/03/25",
+          "total": 23364,
+          "open": 23364
+        }
+      ],
+      "open_invoices_more": 0
+    },
+    {
+      "key": "2025-02",
+      "label": "פברואר 25",
+      "sales": 5089807,
+      "collected": 5088515,
+      "pending_checks": 0,
+      "open": 1292,
+      "open_invoices": [
+        {
+          "customer": "מילועוף אינטגרצית פטם אגודה שיתופית חקלאית בע\"מ",
+          "doc": 77949,
+          "date": "27/02/25",
+          "total": 27382,
+          "open": 1292
+        }
+      ],
+      "open_invoices_more": 0
+    },
+    {
+      "key": "2025-01",
+      "label": "ינואר 25",
+      "sales": 6297928,
+      "collected": 6295023,
+      "pending_checks": 0,
+      "open": 2905,
+      "open_invoices": [
+        {
+          "customer": "מילועוף אינטגרצית פטם אגודה שיתופית חקלאית בע\"מ",
+          "doc": 77650,
+          "date": "30/01/25",
+          "total": 27382,
+          "open": 2905
+        }
+      ],
+      "open_invoices_more": 0
+    }
+  ]
+}
