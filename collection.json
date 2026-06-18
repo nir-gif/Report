@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-17 13:25",
+  "generated_at": "2026-06-18 07:13",
   "months": [
     {
       "key": "2026-06",
       "label": "יוני 26",
-      "sales": 4374052,
+      "sales": 4452206,
       "collected": 451931,
       "pending_checks": 360603,
-      "open": 3561518,
+      "open": 3639672,
       "open_invoices": [
         {
           "customer": "ביכורי כל בע\"מ",
@@ -66,7 +66,7 @@
           "open": 69146
         }
       ],
-      "open_invoices_more": 175
+      "open_invoices_more": 184
     },
     {
       "key": "2026-05",
@@ -206,8 +206,8 @@
       "key": "2026-03",
       "label": "מרץ 26",
       "sales": 5651517,
-      "collected": 4433527,
-      "pending_checks": 459912,
+      "collected": 4441617,
+      "pending_checks": 451822,
       "open": 758078,
       "open_invoices": [
         {
