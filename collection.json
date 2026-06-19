@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-18 07:13",
+  "generated_at": "2026-06-19 07:16",
   "months": [
     {
       "key": "2026-06",
       "label": "יוני 26",
-      "sales": 4452206,
-      "collected": 451931,
-      "pending_checks": 360603,
-      "open": 3639672,
+      "sales": 4768915,
+      "collected": 500634,
+      "pending_checks": 321804,
+      "open": 3946476,
       "open_invoices": [
         {
           "customer": "ביכורי כל בע\"מ",
@@ -66,14 +66,14 @@
           "open": 69146
         }
       ],
-      "open_invoices_more": 184
+      "open_invoices_more": 196
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 1280835,
-      "pending_checks": 1063614,
+      "collected": 1344567,
+      "pending_checks": 999882,
       "open": 5934339,
       "open_invoices": [
         {
@@ -273,9 +273,9 @@
       "key": "2026-02",
       "label": "פברואר 26",
       "sales": 6140925,
-      "collected": 5449953,
+      "collected": 5509953,
       "pending_checks": 177901,
-      "open": 513071,
+      "open": 453071,
       "open_invoices": [
         {
           "customer": "Hatta Company for ice cream &food",
@@ -290,13 +290,6 @@
           "date": "19/02/26",
           "total": 71166,
           "open": 71166
-        },
-        {
-          "customer": "ספקטור שי",
-          "doc": 81943,
-          "date": "19/02/26",
-          "total": 67496,
-          "open": 67496
         },
         {
           "customer": "א.נ.א פתרונות מזון ועוד בע\"מ",
@@ -332,6 +325,13 @@
           "date": "05/02/26",
           "total": 26054,
           "open": 26054
+        },
+        {
+          "customer": "עמיר שיווק והשקעות בחקלאות בע\"מ",
+          "doc": 81840,
+          "date": "11/02/26",
+          "total": 21240,
+          "open": 21240
         }
       ],
       "open_invoices_more": 9
