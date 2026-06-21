@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20 07:15",
+  "generated_at": "2026-06-21 07:16",
   "months": [
     {
       "key": "2026-06",
@@ -206,8 +206,8 @@
       "key": "2026-03",
       "label": "מרץ 26",
       "sales": 5651517,
-      "collected": 4441617,
-      "pending_checks": 451822,
+      "collected": 4444803,
+      "pending_checks": 448636,
       "open": 758078,
       "open_invoices": [
         {
@@ -690,8 +690,8 @@
       "key": "2025-04",
       "label": "אפריל 25",
       "sales": 6858253,
-      "collected": 6856397,
-      "pending_checks": 1845,
+      "collected": 6856990,
+      "pending_checks": 1253,
       "open": 10,
       "open_invoices": [
         {
@@ -708,8 +708,8 @@
       "key": "2025-03",
       "label": "מרץ 25",
       "sales": 7586096,
-      "collected": 7525951,
-      "pending_checks": 5629,
+      "collected": 7527759,
+      "pending_checks": 3821,
       "open": 54516,
       "open_invoices": [
         {
