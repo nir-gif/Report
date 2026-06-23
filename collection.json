@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-22 07:19",
+  "generated_at": "2026-06-23 07:12",
   "months": [
     {
       "key": "2026-06",
       "label": "יוני 26",
-      "sales": 5222248,
-      "collected": 500634,
+      "sales": 5412417,
+      "collected": 620368,
       "pending_checks": 321804,
-      "open": 4399809,
+      "open": 4470245,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -66,15 +66,15 @@
           "open": 69146
         }
       ],
-      "open_invoices_more": 202
+      "open_invoices_more": 212
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 1344567,
+      "collected": 1456176,
       "pending_checks": 999882,
-      "open": 5934339,
+      "open": 5822730,
       "open_invoices": [
         {
           "customer": "גלידן איכות בע\"מ",
@@ -133,15 +133,15 @@
           "open": 85857
         }
       ],
-      "open_invoices_more": 241
+      "open_invoices_more": 239
     },
     {
       "key": "2026-04",
       "label": "אפריל 26",
       "sales": 4990973,
-      "collected": 1348399,
-      "pending_checks": 580857,
-      "open": 3061717,
+      "collected": 1382755,
+      "pending_checks": 593836,
+      "open": 3014382,
       "open_invoices": [
         {
           "customer": "קפוא-זן (2024) בע\"מ",
@@ -200,15 +200,15 @@
           "open": 44392
         }
       ],
-      "open_invoices_more": 154
+      "open_invoices_more": 152
     },
     {
       "key": "2026-03",
       "label": "מרץ 26",
       "sales": 5651517,
       "collected": 4444803,
-      "pending_checks": 448636,
-      "open": 758078,
+      "pending_checks": 451940,
+      "open": 754774,
       "open_invoices": [
         {
           "customer": "odai awaissa",
@@ -267,7 +267,7 @@
           "open": 18904
         }
       ],
-      "open_invoices_more": 36
+      "open_invoices_more": 35
     },
     {
       "key": "2026-02",
@@ -474,17 +474,10 @@
       "key": "2025-11",
       "label": "נובמבר 25",
       "sales": 6826331,
-      "collected": 6772087,
+      "collected": 6823331,
       "pending_checks": 0,
-      "open": 54244,
+      "open": 3000,
       "open_invoices": [
-        {
-          "customer": "גל דרור",
-          "doc": 81016,
-          "date": "26/11/25",
-          "total": 101244,
-          "open": 51244
-        },
         {
           "customer": "המטהר - הנדסה וטיהור מים",
           "doc": 80774,
