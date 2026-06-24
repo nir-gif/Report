@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-24 07:12",
+  "generated_at": "2026-06-24 11:19",
   "months": [
     {
       "key": "2026-06",
       "label": "יוני 26",
-      "sales": 5846860,
+      "sales": 5858879,
       "collected": 634171,
       "pending_checks": 321804,
-      "open": 4890885,
+      "open": 4902904,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -66,7 +66,7 @@
           "open": 69146
         }
       ],
-      "open_invoices_more": 232
+      "open_invoices_more": 234
     },
     {
       "key": "2026-05",
