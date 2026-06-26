@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-25 07:13",
+  "generated_at": "2026-06-26 07:13",
   "months": [
     {
       "key": "2026-06",
       "label": "יוני 26",
-      "sales": 6185449,
-      "collected": 634171,
-      "pending_checks": 321804,
-      "open": 5229474,
+      "sales": 6296393,
+      "collected": 713979,
+      "pending_checks": 293650,
+      "open": 5288764,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -66,14 +66,14 @@
           "open": 69146
         }
       ],
-      "open_invoices_more": 248
+      "open_invoices_more": 249
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 1692931,
-      "pending_checks": 1121882,
+      "collected": 1756663,
+      "pending_checks": 1058150,
       "open": 5463975,
       "open_invoices": [
         {
@@ -206,8 +206,8 @@
       "key": "2026-03",
       "label": "מרץ 26",
       "sales": 5651517,
-      "collected": 4448619,
-      "pending_checks": 452790,
+      "collected": 4627033,
+      "pending_checks": 274376,
       "open": 750108,
       "open_invoices": [
         {
