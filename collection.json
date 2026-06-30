@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-29 15:33",
+  "generated_at": "2026-06-30 07:12",
   "months": [
     {
       "key": "2026-06",
       "label": "יוני 26",
-      "sales": 6572547,
+      "sales": 6711551,
       "collected": 780025,
       "pending_checks": 293650,
-      "open": 5498872,
+      "open": 5637876,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -38,6 +38,13 @@
           "open": 101400
         },
         {
+          "customer": "Hatta Company for ice cream &food",
+          "doc": 386,
+          "date": "29/06/26",
+          "total": 75780,
+          "open": 75780
+        },
+        {
           "customer": "אלי אברהמי שיווק בע\"מ",
           "doc": 82924,
           "date": "01/06/26",
@@ -57,16 +64,9 @@
           "date": "10/06/26",
           "total": 69146,
           "open": 69146
-        },
-        {
-          "customer": "קיי טי יבוא ושיווק בע\"מ",
-          "doc": 83077,
-          "date": "14/06/26",
-          "total": 69146,
-          "open": 69146
         }
       ],
-      "open_invoices_more": 262
+      "open_invoices_more": 264
     },
     {
       "key": "2026-05",
