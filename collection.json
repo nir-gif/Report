@@ -1,28 +1,14 @@
 {
-  "generated_at": "2026-06-30 07:12",
+  "generated_at": "2026-06-30 13:06",
   "months": [
     {
       "key": "2026-06",
       "label": "יוני 26",
-      "sales": 6711551,
-      "collected": 780025,
-      "pending_checks": 293650,
-      "open": 5637876,
+      "sales": 6878476,
+      "collected": 787483,
+      "pending_checks": 862235,
+      "open": 5228758,
       "open_invoices": [
-        {
-          "customer": "מתוק וטעים בע\"מ",
-          "doc": 83161,
-          "date": "21/06/26",
-          "total": 219362,
-          "open": 219362
-        },
-        {
-          "customer": "מתוק וטעים בע\"מ",
-          "doc": 83160,
-          "date": "21/06/26",
-          "total": 161424,
-          "open": 161424
-        },
         {
           "customer": "ביכורי כל בע\"מ",
           "doc": 83126,
@@ -64,17 +50,31 @@
           "date": "10/06/26",
           "total": 69146,
           "open": 69146
+        },
+        {
+          "customer": "קיי טי יבוא ושיווק בע\"מ",
+          "doc": 83077,
+          "date": "14/06/26",
+          "total": 69146,
+          "open": 69146
+        },
+        {
+          "customer": "קיי טי יבוא ושיווק בע\"מ",
+          "doc": 83090,
+          "date": "14/06/26",
+          "total": 69146,
+          "open": 69146
         }
       ],
-      "open_invoices_more": 264
+      "open_invoices_more": 255
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 1830301,
-      "pending_checks": 1058150,
-      "open": 5390337,
+      "collected": 1838315,
+      "pending_checks": 1186278,
+      "open": 5254195,
       "open_invoices": [
         {
           "customer": "גלידן איכות בע\"מ",
@@ -133,15 +133,15 @@
           "open": 75807
         }
       ],
-      "open_invoices_more": 233
+      "open_invoices_more": 227
     },
     {
       "key": "2026-04",
       "label": "אפריל 26",
       "sales": 4990973,
-      "collected": 1439835,
-      "pending_checks": 743001,
-      "open": 2808137,
+      "collected": 1441534,
+      "pending_checks": 822605,
+      "open": 2726834,
       "open_invoices": [
         {
           "customer": "קפוא-זן (2024) בע\"מ",
@@ -163,13 +163,6 @@
           "date": "12/04/26",
           "total": 64068,
           "open": 64068
-        },
-        {
-          "customer": "אבשלום הראל ובניו 1992 בע\"מ- תמרה",
-          "doc": 82415,
-          "date": "15/04/26",
-          "total": 62074,
-          "open": 62074
         },
         {
           "customer": "עבודי פירות קפואים",
@@ -198,9 +191,16 @@
           "date": "09/04/26",
           "total": 44392,
           "open": 44392
+        },
+        {
+          "customer": "סיטונאות עבד",
+          "doc": 82524,
+          "date": "26/04/26",
+          "total": 41984,
+          "open": 41984
         }
       ],
-      "open_invoices_more": 142
+      "open_invoices_more": 139
     },
     {
       "key": "2026-03",
@@ -273,9 +273,9 @@
       "key": "2026-02",
       "label": "פברואר 26",
       "sales": 6140925,
-      "collected": 5735505,
+      "collected": 5739470,
       "pending_checks": 177901,
-      "open": 227519,
+      "open": 223554,
       "open_invoices": [
         {
           "customer": "Hatta Company for ice cream &food",
@@ -320,18 +320,18 @@
           "open": 7496
         },
         {
-          "customer": "צייזי שיווק והפצה בע\"מ",
-          "doc": 81909,
-          "date": "17/02/26",
-          "total": 4248,
-          "open": 4248
-        },
-        {
           "customer": "אנה לוטן בע\"מ",
           "doc": 81888,
           "date": "16/02/26",
           "total": 1229,
           "open": 1229
+        },
+        {
+          "customer": "צייזי שיווק והפצה בע\"מ",
+          "doc": 81909,
+          "date": "17/02/26",
+          "total": 4248,
+          "open": 283
         }
       ],
       "open_invoices_more": 2
@@ -340,17 +340,10 @@
       "key": "2026-01",
       "label": "ינואר 26",
       "sales": 5436727,
-      "collected": 5427120,
+      "collected": 5431085,
       "pending_checks": 1743,
-      "open": 7864,
+      "open": 3899,
       "open_invoices": [
-        {
-          "customer": "צייזי שיווק והפצה בע\"מ",
-          "doc": 81652,
-          "date": "25/01/26",
-          "total": 4248,
-          "open": 4248
-        },
         {
           "customer": "אברהם מרדכי",
           "doc": 81670,
@@ -370,6 +363,13 @@
           "doc": 81542,
           "date": "13/01/26",
           "total": 283,
+          "open": 283
+        },
+        {
+          "customer": "צייזי שיווק והפצה בע\"מ",
+          "doc": 81652,
+          "date": "25/01/26",
+          "total": 4248,
           "open": 283
         }
       ],
