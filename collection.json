@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-01 07:14",
+  "generated_at": "2026-07-01 09:55",
   "months": [
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 788263,
+      "collected": 794210,
       "pending_checks": 862235,
-      "open": 5553963,
+      "open": 5548016,
       "open_invoices": [
         {
           "customer": "ביכורי כל בע\"מ",
@@ -66,15 +66,15 @@
           "open": 69146
         }
       ],
-      "open_invoices_more": 264
+      "open_invoices_more": 263
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 1927290,
+      "collected": 1940843,
       "pending_checks": 1149466,
-      "open": 5202031,
+      "open": 5188478,
       "open_invoices": [
         {
           "customer": "גלידן איכות בע\"מ",
@@ -133,15 +133,15 @@
           "open": 75807
         }
       ],
-      "open_invoices_more": 227
+      "open_invoices_more": 224
     },
     {
       "key": "2026-04",
       "label": "אפריל 26",
       "sales": 4990973,
-      "collected": 1599055,
-      "pending_checks": 719137,
-      "open": 2672781,
+      "collected": 1850047,
+      "pending_checks": 720832,
+      "open": 2420094,
       "open_invoices": [
         {
           "customer": "קפוא-זן (2024) בע\"מ",
@@ -200,15 +200,15 @@
           "open": 39436
         }
       ],
-      "open_invoices_more": 138
+      "open_invoices_more": 117
     },
     {
       "key": "2026-03",
       "label": "מרץ 26",
       "sales": 5651517,
-      "collected": 4815379,
-      "pending_checks": 199082,
-      "open": 637057,
+      "collected": 4837788,
+      "pending_checks": 201669,
+      "open": 612060,
       "open_invoices": [
         {
           "customer": "odai awaissa",
@@ -267,7 +267,7 @@
           "open": 18904
         }
       ],
-      "open_invoices_more": 31
+      "open_invoices_more": 27
     },
     {
       "key": "2026-02",
