@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-30 13:06",
+  "generated_at": "2026-07-01 07:14",
   "months": [
     {
       "key": "2026-06",
       "label": "יוני 26",
-      "sales": 6878476,
-      "collected": 787483,
+      "sales": 7204461,
+      "collected": 788263,
       "pending_checks": 862235,
-      "open": 5228758,
+      "open": 5553963,
       "open_invoices": [
         {
           "customer": "ביכורי כל בע\"מ",
@@ -15,6 +15,13 @@
           "date": "17/06/26",
           "total": 123900,
           "open": 123900
+        },
+        {
+          "customer": "נחלת ראובן - פצ'ורניק ראובן",
+          "doc": 83247,
+          "date": "30/06/26",
+          "total": 116820,
+          "open": 116820
         },
         {
           "customer": "פרו פרי עיבוד פרי וירק בע\"מ",
@@ -57,24 +64,17 @@
           "date": "14/06/26",
           "total": 69146,
           "open": 69146
-        },
-        {
-          "customer": "קיי טי יבוא ושיווק בע\"מ",
-          "doc": 83090,
-          "date": "14/06/26",
-          "total": 69146,
-          "open": 69146
         }
       ],
-      "open_invoices_more": 255
+      "open_invoices_more": 264
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 1838315,
-      "pending_checks": 1186278,
-      "open": 5254195,
+      "collected": 1927290,
+      "pending_checks": 1149466,
+      "open": 5202031,
       "open_invoices": [
         {
           "customer": "גלידן איכות בע\"מ",
@@ -139,9 +139,9 @@
       "key": "2026-04",
       "label": "אפריל 26",
       "sales": 4990973,
-      "collected": 1441534,
-      "pending_checks": 822605,
-      "open": 2726834,
+      "collected": 1599055,
+      "pending_checks": 719137,
+      "open": 2672781,
       "open_invoices": [
         {
           "customer": "קפוא-זן (2024) בע\"מ",
@@ -172,13 +172,6 @@
           "open": 54280
         },
         {
-          "customer": "Hatta Company for ice cream &food",
-          "doc": 375,
-          "date": "13/04/26",
-          "total": 54053,
-          "open": 54053
-        },
-        {
           "customer": "עבודי פירות קפואים",
           "doc": 82349,
           "date": "12/04/26",
@@ -198,17 +191,24 @@
           "date": "26/04/26",
           "total": 41984,
           "open": 41984
+        },
+        {
+          "customer": "עבודי פירות קפואים",
+          "doc": 82477,
+          "date": "20/04/26",
+          "total": 39436,
+          "open": 39436
         }
       ],
-      "open_invoices_more": 139
+      "open_invoices_more": 138
     },
     {
       "key": "2026-03",
       "label": "מרץ 26",
       "sales": 5651517,
-      "collected": 4627033,
-      "pending_checks": 274376,
-      "open": 750108,
+      "collected": 4815379,
+      "pending_checks": 199082,
+      "open": 637057,
       "open_invoices": [
         {
           "customer": "odai awaissa",
@@ -216,13 +216,6 @@
           "date": "17/03/26",
           "total": 118000,
           "open": 118000
-        },
-        {
-          "customer": "Hatta Company for ice cream &food",
-          "doc": 369,
-          "date": "19/03/26",
-          "total": 89538,
-          "open": 89538
         },
         {
           "customer": "כימוקריט בע\"מ",
@@ -237,13 +230,6 @@
           "date": "29/03/26",
           "total": 53808,
           "open": 53808
-        },
-        {
-          "customer": "Hatta Company for ice cream &food",
-          "doc": 372,
-          "date": "31/03/26",
-          "total": 23513,
-          "open": 23513
         },
         {
           "customer": "מוחמד אחמד עבד זערור",
@@ -265,32 +251,32 @@
           "date": "09/03/26",
           "total": 18904,
           "open": 18904
+        },
+        {
+          "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
+          "doc": 82077,
+          "date": "09/03/26",
+          "total": 18904,
+          "open": 18904
+        },
+        {
+          "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
+          "doc": 82081,
+          "date": "09/03/26",
+          "total": 18904,
+          "open": 18904
         }
       ],
-      "open_invoices_more": 33
+      "open_invoices_more": 31
     },
     {
       "key": "2026-02",
       "label": "פברואר 26",
       "sales": 6140925,
-      "collected": 5739470,
-      "pending_checks": 177901,
-      "open": 223554,
+      "collected": 5925199,
+      "pending_checks": 148404,
+      "open": 67322,
       "open_invoices": [
-        {
-          "customer": "Hatta Company for ice cream &food",
-          "doc": 366,
-          "date": "19/02/26",
-          "total": 104430,
-          "open": 104430
-        },
-        {
-          "customer": "Hatta Company for ice cream &food",
-          "doc": 365,
-          "date": "08/02/26",
-          "total": 51802,
-          "open": 51802
-        },
         {
           "customer": "עוף טוב שאן בע\"מ",
           "doc": 81991,
@@ -332,9 +318,23 @@
           "date": "17/02/26",
           "total": 4248,
           "open": 283
+        },
+        {
+          "customer": "ג'ומון יבוא ושיווק מזון בע\"מ",
+          "doc": 81957,
+          "date": "23/02/26",
+          "total": 25960,
+          "open": 47
+        },
+        {
+          "customer": "עוצמה שיווק מוצרי צריכה בע\"מ",
+          "doc": 81912,
+          "date": "17/02/26",
+          "total": 31615,
+          "open": 41
         }
       ],
-      "open_invoices_more": 2
+      "open_invoices_more": 0
     },
     {
       "key": "2026-01",
@@ -379,9 +379,9 @@
       "key": "2025-12",
       "label": "דצמבר 25",
       "sales": 7610386,
-      "collected": 7231911,
+      "collected": 7233136,
       "pending_checks": 27623,
-      "open": 350852,
+      "open": 349627,
       "open_invoices": [
         {
           "customer": "מכוורת הר מירון עלם מנל ע\"מ",
@@ -403,13 +403,6 @@
           "date": "11/12/25",
           "total": 4915,
           "open": 4915
-        },
-        {
-          "customer": "Hatta Company for ice cream &food",
-          "doc": 361,
-          "date": "16/12/25",
-          "total": 83225,
-          "open": 1225
         },
         {
           "customer": "מרב - מזון כל בע\"מ",
