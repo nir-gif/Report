@@ -1,21 +1,81 @@
 {
-  "generated_at": "2026-07-01 09:55",
+  "generated_at": "2026-07-01 12:40",
   "months": [
+    {
+      "key": "2026-07",
+      "label": "יולי 26",
+      "sales": 272341,
+      "collected": 0,
+      "pending_checks": 0,
+      "open": 272341,
+      "open_invoices": [
+        {
+          "customer": "אם החיטה בע\"מ (הלפרין)",
+          "doc": 83276,
+          "date": "01/07/26",
+          "total": 57631,
+          "open": 57631
+        },
+        {
+          "customer": "אלי אברהמי שיווק בע\"מ",
+          "doc": 83273,
+          "date": "01/07/26",
+          "total": 47578,
+          "open": 47578
+        },
+        {
+          "customer": "אלי אברהמי שיווק בע\"מ",
+          "doc": 83262,
+          "date": "01/07/26",
+          "total": 37071,
+          "open": 37071
+        },
+        {
+          "customer": "עבודי פירות קפואים",
+          "doc": 83274,
+          "date": "01/07/26",
+          "total": 36344,
+          "open": 36344
+        },
+        {
+          "customer": "עבודי פירות קפואים",
+          "doc": 83275,
+          "date": "01/07/26",
+          "total": 16567,
+          "open": 16567
+        },
+        {
+          "customer": "ברנבוים אנה",
+          "doc": 83259,
+          "date": "01/07/26",
+          "total": 13939,
+          "open": 13939
+        },
+        {
+          "customer": "י.פ לחם בע\"מ",
+          "doc": 83271,
+          "date": "01/07/26",
+          "total": 8762,
+          "open": 8762
+        },
+        {
+          "customer": "ברנדס אנד קו ייבוא מזון בע\"מ",
+          "doc": 83268,
+          "date": "01/07/26",
+          "total": 6655,
+          "open": 6655
+        }
+      ],
+      "open_invoices_more": 12
+    },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 794210,
+      "collected": 920180,
       "pending_checks": 862235,
-      "open": 5548016,
+      "open": 5422046,
       "open_invoices": [
-        {
-          "customer": "ביכורי כל בע\"מ",
-          "doc": 83126,
-          "date": "17/06/26",
-          "total": 123900,
-          "open": 123900
-        },
         {
           "customer": "נחלת ראובן - פצ'ורניק ראובן",
           "doc": 83247,
@@ -64,9 +124,16 @@
           "date": "14/06/26",
           "total": 69146,
           "open": 69146
+        },
+        {
+          "customer": "קיי טי יבוא ושיווק בע\"מ",
+          "doc": 83090,
+          "date": "14/06/26",
+          "total": 69146,
+          "open": 69146
         }
       ],
-      "open_invoices_more": 263
+      "open_invoices_more": 262
     },
     {
       "key": "2026-05",
@@ -206,9 +273,9 @@
       "key": "2026-03",
       "label": "מרץ 26",
       "sales": 5651517,
-      "collected": 4837788,
+      "collected": 4844160,
       "pending_checks": 201669,
-      "open": 612060,
+      "open": 605688,
       "open_invoices": [
         {
           "customer": "odai awaissa",
@@ -267,7 +334,7 @@
           "open": 18904
         }
       ],
-      "open_invoices_more": 27
+      "open_invoices_more": 26
     },
     {
       "key": "2026-02",
@@ -340,17 +407,10 @@
       "key": "2026-01",
       "label": "ינואר 26",
       "sales": 5436727,
-      "collected": 5431085,
+      "collected": 5433262,
       "pending_checks": 1743,
-      "open": 3899,
+      "open": 1722,
       "open_invoices": [
-        {
-          "customer": "אברהם מרדכי",
-          "doc": 81670,
-          "date": "27/01/26",
-          "total": 8177,
-          "open": 2177
-        },
         {
           "customer": "גדרון תעשיות בע\"מ",
           "doc": 81531,
