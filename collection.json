@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-07 07:12",
+  "generated_at": "2026-07-08 07:11",
   "months": [
     {
       "key": "2026-07",
       "label": "יולי 26",
-      "sales": 1891896,
-      "collected": 50524,
+      "sales": 2247712,
+      "collected": 56795,
       "pending_checks": 0,
-      "open": 1841372,
+      "open": 2190917,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -38,6 +38,13 @@
           "open": 118000
         },
         {
+          "customer": "י. שבי שיווק מזון בע\"מ",
+          "doc": 83361,
+          "date": "07/07/26",
+          "total": 68195,
+          "open": 68195
+        },
+        {
           "customer": "אבשלום הראל ובניו 1992 בע\"מ- תמרה",
           "doc": 83278,
           "date": "01/07/26",
@@ -57,24 +64,17 @@
           "date": "06/07/26",
           "total": 57631,
           "open": 57631
-        },
-        {
-          "customer": "אלי אברהמי שיווק בע\"מ",
-          "doc": 83273,
-          "date": "01/07/26",
-          "total": 47578,
-          "open": 47578
         }
       ],
-      "open_invoices_more": 80
+      "open_invoices_more": 95
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 1132452,
-      "pending_checks": 752363,
-      "open": 5319646,
+      "collected": 1189071,
+      "pending_checks": 756321,
+      "open": 5259069,
       "open_invoices": [
         {
           "customer": "נחלת ראובן - פצ'ורניק ראובן",
@@ -133,15 +133,15 @@
           "open": 69146
         }
       ],
-      "open_invoices_more": 259
+      "open_invoices_more": 257
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 2292436,
-      "pending_checks": 939090,
-      "open": 5047261,
+      "collected": 2624244,
+      "pending_checks": 944636,
+      "open": 4709907,
       "open_invoices": [
         {
           "customer": "גלידן איכות בע\"מ",
@@ -200,15 +200,15 @@
           "open": 75807
         }
       ],
-      "open_invoices_more": 213
+      "open_invoices_more": 205
     },
     {
       "key": "2026-04",
       "label": "אפריל 26",
       "sales": 4990973,
-      "collected": 2833202,
+      "collected": 2947414,
       "pending_checks": 597515,
-      "open": 1560256,
+      "open": 1446044,
       "open_invoices": [
         {
           "customer": "עבודי פירות קפואים",
@@ -253,29 +253,29 @@
           "open": 39436
         },
         {
-          "customer": "פרי טרי ובריא בע\"מ (ארומה)",
-          "doc": 82453,
-          "date": "19/04/26",
-          "total": 37359,
-          "open": 37359
-        },
-        {
           "customer": "עוצמה שיווק מוצרי צריכה בע\"מ",
           "doc": 82486,
           "date": "23/04/26",
           "total": 36734,
           "open": 36734
+        },
+        {
+          "customer": "אייס לקו בע\"מ",
+          "doc": 82323,
+          "date": "09/04/26",
+          "total": 34267,
+          "open": 34267
         }
       ],
-      "open_invoices_more": 80
+      "open_invoices_more": 76
     },
     {
       "key": "2026-03",
       "label": "מרץ 26",
       "sales": 5651517,
-      "collected": 5332868,
-      "pending_checks": 158228,
-      "open": 160421,
+      "collected": 5339988,
+      "pending_checks": 154924,
+      "open": 156605,
       "open_invoices": [
         {
           "customer": "odai awaissa",
@@ -311,13 +311,6 @@
           "date": "04/03/26",
           "total": 3866,
           "open": 3866
-        },
-        {
-          "customer": "נווה התבלין בע\"מ",
-          "doc": 82217,
-          "date": "23/03/26",
-          "total": 3816,
-          "open": 3816
         }
       ],
       "open_invoices_more": 0
