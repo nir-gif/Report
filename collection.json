@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-08 10:20",
+  "generated_at": "2026-07-09 07:06",
   "months": [
     {
       "key": "2026-07",
       "label": "יולי 26",
-      "sales": 2316858,
+      "sales": 2737164,
       "collected": 66141,
       "pending_checks": 0,
-      "open": 2250717,
+      "open": 2671023,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -45,6 +45,13 @@
           "open": 69146
         },
         {
+          "customer": "קיי טי יבוא ושיווק בע\"מ",
+          "doc": 83367,
+          "date": "08/07/26",
+          "total": 69146,
+          "open": 69146
+        },
+        {
           "customer": "י. שבי שיווק מזון בע\"מ",
           "doc": 83361,
           "date": "07/07/26",
@@ -57,16 +64,9 @@
           "date": "01/07/26",
           "total": 66596,
           "open": 66596
-        },
-        {
-          "customer": "אם החיטה בע\"מ (הלפרין)",
-          "doc": 83276,
-          "date": "01/07/26",
-          "total": 57631,
-          "open": 57631
         }
       ],
-      "open_invoices_more": 95
+      "open_invoices_more": 115
     },
     {
       "key": "2026-06",
@@ -139,9 +139,9 @@
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 2676748,
+      "collected": 2682722,
       "pending_checks": 944636,
-      "open": 4657403,
+      "open": 4651429,
       "open_invoices": [
         {
           "customer": "גלידן איכות בע\"מ",
@@ -200,7 +200,7 @@
           "open": 61018
         }
       ],
-      "open_invoices_more": 205
+      "open_invoices_more": 204
     },
     {
       "key": "2026-04",
@@ -254,15 +254,15 @@
         },
         {
           "customer": "עוף טוב שאן בע\"מ",
-          "doc": 82339,
-          "date": "12/04/26",
+          "doc": 82424,
+          "date": "16/04/26",
           "total": 27806,
           "open": 27806
         },
         {
           "customer": "עוף טוב שאן בע\"מ",
-          "doc": 82424,
-          "date": "16/04/26",
+          "doc": 82339,
+          "date": "12/04/26",
           "total": 27806,
           "open": 27806
         }
