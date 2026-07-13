@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-12 07:09",
+  "generated_at": "2026-07-13 07:06",
   "months": [
     {
       "key": "2026-07",
       "label": "יולי 26",
-      "sales": 3079884,
-      "collected": 172903,
-      "pending_checks": 0,
-      "open": 2906981,
+      "sales": 3365418,
+      "collected": 183719,
+      "pending_checks": 1062,
+      "open": 3180637,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -66,23 +66,16 @@
           "open": 68195
         }
       ],
-      "open_invoices_more": 125
+      "open_invoices_more": 140
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 1237250,
-      "pending_checks": 756321,
-      "open": 5210890,
+      "collected": 1241792,
+      "pending_checks": 873141,
+      "open": 5089528,
       "open_invoices": [
-        {
-          "customer": "נחלת ראובן - פצ'ורניק ראובן",
-          "doc": 83247,
-          "date": "30/06/26",
-          "total": 116820,
-          "open": 116820
-        },
         {
           "customer": "פרו פרי עיבוד פרי וירק בע\"מ",
           "doc": 82985,
@@ -131,17 +124,24 @@
           "date": "14/06/26",
           "total": 69146,
           "open": 69146
+        },
+        {
+          "customer": "קיי טי יבוא ושיווק בע\"מ",
+          "doc": 83095,
+          "date": "15/06/26",
+          "total": 69146,
+          "open": 69146
         }
       ],
-      "open_invoices_more": 254
+      "open_invoices_more": 252
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 2682742,
-      "pending_checks": 944636,
-      "open": 4651409,
+      "collected": 2718175,
+      "pending_checks": 909404,
+      "open": 4651208,
       "open_invoices": [
         {
           "customer": "גלידן איכות בע\"מ",
@@ -200,15 +200,15 @@
           "open": 61018
         }
       ],
-      "open_invoices_more": 204
+      "open_invoices_more": 203
     },
     {
       "key": "2026-04",
       "label": "אפריל 26",
       "sales": 4990973,
-      "collected": 3275238,
-      "pending_checks": 591539,
-      "open": 1124196,
+      "collected": 3484372,
+      "pending_checks": 547819,
+      "open": 958783,
       "open_invoices": [
         {
           "customer": "סיטונאות עבד",
@@ -267,14 +267,14 @@
           "open": 27806
         }
       ],
-      "open_invoices_more": 66
+      "open_invoices_more": 50
     },
     {
       "key": "2026-03",
       "label": "מרץ 26",
       "sales": 5651517,
-      "collected": 5372093,
-      "pending_checks": 133971,
+      "collected": 5377842,
+      "pending_checks": 128222,
       "open": 145454,
       "open_invoices": [
         {
