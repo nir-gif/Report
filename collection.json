@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-13 07:06",
+  "generated_at": "2026-07-14 07:06",
   "months": [
     {
       "key": "2026-07",
       "label": "יולי 26",
-      "sales": 3365418,
-      "collected": 183719,
+      "sales": 3733260,
+      "collected": 269220,
       "pending_checks": 1062,
-      "open": 3180637,
+      "open": 3462978,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -22,6 +22,13 @@
           "date": "02/07/26",
           "total": 138484,
           "open": 138484
+        },
+        {
+          "customer": "ביכורי כל בע\"מ",
+          "doc": 83426,
+          "date": "13/07/26",
+          "total": 123900,
+          "open": 123900
         },
         {
           "customer": "ביכורי כל בע\"מ",
@@ -57,16 +64,9 @@
           "date": "08/07/26",
           "total": 69146,
           "open": 69146
-        },
-        {
-          "customer": "י. שבי שיווק מזון בע\"מ",
-          "doc": 83361,
-          "date": "07/07/26",
-          "total": 68195,
-          "open": 68195
         }
       ],
-      "open_invoices_more": 140
+      "open_invoices_more": 149
     },
     {
       "key": "2026-06",
@@ -139,9 +139,9 @@
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 2718175,
-      "pending_checks": 909404,
-      "open": 4651208,
+      "collected": 2734530,
+      "pending_checks": 917968,
+      "open": 4626289,
       "open_invoices": [
         {
           "customer": "גלידן איכות בע\"מ",
@@ -200,15 +200,15 @@
           "open": 61018
         }
       ],
-      "open_invoices_more": 203
+      "open_invoices_more": 201
     },
     {
       "key": "2026-04",
       "label": "אפריל 26",
       "sales": 4990973,
       "collected": 3484372,
-      "pending_checks": 547819,
-      "open": 958783,
+      "pending_checks": 557309,
+      "open": 949293,
       "open_invoices": [
         {
           "customer": "סיטונאות עבד",
@@ -267,15 +267,15 @@
           "open": 27806
         }
       ],
-      "open_invoices_more": 50
+      "open_invoices_more": 49
     },
     {
       "key": "2026-03",
       "label": "מרץ 26",
       "sales": 5651517,
-      "collected": 5377842,
+      "collected": 5381708,
       "pending_checks": 128222,
-      "open": 145454,
+      "open": 141588,
       "open_invoices": [
         {
           "customer": "odai awaissa",
@@ -297,13 +297,6 @@
           "date": "30/03/26",
           "total": 9251,
           "open": 9251
-        },
-        {
-          "customer": "מוצרים טבעיים בית יצחק (ייצור 2004) בע\"מ",
-          "doc": 82025,
-          "date": "04/03/26",
-          "total": 3866,
-          "open": 3866
         }
       ],
       "open_invoices_more": 0
