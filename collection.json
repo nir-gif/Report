@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-15 07:10",
+  "generated_at": "2026-07-16 07:09",
   "months": [
     {
       "key": "2026-07",
       "label": "יולי 26",
-      "sales": 4120803,
-      "collected": 278023,
+      "sales": 4661867,
+      "collected": 325643,
       "pending_checks": 307514,
-      "open": 3535266,
+      "open": 4028710,
       "open_invoices": [
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
@@ -45,6 +45,13 @@
           "open": 102365
         },
         {
+          "customer": "גלידן איכות בע\"מ",
+          "doc": 83456,
+          "date": "15/07/26",
+          "total": 83526,
+          "open": 83526
+        },
+        {
           "customer": "שיווק והפצה בני דרום- אגודה חקלאית שיתופית בע\"מ",
           "doc": 83399,
           "date": "09/07/26",
@@ -57,23 +64,16 @@
           "date": "08/07/26",
           "total": 69146,
           "open": 69146
-        },
-        {
-          "customer": "קיי טי יבוא ושיווק בע\"מ",
-          "doc": 83367,
-          "date": "08/07/26",
-          "total": 69146,
-          "open": 69146
         }
       ],
-      "open_invoices_more": 157
+      "open_invoices_more": 179
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 1247633,
-      "pending_checks": 937144,
+      "collected": 1357505,
+      "pending_checks": 827273,
       "open": 5019684,
       "open_invoices": [
         {
@@ -139,9 +139,9 @@
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 2890285,
-      "pending_checks": 926619,
-      "open": 4461883,
+      "collected": 2981275,
+      "pending_checks": 1007942,
+      "open": 4289570,
       "open_invoices": [
         {
           "customer": "גלידן איכות בע\"מ",
@@ -200,15 +200,15 @@
           "open": 61018
         }
       ],
-      "open_invoices_more": 194
+      "open_invoices_more": 186
     },
     {
       "key": "2026-04",
       "label": "אפריל 26",
       "sales": 4990973,
-      "collected": 3877995,
-      "pending_checks": 591576,
-      "open": 521403,
+      "collected": 3880186,
+      "pending_checks": 594472,
+      "open": 516315,
       "open_invoices": [
         {
           "customer": "סיטונאות עבד",
@@ -240,15 +240,15 @@
         },
         {
           "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
-          "doc": 82423,
-          "date": "16/04/26",
+          "doc": 82501,
+          "date": "23/04/26",
           "total": 22684,
           "open": 22684
         },
         {
           "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
-          "doc": 82501,
-          "date": "23/04/26",
+          "doc": 82423,
+          "date": "16/04/26",
           "total": 22684,
           "open": 22684
         },
@@ -267,36 +267,29 @@
           "open": 19514
         }
       ],
-      "open_invoices_more": 33
+      "open_invoices_more": 31
     },
     {
       "key": "2026-03",
       "label": "מרץ 26",
       "sales": 5651517,
-      "collected": 5381708,
+      "collected": 5513249,
       "pending_checks": 128222,
-      "open": 141588,
+      "open": 10047,
       "open_invoices": [
-        {
-          "customer": "odai awaissa",
-          "doc": 367,
-          "date": "17/03/26",
-          "total": 118000,
-          "open": 118000
-        },
-        {
-          "customer": "אל אור שיווק מזון בע\"מ",
-          "doc": 82244,
-          "date": "24/03/26",
-          "total": 14337,
-          "open": 14337
-        },
         {
           "customer": "אדמה אגן בע\"מ",
           "doc": 82277,
           "date": "30/03/26",
           "total": 9251,
           "open": 9251
+        },
+        {
+          "customer": "אל אור שיווק מזון בע\"מ",
+          "doc": 82244,
+          "date": "24/03/26",
+          "total": 14337,
+          "open": 796
         }
       ],
       "open_invoices_more": 0
@@ -606,25 +599,10 @@
       "key": "2025-03",
       "label": "מרץ 25",
       "sales": 7586096,
-      "collected": 7527759,
+      "collected": 7582275,
       "pending_checks": 3821,
-      "open": 54516,
-      "open_invoices": [
-        {
-          "customer": "געשמאק בע\"מ",
-          "doc": 78296,
-          "date": "27/03/25",
-          "total": 31152,
-          "open": 31152
-        },
-        {
-          "customer": "געשמאק בע\"מ",
-          "doc": 78213,
-          "date": "19/03/25",
-          "total": 23364,
-          "open": 23364
-        }
-      ],
+      "open": 0,
+      "open_invoices": [],
       "open_invoices_more": 0
     },
     {
