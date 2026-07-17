@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-16 07:09",
+  "generated_at": "2026-07-17 07:07",
   "months": [
     {
       "key": "2026-07",
       "label": "יולי 26",
-      "sales": 4661867,
-      "collected": 325643,
-      "pending_checks": 307514,
-      "open": 4028710,
+      "sales": 4921107,
+      "collected": 368595,
+      "pending_checks": 342878,
+      "open": 4209634,
       "open_invoices": [
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
@@ -66,15 +66,15 @@
           "open": 69146
         }
       ],
-      "open_invoices_more": 179
+      "open_invoices_more": 195
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 1357505,
-      "pending_checks": 827273,
-      "open": 5019684,
+      "collected": 1375317,
+      "pending_checks": 947453,
+      "open": 4881691,
       "open_invoices": [
         {
           "customer": "פרו פרי עיבוד פרי וירק בע\"מ",
@@ -133,15 +133,15 @@
           "open": 69146
         }
       ],
-      "open_invoices_more": 249
+      "open_invoices_more": 243
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 2981275,
+      "collected": 3014368,
       "pending_checks": 1007942,
-      "open": 4289570,
+      "open": 4256477,
       "open_invoices": [
         {
           "customer": "גלידן איכות בע\"מ",
@@ -200,15 +200,15 @@
           "open": 61018
         }
       ],
-      "open_invoices_more": 186
+      "open_invoices_more": 181
     },
     {
       "key": "2026-04",
       "label": "אפריל 26",
       "sales": 4990973,
-      "collected": 3880186,
-      "pending_checks": 594472,
-      "open": 516315,
+      "collected": 3881131,
+      "pending_checks": 603523,
+      "open": 506320,
       "open_invoices": [
         {
           "customer": "סיטונאות עבד",
@@ -267,7 +267,7 @@
           "open": 19514
         }
       ],
-      "open_invoices_more": 31
+      "open_invoices_more": 30
     },
     {
       "key": "2026-03",
