@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18 07:06",
+  "generated_at": "2026-07-19 07:09",
   "months": [
     {
       "key": "2026-07",
@@ -273,8 +273,8 @@
       "key": "2026-03",
       "label": "מרץ 26",
       "sales": 5651517,
-      "collected": 5513249,
-      "pending_checks": 128222,
+      "collected": 5514559,
+      "pending_checks": 126911,
       "open": 10047,
       "open_invoices": [
         {
@@ -337,8 +337,8 @@
       "key": "2026-01",
       "label": "ינואר 26",
       "sales": 5436727,
-      "collected": 5433262,
-      "pending_checks": 1743,
+      "collected": 5435005,
+      "pending_checks": 0,
       "open": 1722,
       "open_invoices": [
         {
