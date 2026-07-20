@@ -1,14 +1,35 @@
 {
-  "generated_at": "2026-07-19 07:09",
+  "generated_at": "2026-07-20 07:08",
   "months": [
     {
       "key": "2026-07",
       "label": "יולי 26",
-      "sales": 4921107,
-      "collected": 368595,
+      "sales": 5710383,
+      "collected": 422719,
       "pending_checks": 342878,
-      "open": 4209634,
+      "open": 4944786,
       "open_invoices": [
+        {
+          "customer": "מתוק וטעים בע\"מ",
+          "doc": 83504,
+          "date": "19/07/26",
+          "total": 219362,
+          "open": 219362
+        },
+        {
+          "customer": "מתוק וטעים בע\"מ",
+          "doc": 83502,
+          "date": "19/07/26",
+          "total": 172634,
+          "open": 172634
+        },
+        {
+          "customer": "מתוק וטעים בע\"מ",
+          "doc": 83503,
+          "date": "19/07/26",
+          "total": 161424,
+          "open": 161424
+        },
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
           "doc": 83301,
@@ -43,38 +64,17 @@
           "date": "14/07/26",
           "total": 102365,
           "open": 102365
-        },
-        {
-          "customer": "גלידן איכות בע\"מ",
-          "doc": 83456,
-          "date": "15/07/26",
-          "total": 83526,
-          "open": 83526
-        },
-        {
-          "customer": "שיווק והפצה בני דרום- אגודה חקלאית שיתופית בע\"מ",
-          "doc": 83399,
-          "date": "09/07/26",
-          "total": 75807,
-          "open": 75807
-        },
-        {
-          "customer": "קיי טי יבוא ושיווק בע\"מ",
-          "doc": 83366,
-          "date": "08/07/26",
-          "total": 69146,
-          "open": 69146
         }
       ],
-      "open_invoices_more": 195
+      "open_invoices_more": 208
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 1375317,
+      "collected": 1379565,
       "pending_checks": 947453,
-      "open": 4881691,
+      "open": 4877443,
       "open_invoices": [
         {
           "customer": "פרו פרי עיבוד פרי וירק בע\"מ",
@@ -133,15 +133,15 @@
           "open": 69146
         }
       ],
-      "open_invoices_more": 243
+      "open_invoices_more": 242
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 3014368,
-      "pending_checks": 1007942,
-      "open": 4256477,
+      "collected": 3074328,
+      "pending_checks": 980220,
+      "open": 4224239,
       "open_invoices": [
         {
           "customer": "גלידן איכות בע\"מ",
@@ -200,7 +200,7 @@
           "open": 61018
         }
       ],
-      "open_invoices_more": 181
+      "open_invoices_more": 180
     },
     {
       "key": "2026-04",
@@ -240,15 +240,15 @@
         },
         {
           "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
-          "doc": 82501,
-          "date": "23/04/26",
+          "doc": 82423,
+          "date": "16/04/26",
           "total": 22684,
           "open": 22684
         },
         {
           "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
-          "doc": 82423,
-          "date": "16/04/26",
+          "doc": 82501,
+          "date": "23/04/26",
           "total": 22684,
           "open": 22684
         },
@@ -273,8 +273,8 @@
       "key": "2026-03",
       "label": "מרץ 26",
       "sales": 5651517,
-      "collected": 5514559,
-      "pending_checks": 126911,
+      "collected": 5515019,
+      "pending_checks": 126451,
       "open": 10047,
       "open_invoices": [
         {
