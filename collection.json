@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-21 07:06",
+  "generated_at": "2026-07-22 07:05",
   "months": [
     {
       "key": "2026-07",
       "label": "יולי 26",
-      "sales": 5788443,
-      "collected": 422935,
-      "pending_checks": 342878,
-      "open": 5022630,
+      "sales": 6103813,
+      "collected": 422737,
+      "pending_checks": 345422,
+      "open": 5335654,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -66,15 +66,15 @@
           "open": 102365
         }
       ],
-      "open_invoices_more": 216
+      "open_invoices_more": 231
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
       "collected": 1388467,
-      "pending_checks": 970175,
-      "open": 4845819,
+      "pending_checks": 974434,
+      "open": 4841560,
       "open_invoices": [
         {
           "customer": "פרו פרי עיבוד פרי וירק בע\"מ",
@@ -133,7 +133,7 @@
           "open": 69146
         }
       ],
-      "open_invoices_more": 240
+      "open_invoices_more": 239
     },
     {
       "key": "2026-05",
@@ -206,8 +206,8 @@
       "key": "2026-04",
       "label": "אפריל 26",
       "sales": 4990973,
-      "collected": 3946920,
-      "pending_checks": 537734,
+      "collected": 3977423,
+      "pending_checks": 507231,
       "open": 506320,
       "open_invoices": [
         {
@@ -240,15 +240,15 @@
         },
         {
           "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
-          "doc": 82423,
-          "date": "16/04/26",
+          "doc": 82501,
+          "date": "23/04/26",
           "total": 22684,
           "open": 22684
         },
         {
           "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
-          "doc": 82501,
-          "date": "23/04/26",
+          "doc": 82423,
+          "date": "16/04/26",
           "total": 22684,
           "open": 22684
         },
@@ -273,8 +273,8 @@
       "key": "2026-03",
       "label": "מרץ 26",
       "sales": 5651517,
-      "collected": 5520768,
-      "pending_checks": 120702,
+      "collected": 5541394,
+      "pending_checks": 100076,
       "open": 10047,
       "open_invoices": [
         {
