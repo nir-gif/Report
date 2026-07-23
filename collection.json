@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-22 07:05",
+  "generated_at": "2026-07-23 07:09",
   "months": [
     {
       "key": "2026-07",
       "label": "יולי 26",
-      "sales": 6103813,
-      "collected": 422737,
+      "sales": 6353810,
+      "collected": 546575,
       "pending_checks": 345422,
-      "open": 5335654,
+      "open": 5461813,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -45,13 +45,6 @@
           "open": 123900
         },
         {
-          "customer": "ביכורי כל בע\"מ",
-          "doc": 83318,
-          "date": "05/07/26",
-          "total": 123838,
-          "open": 123838
-        },
-        {
           "customer": "ספקטור שי",
           "doc": 83289,
           "date": "02/07/26",
@@ -64,9 +57,16 @@
           "date": "14/07/26",
           "total": 102365,
           "open": 102365
+        },
+        {
+          "customer": "גלידן איכות בע\"מ",
+          "doc": 83456,
+          "date": "15/07/26",
+          "total": 83526,
+          "open": 83526
         }
       ],
-      "open_invoices_more": 231
+      "open_invoices_more": 248
     },
     {
       "key": "2026-06",
