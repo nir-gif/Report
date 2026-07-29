@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-28 07:06",
+  "generated_at": "2026-07-29 07:06",
   "months": [
     {
       "key": "2026-07",
       "label": "יולי 26",
-      "sales": 7349012,
-      "collected": 621978,
-      "pending_checks": 306029,
-      "open": 6421005,
+      "sales": 7623270,
+      "collected": 739590,
+      "pending_checks": 340231,
+      "open": 6543449,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -66,15 +66,15 @@
           "open": 83526
         }
       ],
-      "open_invoices_more": 290
+      "open_invoices_more": 289
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 1509006,
-      "pending_checks": 853895,
-      "open": 4841560,
+      "collected": 1585322,
+      "pending_checks": 911929,
+      "open": 4707210,
       "open_invoices": [
         {
           "customer": "פרו פרי עיבוד פרי וירק בע\"מ",
@@ -133,15 +133,15 @@
           "open": 69146
         }
       ],
-      "open_invoices_more": 239
+      "open_invoices_more": 231
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 3182621,
-      "pending_checks": 890159,
-      "open": 4206008,
+      "collected": 3375093,
+      "pending_checks": 917435,
+      "open": 3986260,
       "open_invoices": [
         {
           "customer": "גלידן איכות בע\"מ",
@@ -149,13 +149,6 @@
           "date": "11/05/26",
           "total": 279802,
           "open": 279802
-        },
-        {
-          "customer": "טנדט אריה",
-          "doc": 82815,
-          "date": "18/05/26",
-          "total": 132967,
-          "open": 132967
         },
         {
           "customer": "אקו אלפא בע\"מ",
@@ -193,6 +186,13 @@
           "open": 75807
         },
         {
+          "customer": "טנדט אריה",
+          "doc": 82815,
+          "date": "18/05/26",
+          "total": 132967,
+          "open": 66483
+        },
+        {
           "customer": "עבודי פירות קפואים",
           "doc": 82598,
           "date": "03/05/26",
@@ -200,15 +200,15 @@
           "open": 61018
         }
       ],
-      "open_invoices_more": 178
+      "open_invoices_more": 169
     },
     {
       "key": "2026-04",
       "label": "אפריל 26",
       "sales": 4990973,
-      "collected": 4087588,
+      "collected": 4091767,
       "pending_checks": 439109,
-      "open": 464276,
+      "open": 460097,
       "open_invoices": [
         {
           "customer": "סיטונאות עבד",
@@ -233,15 +233,15 @@
         },
         {
           "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
-          "doc": 82423,
-          "date": "16/04/26",
+          "doc": 82501,
+          "date": "23/04/26",
           "total": 22684,
           "open": 22684
         },
         {
           "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
-          "doc": 82501,
-          "date": "23/04/26",
+          "doc": 82423,
+          "date": "16/04/26",
           "total": 22684,
           "open": 22684
         },
@@ -261,13 +261,13 @@
         },
         {
           "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
-          "doc": 82529,
-          "date": "26/04/26",
+          "doc": 82426,
+          "date": "16/04/26",
           "total": 18904,
           "open": 18904
         }
       ],
-      "open_invoices_more": 28
+      "open_invoices_more": 27
     },
     {
       "key": "2026-03",
