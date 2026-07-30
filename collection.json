@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-29 07:06",
+  "generated_at": "2026-07-30 07:07",
   "months": [
     {
       "key": "2026-07",
       "label": "יולי 26",
-      "sales": 7623270,
-      "collected": 739590,
+      "sales": 7821106,
+      "collected": 748286,
       "pending_checks": 340231,
-      "open": 6543449,
+      "open": 6732589,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -66,15 +66,15 @@
           "open": 83526
         }
       ],
-      "open_invoices_more": 289
+      "open_invoices_more": 297
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 1585322,
+      "collected": 1587322,
       "pending_checks": 911929,
-      "open": 4707210,
+      "open": 4705210,
       "open_invoices": [
         {
           "customer": "פרו פרי עיבוד פרי וירק בע\"מ",
@@ -139,9 +139,9 @@
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 3375093,
-      "pending_checks": 917435,
-      "open": 3986260,
+      "collected": 3450900,
+      "pending_checks": 929117,
+      "open": 3898771,
       "open_invoices": [
         {
           "customer": "גלידן איכות בע\"מ",
@@ -179,13 +179,6 @@
           "open": 81455
         },
         {
-          "customer": "שיווק והפצה בני דרום- אגודה חקלאית שיתופית בע\"מ",
-          "doc": 82852,
-          "date": "20/05/26",
-          "total": 75807,
-          "open": 75807
-        },
-        {
           "customer": "טנדט אריה",
           "doc": 82815,
           "date": "18/05/26",
@@ -198,9 +191,16 @@
           "date": "03/05/26",
           "total": 61018,
           "open": 61018
+        },
+        {
+          "customer": "י. שבי שיווק מזון בע\"מ",
+          "doc": 82874,
+          "date": "24/05/26",
+          "total": 60582,
+          "open": 60582
         }
       ],
-      "open_invoices_more": 169
+      "open_invoices_more": 166
     },
     {
       "key": "2026-04",
