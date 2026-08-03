@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-02 13:25",
+  "generated_at": "2026-08-03 07:07",
   "months": [
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
-      "sales": 642753,
+      "sales": 794023,
       "collected": 0,
       "pending_checks": 0,
-      "open": 661154,
+      "open": 812424,
       "open_invoices": [
         {
           "customer": "עבודי פירות קפואים",
@@ -29,6 +29,13 @@
           "date": "02/08/26",
           "total": 67244,
           "open": 67244
+        },
+        {
+          "customer": "אניטה פרי בע\"מ",
+          "doc": 83677,
+          "date": "02/08/26",
+          "total": 53725,
+          "open": 53725
         },
         {
           "customer": "שפיר תעשיות בע\"מ",
@@ -57,16 +64,9 @@
           "date": "02/08/26",
           "total": 39648,
           "open": 39648
-        },
-        {
-          "customer": "אלי אברהמי שיווק בע\"מ",
-          "doc": 83654,
-          "date": "02/08/26",
-          "total": 23222,
-          "open": 23222
         }
       ],
-      "open_invoices_more": 24
+      "open_invoices_more": 32
     },
     {
       "key": "2026-07",
@@ -139,8 +139,8 @@
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 1634472,
-      "pending_checks": 888940,
+      "collected": 1636782,
+      "pending_checks": 886631,
       "open": 4681049,
       "open_invoices": [
         {
@@ -206,8 +206,8 @@
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 4023073,
-      "pending_checks": 775852,
+      "collected": 4026309,
+      "pending_checks": 772616,
       "open": 3479863,
       "open_invoices": [
         {
@@ -300,15 +300,15 @@
         },
         {
           "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
-          "doc": 82423,
-          "date": "16/04/26",
+          "doc": 82501,
+          "date": "23/04/26",
           "total": 22684,
           "open": 22684
         },
         {
           "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
-          "doc": 82501,
-          "date": "23/04/26",
+          "doc": 82423,
+          "date": "16/04/26",
           "total": 22684,
           "open": 22684
         },
@@ -328,8 +328,8 @@
         },
         {
           "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
-          "doc": 82529,
-          "date": "26/04/26",
+          "doc": 82426,
+          "date": "16/04/26",
           "total": 18904,
           "open": 18904
         }
