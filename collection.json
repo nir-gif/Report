@@ -1,14 +1,28 @@
 {
-  "generated_at": "2026-08-04 07:12",
+  "generated_at": "2026-08-05 07:09",
   "months": [
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
-      "sales": 1100934,
-      "collected": 7217,
+      "sales": 1660700,
+      "collected": 2119,
       "pending_checks": 0,
-      "open": 1093717,
+      "open": 1658581,
       "open_invoices": [
+        {
+          "customer": "פרסקו חצבה 2006 בע\"מ",
+          "doc": 83710,
+          "date": "04/08/26",
+          "total": 206665,
+          "open": 206665
+        },
+        {
+          "customer": "א.מ שרון שיווק (2014) בע\"מ",
+          "doc": 83706,
+          "date": "04/08/26",
+          "total": 137144,
+          "open": 137144
+        },
         {
           "customer": "עבודי פירות קפואים",
           "doc": 83664,
@@ -31,13 +45,6 @@
           "open": 67244
         },
         {
-          "customer": "אניטה פרי בע\"מ",
-          "doc": 83677,
-          "date": "02/08/26",
-          "total": 53725,
-          "open": 53725
-        },
-        {
           "customer": "שפיר תעשיות בע\"מ",
           "doc": 83657,
           "date": "02/08/26",
@@ -52,21 +59,14 @@
           "open": 51684
         },
         {
-          "customer": "סיטונאות עבד",
-          "doc": 83683,
-          "date": "03/08/26",
-          "total": 48096,
-          "open": 48096
-        },
-        {
-          "customer": "עץ פרי אהבה מהטבע בע\"מ",
-          "doc": 83653,
+          "customer": "אניטה פרי בע\"מ",
+          "doc": 83677,
           "date": "02/08/26",
-          "total": 47294,
-          "open": 47294
+          "total": 53725,
+          "open": 50586
         }
       ],
-      "open_invoices_more": 51
+      "open_invoices_more": 64
     },
     {
       "key": "2026-07",
@@ -139,9 +139,9 @@
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 1649270,
+      "collected": 1651814,
       "pending_checks": 886631,
-      "open": 4668561,
+      "open": 4666017,
       "open_invoices": [
         {
           "customer": "פרו פרי עיבוד פרי וירק בע\"מ",
@@ -200,7 +200,7 @@
           "open": 69146
         }
       ],
-      "open_invoices_more": 227
+      "open_invoices_more": 226
     },
     {
       "key": "2026-05",
@@ -273,9 +273,9 @@
       "key": "2026-04",
       "label": "אפריל 26",
       "sales": 4990973,
-      "collected": 4495781,
+      "collected": 4498094,
       "pending_checks": 321751,
-      "open": 173441,
+      "open": 171128,
       "open_invoices": [
         {
           "customer": "סיטונאות עבד",
@@ -334,7 +334,7 @@
           "open": 7930
         }
       ],
-      "open_invoices_more": 8
+      "open_invoices_more": 7
     },
     {
       "key": "2026-03",
