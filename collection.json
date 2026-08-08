@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-06 07:06",
+  "generated_at": "2026-08-08 07:09",
   "months": [
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
-      "sales": 2077071,
-      "collected": 19177,
+      "sales": 2233257,
+      "collected": 20985,
       "pending_checks": 17133,
-      "open": 2040761,
+      "open": 2195139,
       "open_invoices": [
         {
           "customer": "פרסקו חצבה 2006 בע\"מ",
@@ -66,7 +66,7 @@
           "open": 57631
         }
       ],
-      "open_invoices_more": 75
+      "open_invoices_more": 85
     },
     {
       "key": "2026-07",
@@ -139,9 +139,9 @@
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 1821145,
+      "collected": 1821276,
       "pending_checks": 752134,
-      "open": 4631183,
+      "open": 4631052,
       "open_invoices": [
         {
           "customer": "פרו פרי עיבוד פרי וירק בע\"מ",
@@ -200,23 +200,16 @@
           "open": 69146
         }
       ],
-      "open_invoices_more": 225
+      "open_invoices_more": 224
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 4486179,
+      "collected": 5945743,
       "pending_checks": 665904,
-      "open": 3126704,
+      "open": 1667140,
       "open_invoices": [
-        {
-          "customer": "אקו אלפא בע\"מ",
-          "doc": 82657,
-          "date": "05/05/26",
-          "total": 105728,
-          "open": 105728
-        },
         {
           "customer": "גל דרור",
           "doc": 82885,
@@ -265,17 +258,24 @@
           "date": "14/05/26",
           "total": 59000,
           "open": 59000
+        },
+        {
+          "customer": "כימוקריט בע\"מ",
+          "doc": 82678,
+          "date": "06/05/26",
+          "total": 53808,
+          "open": 53808
         }
       ],
-      "open_invoices_more": 130
+      "open_invoices_more": 71
     },
     {
       "key": "2026-04",
       "label": "אפריל 26",
       "sales": 4990973,
-      "collected": 4544475,
+      "collected": 4553074,
       "pending_checks": 278450,
-      "open": 168049,
+      "open": 159450,
       "open_invoices": [
         {
           "customer": "סיטונאות עבד",
@@ -334,23 +334,16 @@
           "open": 7930
         }
       ],
-      "open_invoices_more": 6
+      "open_invoices_more": 4
     },
     {
       "key": "2026-03",
       "label": "מרץ 26",
       "sales": 5651517,
-      "collected": 5556888,
+      "collected": 5566139,
       "pending_checks": 84582,
-      "open": 10047,
+      "open": 796,
       "open_invoices": [
-        {
-          "customer": "אדמה אגן בע\"מ",
-          "doc": 82277,
-          "date": "30/03/26",
-          "total": 9251,
-          "open": 9251
-        },
         {
           "customer": "אל אור שיווק מזון בע\"מ",
           "doc": 82244,
