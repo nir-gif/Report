@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-10 07:13",
+  "generated_at": "2026-08-11 07:12",
   "months": [
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
-      "sales": 2428156,
-      "collected": 38180,
+      "sales": 2756927,
+      "collected": 38807,
       "pending_checks": 0,
-      "open": 2389976,
+      "open": 2718120,
       "open_invoices": [
         {
           "customer": "פרסקו חצבה 2006 בע\"מ",
@@ -15,6 +15,13 @@
           "date": "04/08/26",
           "total": 206665,
           "open": 206665
+        },
+        {
+          "customer": "jala food company",
+          "doc": 395,
+          "date": "10/08/26",
+          "total": 139976,
+          "open": 139976
         },
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
@@ -57,23 +64,16 @@
           "date": "02/08/26",
           "total": 67244,
           "open": 67244
-        },
-        {
-          "customer": "דבש יריב בע\"מ",
-          "doc": 83717,
-          "date": "05/08/26",
-          "total": 62304,
-          "open": 62304
         }
       ],
-      "open_invoices_more": 95
+      "open_invoices_more": 108
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 1138035,
-      "pending_checks": 358471,
+      "collected": 1189111,
+      "pending_checks": 307395,
       "open": 6658134,
       "open_invoices": [
         {
@@ -139,9 +139,9 @@
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 2414320,
-      "pending_checks": 752134,
-      "open": 4038008,
+      "collected": 2431501,
+      "pending_checks": 741467,
+      "open": 4031494,
       "open_invoices": [
         {
           "customer": "Hatta Company for ice cream &food",
@@ -200,15 +200,15 @@
           "open": 56043
         }
       ],
-      "open_invoices_more": 213
+      "open_invoices_more": 212
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 6198234,
-      "pending_checks": 665904,
-      "open": 1414649,
+      "collected": 6349112,
+      "pending_checks": 634403,
+      "open": 1295273,
       "open_invoices": [
         {
           "customer": "גל דרור",
@@ -253,29 +253,29 @@
           "open": 59596
         },
         {
-          "customer": "ענבי ציון משקאות קלים 1981 בע\"מ",
-          "doc": 82785,
-          "date": "14/05/26",
-          "total": 59000,
-          "open": 59000
-        },
-        {
           "customer": "כימוקריט בע\"מ",
           "doc": 82678,
           "date": "06/05/26",
           "total": 53808,
           "open": 53808
+        },
+        {
+          "customer": "כימוקריט בע\"מ",
+          "doc": 82864,
+          "date": "24/05/26",
+          "total": 53808,
+          "open": 53808
         }
       ],
-      "open_invoices_more": 60
+      "open_invoices_more": 54
     },
     {
       "key": "2026-04",
       "label": "אפריל 26",
       "sales": 4990973,
-      "collected": 4586748,
-      "pending_checks": 278450,
-      "open": 125776,
+      "collected": 4716130,
+      "pending_checks": 157888,
+      "open": 116955,
       "open_invoices": [
         {
           "customer": "סיטונאות עבד",
@@ -306,13 +306,6 @@
           "open": 9251
         },
         {
-          "customer": "קשת יבוא ושיווק מזון בע\"מ",
-          "doc": 82390,
-          "date": "13/04/26",
-          "total": 8821,
-          "open": 8821
-        },
-        {
           "customer": "א.נ.א פתרונות מזון ועוד בע\"מ",
           "doc": 82499,
           "date": "23/04/26",
@@ -332,16 +325,23 @@
           "date": "08/04/26",
           "total": 12489,
           "open": 1388
+        },
+        {
+          "customer": "חברת מילחם",
+          "doc": 374,
+          "date": "12/04/26",
+          "total": 12803,
+          "open": 232
         }
       ],
-      "open_invoices_more": 2
+      "open_invoices_more": 1
     },
     {
       "key": "2026-03",
       "label": "מרץ 26",
       "sales": 5651517,
-      "collected": 5566139,
-      "pending_checks": 84582,
+      "collected": 5606917,
+      "pending_checks": 43805,
       "open": 796,
       "open_invoices": [
         {
