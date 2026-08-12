@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-11 07:12",
+  "generated_at": "2026-08-12 07:17",
   "months": [
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
-      "sales": 2756927,
-      "collected": 38807,
+      "sales": 2983565,
+      "collected": 178783,
       "pending_checks": 0,
-      "open": 2718120,
+      "open": 2804782,
       "open_invoices": [
         {
           "customer": "פרסקו חצבה 2006 בע\"מ",
@@ -15,13 +15,6 @@
           "date": "04/08/26",
           "total": 206665,
           "open": 206665
-        },
-        {
-          "customer": "jala food company",
-          "doc": 395,
-          "date": "10/08/26",
-          "total": 139976,
-          "open": 139976
         },
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
@@ -64,17 +57,24 @@
           "date": "02/08/26",
           "total": 67244,
           "open": 67244
+        },
+        {
+          "customer": "דבש יריב בע\"מ",
+          "doc": 83717,
+          "date": "05/08/26",
+          "total": 62304,
+          "open": 62304
         }
       ],
-      "open_invoices_more": 108
+      "open_invoices_more": 130
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 1189111,
-      "pending_checks": 307395,
-      "open": 6658134,
+      "collected": 1265681,
+      "pending_checks": 379435,
+      "open": 6509524,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -133,15 +133,15 @@
           "open": 83526
         }
       ],
-      "open_invoices_more": 296
+      "open_invoices_more": 293
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 2431501,
-      "pending_checks": 741467,
-      "open": 4031494,
+      "collected": 2431521,
+      "pending_checks": 853619,
+      "open": 3919322,
       "open_invoices": [
         {
           "customer": "Hatta Company for ice cream &food",
@@ -186,29 +186,29 @@
           "open": 57631
         },
         {
-          "customer": "אבשלום הראל ובניו 1992 בע\"מ- תמרה",
-          "doc": 82930,
-          "date": "01/06/26",
-          "total": 56109,
-          "open": 56109
+          "customer": "חברת מילחם",
+          "doc": 384,
+          "date": "24/06/26",
+          "total": 55696,
+          "open": 55696
         },
         {
-          "customer": "אבשלום הראל ובניו 1992 בע\"מ- תמרה",
-          "doc": 83061,
-          "date": "10/06/26",
-          "total": 56043,
-          "open": 56043
+          "customer": "יגיל אדר",
+          "doc": 83226,
+          "date": "28/06/26",
+          "total": 55399,
+          "open": 55399
         }
       ],
-      "open_invoices_more": 212
+      "open_invoices_more": 210
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 6349112,
+      "collected": 6405951,
       "pending_checks": 634403,
-      "open": 1295273,
+      "open": 1238434,
       "open_invoices": [
         {
           "customer": "גל דרור",
@@ -267,7 +267,7 @@
           "open": 53808
         }
       ],
-      "open_invoices_more": 54
+      "open_invoices_more": 49
     },
     {
       "key": "2026-04",
