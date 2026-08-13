@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-12 07:17",
+  "generated_at": "2026-08-13 07:07",
   "months": [
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
-      "sales": 2983565,
-      "collected": 178783,
-      "pending_checks": 0,
-      "open": 2804782,
+      "sales": 3472295,
+      "collected": 191527,
+      "pending_checks": 98719,
+      "open": 3182049,
       "open_invoices": [
         {
           "customer": "פרסקו חצבה 2006 בע\"מ",
@@ -66,37 +66,16 @@
           "open": 62304
         }
       ],
-      "open_invoices_more": 130
+      "open_invoices_more": 154
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 1265681,
-      "pending_checks": 379435,
-      "open": 6509524,
+      "collected": 1280761,
+      "pending_checks": 1166147,
+      "open": 5707732,
       "open_invoices": [
-        {
-          "customer": "מתוק וטעים בע\"מ",
-          "doc": 83504,
-          "date": "19/07/26",
-          "total": 219362,
-          "open": 219362
-        },
-        {
-          "customer": "מתוק וטעים בע\"מ",
-          "doc": 83502,
-          "date": "19/07/26",
-          "total": 172634,
-          "open": 172634
-        },
-        {
-          "customer": "מתוק וטעים בע\"מ",
-          "doc": 83503,
-          "date": "19/07/26",
-          "total": 161424,
-          "open": 161424
-        },
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
           "doc": 83301,
@@ -131,17 +110,38 @@
           "date": "15/07/26",
           "total": 83526,
           "open": 83526
+        },
+        {
+          "customer": "עבודי פירות קפואים",
+          "doc": 83559,
+          "date": "23/07/26",
+          "total": 80063,
+          "open": 80063
+        },
+        {
+          "customer": "שיווק והפצה בני דרום- אגודה חקלאית שיתופית בע\"מ",
+          "doc": 83399,
+          "date": "09/07/26",
+          "total": 75807,
+          "open": 75807
+        },
+        {
+          "customer": "קיי טי יבוא ושיווק בע\"מ",
+          "doc": 83420,
+          "date": "13/07/26",
+          "total": 69146,
+          "open": 69146
         }
       ],
-      "open_invoices_more": 293
+      "open_invoices_more": 280
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 2431521,
-      "pending_checks": 853619,
-      "open": 3919322,
+      "collected": 2473302,
+      "pending_checks": 830897,
+      "open": 3900263,
       "open_invoices": [
         {
           "customer": "Hatta Company for ice cream &food",
@@ -200,23 +200,16 @@
           "open": 55399
         }
       ],
-      "open_invoices_more": 210
+      "open_invoices_more": 209
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 6405951,
-      "pending_checks": 634403,
-      "open": 1238434,
+      "collected": 6514079,
+      "pending_checks": 625501,
+      "open": 1139208,
       "open_invoices": [
-        {
-          "customer": "גל דרור",
-          "doc": 82885,
-          "date": "25/05/26",
-          "total": 92996,
-          "open": 92996
-        },
         {
           "customer": "עבודי פירות קפואים",
           "doc": 82595,
@@ -265,9 +258,16 @@
           "date": "24/05/26",
           "total": 53808,
           "open": 53808
+        },
+        {
+          "customer": "עבודי פירות קפואים",
+          "doc": 82750,
+          "date": "12/05/26",
+          "total": 51873,
+          "open": 51873
         }
       ],
-      "open_invoices_more": 49
+      "open_invoices_more": 47
     },
     {
       "key": "2026-04",
