@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-13 07:07",
+  "generated_at": "2026-08-14 07:05",
   "months": [
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
-      "sales": 3472295,
-      "collected": 191527,
+      "sales": 3736184,
+      "collected": 426033,
       "pending_checks": 98719,
-      "open": 3182049,
+      "open": 3211432,
       "open_invoices": [
-        {
-          "customer": "פרסקו חצבה 2006 בע\"מ",
-          "doc": 83710,
-          "date": "04/08/26",
-          "total": 206665,
-          "open": 206665
-        },
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
           "doc": 83706,
           "date": "04/08/26",
           "total": 137144,
           "open": 137144
+        },
+        {
+          "customer": "ביכורי כל בע\"מ",
+          "doc": 83821,
+          "date": "13/08/26",
+          "total": 123900,
+          "open": 123900
         },
         {
           "customer": "ביכורי כל בע\"מ",
@@ -66,7 +66,7 @@
           "open": 62304
         }
       ],
-      "open_invoices_more": 154
+      "open_invoices_more": 155
     },
     {
       "key": "2026-07",
@@ -127,8 +127,8 @@
         },
         {
           "customer": "קיי טי יבוא ושיווק בע\"מ",
-          "doc": 83420,
-          "date": "13/07/26",
+          "doc": 83366,
+          "date": "08/07/26",
           "total": 69146,
           "open": 69146
         }
@@ -139,9 +139,9 @@
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 2473302,
-      "pending_checks": 830897,
-      "open": 3900263,
+      "collected": 2483537,
+      "pending_checks": 835205,
+      "open": 3885720,
       "open_invoices": [
         {
           "customer": "Hatta Company for ice cream &food",
@@ -200,15 +200,15 @@
           "open": 55399
         }
       ],
-      "open_invoices_more": 209
+      "open_invoices_more": 206
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 6514079,
-      "pending_checks": 625501,
-      "open": 1139208,
+      "collected": 6517966,
+      "pending_checks": 629593,
+      "open": 1131229,
       "open_invoices": [
         {
           "customer": "עבודי פירות קפואים",
@@ -267,7 +267,7 @@
           "open": 51873
         }
       ],
-      "open_invoices_more": 47
+      "open_invoices_more": 46
     },
     {
       "key": "2026-04",
