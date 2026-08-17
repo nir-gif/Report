@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-16 07:24",
+  "generated_at": "2026-08-17 07:15",
   "months": [
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
-      "sales": 3736184,
+      "sales": 4435644,
       "collected": 426033,
-      "pending_checks": 98719,
-      "open": 3211432,
+      "pending_checks": 114317,
+      "open": 3895294,
       "open_invoices": [
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
@@ -59,22 +59,22 @@
           "open": 67244
         },
         {
-          "customer": "דבש יריב בע\"מ",
-          "doc": 83717,
-          "date": "05/08/26",
-          "total": 62304,
-          "open": 62304
+          "customer": "אבשלום הראל ובניו 1992 בע\"מ- תמרה",
+          "doc": 83861,
+          "date": "16/08/26",
+          "total": 63433,
+          "open": 63433
         }
       ],
-      "open_invoices_more": 155
+      "open_invoices_more": 189
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
       "collected": 1280761,
-      "pending_checks": 1166147,
-      "open": 5707732,
+      "pending_checks": 1180086,
+      "open": 5693793,
       "open_invoices": [
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
@@ -127,21 +127,21 @@
         },
         {
           "customer": "קיי טי יבוא ושיווק בע\"מ",
-          "doc": 83366,
-          "date": "08/07/26",
+          "doc": 83420,
+          "date": "13/07/26",
           "total": 69146,
           "open": 69146
         }
       ],
-      "open_invoices_more": 280
+      "open_invoices_more": 279
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 2595515,
+      "collected": 2745126,
       "pending_checks": 723226,
-      "open": 3885720,
+      "open": 3736109,
       "open_invoices": [
         {
           "customer": "Hatta Company for ice cream &food",
@@ -200,36 +200,22 @@
           "open": 55399
         }
       ],
-      "open_invoices_more": 206
+      "open_invoices_more": 200
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 6581698,
+      "collected": 6912015,
       "pending_checks": 565861,
-      "open": 1131229,
+      "open": 800912,
       "open_invoices": [
-        {
-          "customer": "עבודי פירות קפואים",
-          "doc": 82595,
-          "date": "03/05/26",
-          "total": 85857,
-          "open": 85857
-        },
         {
           "customer": "טנדט אריה",
           "doc": 82815,
           "date": "18/05/26",
           "total": 132967,
           "open": 66483
-        },
-        {
-          "customer": "עבודי פירות קפואים",
-          "doc": 82598,
-          "date": "03/05/26",
-          "total": 61018,
-          "open": 61018
         },
         {
           "customer": "י. שבי שיווק מזון בע\"מ",
@@ -260,14 +246,28 @@
           "open": 53808
         },
         {
-          "customer": "עבודי פירות קפואים",
-          "doc": 82750,
+          "customer": "דיפ שיווק בע\"מ",
+          "doc": 82674,
+          "date": "06/05/26",
+          "total": 41713,
+          "open": 41713
+        },
+        {
+          "customer": "א.נ.א פתרונות מזון ועוד בע\"מ",
+          "doc": 82746,
           "date": "12/05/26",
-          "total": 51873,
-          "open": 51873
+          "total": 35117,
+          "open": 35117
+        },
+        {
+          "customer": "Hatta Company for ice cream &food",
+          "doc": 379,
+          "date": "26/05/26",
+          "total": 28237,
+          "open": 28237
         }
       ],
-      "open_invoices_more": 46
+      "open_invoices_more": 37
     },
     {
       "key": "2026-04",
