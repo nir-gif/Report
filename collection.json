@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-17 07:15",
+  "generated_at": "2026-08-18 07:19",
   "months": [
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
-      "sales": 4435644,
-      "collected": 426033,
+      "sales": 4686625,
+      "collected": 437663,
       "pending_checks": 114317,
-      "open": 3895294,
+      "open": 4134645,
       "open_invoices": [
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
@@ -29,6 +29,13 @@
           "date": "09/08/26",
           "total": 123900,
           "open": 123838
+        },
+        {
+          "customer": "עבודי פירות קפואים",
+          "doc": 83869,
+          "date": "17/08/26",
+          "total": 106943,
+          "open": 106943
         },
         {
           "customer": "עבודי פירות קפואים",
@@ -57,24 +64,17 @@
           "date": "02/08/26",
           "total": 67244,
           "open": 67244
-        },
-        {
-          "customer": "אבשלום הראל ובניו 1992 בע\"מ- תמרה",
-          "doc": 83861,
-          "date": "16/08/26",
-          "total": 63433,
-          "open": 63433
         }
       ],
-      "open_invoices_more": 189
+      "open_invoices_more": 192
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 1280761,
+      "collected": 1289523,
       "pending_checks": 1180086,
-      "open": 5693793,
+      "open": 5685031,
       "open_invoices": [
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
@@ -119,7 +119,7 @@
           "open": 80063
         },
         {
-          "customer": "שיווק והפצה בני דרום- אגודה חקלאית שיתופית בע\"מ",
+          "customer": "שיווק והפצה בני דרום",
           "doc": 83399,
           "date": "09/07/26",
           "total": 75807,
@@ -127,21 +127,21 @@
         },
         {
           "customer": "קיי טי יבוא ושיווק בע\"מ",
-          "doc": 83420,
-          "date": "13/07/26",
+          "doc": 83366,
+          "date": "08/07/26",
           "total": 69146,
           "open": 69146
         }
       ],
-      "open_invoices_more": 279
+      "open_invoices_more": 4
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 2745126,
+      "collected": 2752137,
       "pending_checks": 723226,
-      "open": 3736109,
+      "open": 3729098,
       "open_invoices": [
         {
           "customer": "Hatta Company for ice cream &food",
@@ -200,15 +200,15 @@
           "open": 55399
         }
       ],
-      "open_invoices_more": 200
+      "open_invoices_more": 4
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
       "collected": 6912015,
-      "pending_checks": 565861,
-      "open": 800912,
+      "pending_checks": 600978,
+      "open": 765795,
       "open_invoices": [
         {
           "customer": "טנדט אריה",
@@ -253,29 +253,29 @@
           "open": 41713
         },
         {
-          "customer": "א.נ.א פתרונות מזון ועוד בע\"מ",
-          "doc": 82746,
-          "date": "12/05/26",
-          "total": 35117,
-          "open": 35117
-        },
-        {
           "customer": "Hatta Company for ice cream &food",
           "doc": 379,
           "date": "26/05/26",
           "total": 28237,
           "open": 28237
+        },
+        {
+          "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
+          "doc": 82847,
+          "date": "20/05/26",
+          "total": 24575,
+          "open": 24575
         }
       ],
-      "open_invoices_more": 37
+      "open_invoices_more": 4
     },
     {
       "key": "2026-04",
       "label": "אפריל 26",
       "sales": 4990973,
       "collected": 4718322,
-      "pending_checks": 155697,
-      "open": 116955,
+      "pending_checks": 192903,
+      "open": 79749,
       "open_invoices": [
         {
           "customer": "סיטונאות עבד",
@@ -283,13 +283,6 @@
           "date": "26/04/26",
           "total": 41984,
           "open": 41984
-        },
-        {
-          "customer": "א.נ.א פתרונות מזון ועוד בע\"מ",
-          "doc": 82522,
-          "date": "26/04/26",
-          "total": 29276,
-          "open": 29276
         },
         {
           "customer": "תעשיות עוף והודו ברקת (2003) בע\"מ",
@@ -304,13 +297,6 @@
           "date": "23/04/26",
           "total": 9251,
           "open": 9251
-        },
-        {
-          "customer": "א.נ.א פתרונות מזון ועוד בע\"מ",
-          "doc": 82499,
-          "date": "23/04/26",
-          "total": 7930,
-          "open": 7930
         },
         {
           "customer": "קל מוצרי בידוד (2000) בע\"מ",
@@ -332,9 +318,16 @@
           "date": "12/04/26",
           "total": 12803,
           "open": 232
+        },
+        {
+          "customer": "חוות הקפואים בע\"מ",
+          "doc": 82384,
+          "date": "13/04/26",
+          "total": 16992,
+          "open": 90
         }
       ],
-      "open_invoices_more": 1
+      "open_invoices_more": 0
     },
     {
       "key": "2026-03",
@@ -628,7 +621,7 @@
           "open": 17809
         },
         {
-          "customer": "מילועוף אינטגרצית פטם אגודה שיתופית חקלאית בע\"מ",
+          "customer": "מילועוף אינטגרצית פטם",
           "doc": 78914,
           "date": "18/05/25",
           "total": 25276,
@@ -674,7 +667,7 @@
       "open": 1292,
       "open_invoices": [
         {
-          "customer": "מילועוף אינטגרצית פטם אגודה שיתופית חקלאית בע\"מ",
+          "customer": "מילועוף אינטגרצית פטם",
           "doc": 77949,
           "date": "27/02/25",
           "total": 27382,
@@ -692,7 +685,7 @@
       "open": 2905,
       "open_invoices": [
         {
-          "customer": "מילועוף אינטגרצית פטם אגודה שיתופית חקלאית בע\"מ",
+          "customer": "מילועוף אינטגרצית פטם",
           "doc": 77650,
           "date": "30/01/25",
           "total": 27382,
