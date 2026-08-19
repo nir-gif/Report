@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-18 07:19",
+  "generated_at": "2026-08-19 07:07",
   "months": [
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
-      "sales": 4686625,
-      "collected": 437663,
-      "pending_checks": 114317,
-      "open": 4134645,
+      "sales": 4923718,
+      "collected": 519957,
+      "pending_checks": 106989,
+      "open": 4296772,
       "open_invoices": [
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
@@ -66,15 +66,15 @@
           "open": 67244
         }
       ],
-      "open_invoices_more": 192
+      "open_invoices_more": 207
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 1289523,
-      "pending_checks": 1180086,
-      "open": 5685031,
+      "collected": 1374566,
+      "pending_checks": 1101415,
+      "open": 5678659,
       "open_invoices": [
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
@@ -119,7 +119,7 @@
           "open": 80063
         },
         {
-          "customer": "שיווק והפצה בני דרום",
+          "customer": "שיווק והפצה בני דרום- אגודה חקלאית שיתופית בע\"מ",
           "doc": 83399,
           "date": "09/07/26",
           "total": 75807,
@@ -133,15 +133,15 @@
           "open": 69146
         }
       ],
-      "open_invoices_more": 4
+      "open_invoices_more": 277
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 2752137,
-      "pending_checks": 723226,
-      "open": 3729098,
+      "collected": 2809290,
+      "pending_checks": 731657,
+      "open": 3663514,
       "open_invoices": [
         {
           "customer": "Hatta Company for ice cream &food",
@@ -200,15 +200,15 @@
           "open": 55399
         }
       ],
-      "open_invoices_more": 4
+      "open_invoices_more": 192
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 6912015,
+      "collected": 6918709,
       "pending_checks": 600978,
-      "open": 765795,
+      "open": 759101,
       "open_invoices": [
         {
           "customer": "טנדט אריה",
@@ -267,7 +267,7 @@
           "open": 24575
         }
       ],
-      "open_invoices_more": 4
+      "open_invoices_more": 34
     },
     {
       "key": "2026-04",
@@ -310,7 +310,7 @@
           "doc": 82302,
           "date": "08/04/26",
           "total": 12489,
-          "open": 1388
+          "open": 1387
         },
         {
           "customer": "חברת מילחם",
@@ -551,7 +551,7 @@
           "doc": 80074,
           "date": "27/08/25",
           "total": 7372,
-          "open": 969
+          "open": 968
         }
       ],
       "open_invoices_more": 0
@@ -578,8 +578,8 @@
           "customer": "Islam Alshelleh&partners company",
           "doc": 328,
           "date": "03/06/25",
-          "total": 17809,
-          "open": 17809
+          "total": 17808,
+          "open": 17808
         },
         {
           "customer": "לוטום - בנין ופיתוח (1997) בע\"מ",
@@ -603,25 +603,25 @@
           "customer": "Islam Alshelleh&partners company",
           "doc": 324,
           "date": "25/05/25",
-          "total": 17809,
-          "open": 17809
+          "total": 17808,
+          "open": 17808
         },
         {
           "customer": "Islam Alshelleh&partners company",
           "doc": 325,
           "date": "27/05/25",
-          "total": 17809,
-          "open": 17809
+          "total": 17808,
+          "open": 17808
         },
         {
           "customer": "Islam Alshelleh&partners company",
           "doc": 326,
           "date": "28/05/25",
-          "total": 17809,
-          "open": 17809
+          "total": 17808,
+          "open": 17808
         },
         {
-          "customer": "מילועוף אינטגרצית פטם",
+          "customer": "מילועוף אינטגרצית פטם אגודה שיתופית חקלאית בע\"מ",
           "doc": 78914,
           "date": "18/05/25",
           "total": 25276,
@@ -667,7 +667,7 @@
       "open": 1292,
       "open_invoices": [
         {
-          "customer": "מילועוף אינטגרצית פטם",
+          "customer": "מילועוף אינטגרצית פטם אגודה שיתופית חקלאית בע\"מ",
           "doc": 77949,
           "date": "27/02/25",
           "total": 27382,
@@ -685,7 +685,7 @@
       "open": 2905,
       "open_invoices": [
         {
-          "customer": "מילועוף אינטגרצית פטם",
+          "customer": "מילועוף אינטגרצית פטם אגודה שיתופית חקלאית בע\"מ",
           "doc": 77650,
           "date": "30/01/25",
           "total": 27382,
