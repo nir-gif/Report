@@ -1,14 +1,21 @@
 {
-  "generated_at": "2026-08-20 10:48",
+  "generated_at": "2026-08-21 07:04",
   "months": [
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
-      "sales": 5218524,
-      "collected": 704162,
+      "sales": 5831016,
+      "collected": 706648,
       "pending_checks": 111417,
-      "open": 4402945,
+      "open": 5012951,
       "open_invoices": [
+        {
+          "customer": "מתוק וטעים בע\"מ",
+          "doc": 83914,
+          "date": "20/08/26",
+          "total": 161424,
+          "open": 161424
+        },
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
           "doc": 83706,
@@ -57,16 +64,9 @@
           "date": "02/08/26",
           "total": 67244,
           "open": 67244
-        },
-        {
-          "customer": "אבשלום הראל ובניו 1992 בע\"מ- תמרה",
-          "doc": 83861,
-          "date": "16/08/26",
-          "total": 63433,
-          "open": 63433
         }
       ],
-      "open_invoices_more": 218
+      "open_invoices_more": 241
     },
     {
       "key": "2026-07",
@@ -139,8 +139,8 @@
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 2904448,
-      "pending_checks": 731657,
+      "collected": 2906005,
+      "pending_checks": 730101,
       "open": 3568356,
       "open_invoices": [
         {
@@ -206,8 +206,8 @@
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 6960644,
-      "pending_checks": 591827,
+      "collected": 6962533,
+      "pending_checks": 589938,
       "open": 726317,
       "open_invoices": [
         {
@@ -634,8 +634,8 @@
       "key": "2025-04",
       "label": "אפריל 25",
       "sales": 6858253,
-      "collected": 6857583,
-      "pending_checks": 660,
+      "collected": 6858243,
+      "pending_checks": 0,
       "open": 10,
       "open_invoices": [
         {
@@ -652,8 +652,8 @@
       "key": "2025-03",
       "label": "מרץ 25",
       "sales": 7586096,
-      "collected": 7584082,
-      "pending_checks": 2014,
+      "collected": 7586096,
+      "pending_checks": 0,
       "open": 0,
       "open_invoices": [],
       "open_invoices_more": 0
