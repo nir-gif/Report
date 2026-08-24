@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-23 07:05",
+  "generated_at": "2026-08-24 07:04",
   "months": [
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
-      "sales": 5831016,
-      "collected": 706648,
+      "sales": 5874314,
+      "collected": 754812,
       "pending_checks": 111417,
-      "open": 5012951,
+      "open": 5008085,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -66,15 +66,15 @@
           "open": 67244
         }
       ],
-      "open_invoices_more": 241
+      "open_invoices_more": 243
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 1516366,
+      "collected": 1606321,
       "pending_checks": 1050340,
-      "open": 5587934,
+      "open": 5497979,
       "open_invoices": [
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
@@ -96,13 +96,6 @@
           "date": "14/07/26",
           "total": 102365,
           "open": 102365
-        },
-        {
-          "customer": "מרב - מזון כל בע\"מ",
-          "doc": 83629,
-          "date": "30/07/26",
-          "total": 89955,
-          "open": 89955
         },
         {
           "customer": "גלידן איכות בע\"מ",
@@ -131,17 +124,24 @@
           "date": "08/07/26",
           "total": 69146,
           "open": 69146
+        },
+        {
+          "customer": "קיי טי יבוא ושיווק בע\"מ",
+          "doc": 83367,
+          "date": "08/07/26",
+          "total": 69146,
+          "open": 69146
         }
       ],
-      "open_invoices_more": 276
+      "open_invoices_more": 275
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 2927316,
+      "collected": 2942981,
       "pending_checks": 708789,
-      "open": 3568356,
+      "open": 3552691,
       "open_invoices": [
         {
           "customer": "אלי אברהמי שיווק בע\"מ",
@@ -200,15 +200,15 @@
           "open": 53808
         }
       ],
-      "open_invoices_more": 188
+      "open_invoices_more": 187
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
       "collected": 6971184,
-      "pending_checks": 581287,
-      "open": 726317,
+      "pending_checks": 623000,
+      "open": 684604,
       "open_invoices": [
         {
           "customer": "טנדט אריה",
@@ -246,13 +246,6 @@
           "open": 53808
         },
         {
-          "customer": "דיפ שיווק בע\"מ",
-          "doc": 82674,
-          "date": "06/05/26",
-          "total": 41713,
-          "open": 41713
-        },
-        {
           "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
           "doc": 82847,
           "date": "20/05/26",
@@ -265,9 +258,16 @@
           "date": "31/05/26",
           "total": 22684,
           "open": 22684
+        },
+        {
+          "customer": "עמיר שיווק והשקעות בחקלאות בע\"מ",
+          "doc": 82806,
+          "date": "18/05/26",
+          "total": 21240,
+          "open": 21240
         }
       ],
-      "open_invoices_more": 32
+      "open_invoices_more": 31
     },
     {
       "key": "2026-04",
@@ -391,8 +391,8 @@
       "label": "ינואר 26",
       "sales": 5436727,
       "collected": 5435005,
-      "pending_checks": 0,
-      "open": 1722,
+      "pending_checks": 283,
+      "open": 1439,
       "open_invoices": [
         {
           "customer": "גדרון תעשיות בע\"מ",
@@ -400,13 +400,6 @@
           "date": "12/01/26",
           "total": 1156,
           "open": 1156
-        },
-        {
-          "customer": "דיפ שיווק בע\"מ",
-          "doc": 81542,
-          "date": "13/01/26",
-          "total": 283,
-          "open": 283
         },
         {
           "customer": "צייזי שיווק והפצה בע\"מ",
