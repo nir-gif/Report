@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-24 07:04",
+  "generated_at": "2026-08-25 07:11",
   "months": [
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
-      "sales": 5874314,
-      "collected": 754812,
+      "sales": 6296547,
+      "collected": 763412,
       "pending_checks": 111417,
-      "open": 5008085,
+      "open": 5421718,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -38,6 +38,13 @@
           "open": 106943
         },
         {
+          "customer": "מתוק וטעים בע\"מ",
+          "doc": 83939,
+          "date": "24/08/26",
+          "total": 86317,
+          "open": 86317
+        },
+        {
           "customer": "עבודי פירות קפואים",
           "doc": 83664,
           "date": "02/08/26",
@@ -57,24 +64,17 @@
           "date": "02/08/26",
           "total": 67645,
           "open": 67645
-        },
-        {
-          "customer": "י.מ.יעקובי סיטונאי מזון בע\"מ",
-          "doc": 83665,
-          "date": "02/08/26",
-          "total": 67244,
-          "open": 67244
         }
       ],
-      "open_invoices_more": 243
+      "open_invoices_more": 258
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 1606321,
+      "collected": 1637372,
       "pending_checks": 1050340,
-      "open": 5497979,
+      "open": 5466928,
       "open_invoices": [
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
@@ -133,15 +133,15 @@
           "open": 69146
         }
       ],
-      "open_invoices_more": 275
+      "open_invoices_more": 272
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 2942981,
-      "pending_checks": 708789,
-      "open": 3552691,
+      "collected": 2944885,
+      "pending_checks": 727507,
+      "open": 3532069,
       "open_invoices": [
         {
           "customer": "אלי אברהמי שיווק בע\"מ",
@@ -200,7 +200,7 @@
           "open": 53808
         }
       ],
-      "open_invoices_more": 187
+      "open_invoices_more": 183
     },
     {
       "key": "2026-05",
