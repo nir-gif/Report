@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-26 07:12",
+  "generated_at": "2026-08-27 07:05",
   "months": [
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
-      "sales": 6728801,
-      "collected": 786011,
+      "sales": 6744103,
+      "collected": 923213,
       "pending_checks": 111417,
-      "open": 5831373,
+      "open": 5709473,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -22,13 +22,6 @@
           "date": "04/08/26",
           "total": 137144,
           "open": 137144
-        },
-        {
-          "customer": "ביכורי כל בע\"מ",
-          "doc": 83821,
-          "date": "13/08/26",
-          "total": 123900,
-          "open": 123838
         },
         {
           "customer": "עבודי פירות קפואים",
@@ -64,17 +57,24 @@
           "date": "25/08/26",
           "total": 72150,
           "open": 72150
+        },
+        {
+          "customer": "אבשלום הראל ובניו 1992 בע\"מ- תמרה",
+          "doc": 83661,
+          "date": "02/08/26",
+          "total": 67645,
+          "open": 67645
         }
       ],
-      "open_invoices_more": 274
+      "open_invoices_more": 276
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 1660298,
+      "collected": 1683406,
       "pending_checks": 1050340,
-      "open": 5444002,
+      "open": 5420894,
       "open_invoices": [
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
@@ -120,28 +120,28 @@
         },
         {
           "customer": "קיי טי יבוא ושיווק בע\"מ",
-          "doc": 83366,
-          "date": "08/07/26",
+          "doc": 83420,
+          "date": "13/07/26",
           "total": 69146,
           "open": 69146
         },
         {
           "customer": "קיי טי יבוא ושיווק בע\"מ",
-          "doc": 83367,
+          "doc": 83366,
           "date": "08/07/26",
           "total": 69146,
           "open": 69146
         }
       ],
-      "open_invoices_more": 270
+      "open_invoices_more": 268
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 3039454,
+      "collected": 3095143,
       "pending_checks": 665686,
-      "open": 3499321,
+      "open": 3443632,
       "open_invoices": [
         {
           "customer": "אלי אברהמי שיווק בע\"מ",
@@ -179,13 +179,6 @@
           "open": 57631
         },
         {
-          "customer": "חברת מילחם",
-          "doc": 384,
-          "date": "24/06/26",
-          "total": 55696,
-          "open": 55696
-        },
-        {
           "customer": "יגיל אדר",
           "doc": 83226,
           "date": "28/06/26",
@@ -198,6 +191,13 @@
           "date": "21/06/26",
           "total": 53808,
           "open": 53808
+        },
+        {
+          "customer": "עץ פרי אהבה מהטבע בע\"מ",
+          "doc": 83153,
+          "date": "18/06/26",
+          "total": 49914,
+          "open": 49914
         }
       ],
       "open_invoices_more": 179
@@ -206,9 +206,9 @@
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 7116239,
+      "collected": 7131850,
       "pending_checks": 544772,
-      "open": 617777,
+      "open": 602166,
       "open_invoices": [
         {
           "customer": "טנדט אריה",
@@ -261,13 +261,13 @@
         },
         {
           "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
-          "doc": 82764,
-          "date": "13/05/26",
+          "doc": 82605,
+          "date": "03/05/26",
           "total": 18904,
           "open": 18904
         }
       ],
-      "open_invoices_more": 29
+      "open_invoices_more": 28
     },
     {
       "key": "2026-04",
