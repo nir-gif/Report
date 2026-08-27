@@ -1,14 +1,21 @@
 {
-  "generated_at": "2026-08-27 07:05",
+  "generated_at": "2026-08-27 16:02",
   "months": [
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
-      "sales": 6744103,
-      "collected": 923213,
+      "sales": 7188318,
+      "collected": 917070,
       "pending_checks": 111417,
-      "open": 5709473,
+      "open": 6159831,
       "open_invoices": [
+        {
+          "customer": "קפוא-זן (2024) בע\"מ",
+          "doc": 83978,
+          "date": "27/08/26",
+          "total": 290752,
+          "open": 290752
+        },
         {
           "customer": "מתוק וטעים בע\"מ",
           "doc": 83914,
@@ -57,32 +64,18 @@
           "date": "25/08/26",
           "total": 72150,
           "open": 72150
-        },
-        {
-          "customer": "אבשלום הראל ובניו 1992 בע\"מ- תמרה",
-          "doc": 83661,
-          "date": "02/08/26",
-          "total": 67645,
-          "open": 67645
         }
       ],
-      "open_invoices_more": 276
+      "open_invoices_more": 290
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 1683406,
-      "pending_checks": 1050340,
-      "open": 5420894,
+      "collected": 1735195,
+      "pending_checks": 1193085,
+      "open": 5226360,
       "open_invoices": [
-        {
-          "customer": "א.מ שרון שיווק (2014) בע\"מ",
-          "doc": 83301,
-          "date": "02/07/26",
-          "total": 138484,
-          "open": 138484
-        },
         {
           "customer": "ספקטור שי",
           "doc": 83289,
@@ -120,28 +113,35 @@
         },
         {
           "customer": "קיי טי יבוא ושיווק בע\"מ",
-          "doc": 83420,
-          "date": "13/07/26",
+          "doc": 83366,
+          "date": "08/07/26",
           "total": 69146,
           "open": 69146
         },
         {
           "customer": "קיי טי יבוא ושיווק בע\"מ",
-          "doc": 83366,
+          "doc": 83367,
           "date": "08/07/26",
+          "total": 69146,
+          "open": 69146
+        },
+        {
+          "customer": "קיי טי יבוא ושיווק בע\"מ",
+          "doc": 83420,
+          "date": "13/07/26",
           "total": 69146,
           "open": 69146
         }
       ],
-      "open_invoices_more": 268
+      "open_invoices_more": 265
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
       "collected": 3095143,
-      "pending_checks": 665686,
-      "open": 3443632,
+      "pending_checks": 689286,
+      "open": 3420032,
       "open_invoices": [
         {
           "customer": "אלי אברהמי שיווק בע\"מ",
@@ -200,7 +200,7 @@
           "open": 49914
         }
       ],
-      "open_invoices_more": 179
+      "open_invoices_more": 178
     },
     {
       "key": "2026-05",
@@ -261,8 +261,8 @@
         },
         {
           "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
-          "doc": 82605,
-          "date": "03/05/26",
+          "doc": 82849,
+          "date": "20/05/26",
           "total": 18904,
           "open": 18904
         }
