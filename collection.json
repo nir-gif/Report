@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-30 07:06",
+  "generated_at": "2026-08-30 12:25",
   "months": [
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
-      "sales": 7188318,
-      "collected": 917070,
-      "pending_checks": 111417,
-      "open": 6159831,
+      "sales": 7321962,
+      "collected": 924433,
+      "pending_checks": 115478,
+      "open": 6282051,
       "open_invoices": [
         {
           "customer": "קפוא-זן (2024) בע\"מ",
@@ -66,15 +66,15 @@
           "open": 72150
         }
       ],
-      "open_invoices_more": 290
+      "open_invoices_more": 297
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
       "collected": 1735195,
-      "pending_checks": 1193085,
-      "open": 5226360,
+      "pending_checks": 1198513,
+      "open": 5220932,
       "open_invoices": [
         {
           "customer": "ספקטור שי",
@@ -133,15 +133,15 @@
           "open": 69146
         }
       ],
-      "open_invoices_more": 265
+      "open_invoices_more": 264
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 3095143,
+      "collected": 3098959,
       "pending_checks": 689286,
-      "open": 3420032,
+      "open": 3416216,
       "open_invoices": [
         {
           "customer": "אלי אברהמי שיווק בע\"מ",
@@ -200,7 +200,7 @@
           "open": 49914
         }
       ],
-      "open_invoices_more": 178
+      "open_invoices_more": 177
     },
     {
       "key": "2026-05",
