@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-30 12:25",
+  "generated_at": "2026-08-31 07:07",
   "months": [
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
-      "sales": 7321962,
-      "collected": 924433,
-      "pending_checks": 115478,
-      "open": 6282051,
+      "sales": 7451807,
+      "collected": 932417,
+      "pending_checks": 105606,
+      "open": 6413784,
       "open_invoices": [
         {
           "customer": "קפוא-זן (2024) בע\"מ",
@@ -66,14 +66,14 @@
           "open": 72150
         }
       ],
-      "open_invoices_more": 297
+      "open_invoices_more": 303
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 1735195,
-      "pending_checks": 1198513,
+      "collected": 1813866,
+      "pending_checks": 1119842,
       "open": 5220932,
       "open_invoices": [
         {
@@ -139,8 +139,8 @@
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 3098959,
-      "pending_checks": 689286,
+      "collected": 3107554,
+      "pending_checks": 680691,
       "open": 3416216,
       "open_invoices": [
         {
@@ -206,8 +206,8 @@
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 7131850,
-      "pending_checks": 544772,
+      "collected": 7142282,
+      "pending_checks": 534340,
       "open": 602166,
       "open_invoices": [
         {
@@ -261,8 +261,8 @@
         },
         {
           "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
-          "doc": 82849,
-          "date": "20/05/26",
+          "doc": 82764,
+          "date": "13/05/26",
           "total": 18904,
           "open": 18904
         }
