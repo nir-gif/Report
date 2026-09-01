@@ -1,13 +1,80 @@
 {
-  "generated_at": "2026-09-01 07:06",
+  "generated_at": "2026-09-01 10:30",
   "months": [
+    {
+      "key": "2026-09",
+      "label": "ספטמבר 26",
+      "sales": 361064,
+      "collected": 0,
+      "pending_checks": 0,
+      "open": 361064,
+      "open_invoices": [
+        {
+          "customer": "א.ג. טייסטי פוד בע\"מ",
+          "doc": 84041,
+          "date": "01/09/26",
+          "total": 130626,
+          "open": 130626
+        },
+        {
+          "customer": "שיווק והפצה בני דרום- אגודה חקלאית שיתופית בע\"מ",
+          "doc": 84032,
+          "date": "01/09/26",
+          "total": 66609,
+          "open": 66609
+        },
+        {
+          "customer": "פוליבה בע\"מ",
+          "doc": 84045,
+          "date": "01/09/26",
+          "total": 34940,
+          "open": 34940
+        },
+        {
+          "customer": "סימון שבתאי",
+          "doc": 84040,
+          "date": "01/09/26",
+          "total": 24426,
+          "open": 24426
+        },
+        {
+          "customer": "זו הארץ בע\"מ",
+          "doc": 84028,
+          "date": "01/09/26",
+          "total": 22979,
+          "open": 22979
+        },
+        {
+          "customer": "פסטה ביגה בע\"מ",
+          "doc": 84044,
+          "date": "01/09/26",
+          "total": 15835,
+          "open": 15835
+        },
+        {
+          "customer": "אם החיטה בע\"מ (הלפרין)",
+          "doc": 84026,
+          "date": "01/09/26",
+          "total": 15718,
+          "open": 15718
+        },
+        {
+          "customer": "עץ פרי אהבה מהטבע בע\"מ",
+          "doc": 84043,
+          "date": "01/09/26",
+          "total": 13027,
+          "open": 13027
+        }
+      ],
+      "open_invoices_more": 21
+    },
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
       "sales": 7941711,
-      "collected": 935019,
+      "collected": 937476,
       "pending_checks": 146146,
-      "open": 6860546,
+      "open": 6858089,
       "open_invoices": [
         {
           "customer": "קפוא-זן (2024) בע\"מ",
@@ -66,15 +133,15 @@
           "open": 75727
         }
       ],
-      "open_invoices_more": 315
+      "open_invoices_more": 314
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 1864942,
+      "collected": 1871456,
       "pending_checks": 1068766,
-      "open": 5220932,
+      "open": 5214418,
       "open_invoices": [
         {
           "customer": "ספקטור שי",
@@ -113,6 +180,13 @@
         },
         {
           "customer": "קיי טי יבוא ושיווק בע\"מ",
+          "doc": 83420,
+          "date": "13/07/26",
+          "total": 69146,
+          "open": 69146
+        },
+        {
+          "customer": "קיי טי יבוא ושיווק בע\"מ",
           "doc": 83366,
           "date": "08/07/26",
           "total": 69146,
@@ -124,24 +198,17 @@
           "date": "08/07/26",
           "total": 69146,
           "open": 69146
-        },
-        {
-          "customer": "קיי טי יבוא ושיווק בע\"מ",
-          "doc": 83420,
-          "date": "13/07/26",
-          "total": 69146,
-          "open": 69146
         }
       ],
-      "open_invoices_more": 264
+      "open_invoices_more": 263
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 3317856,
+      "collected": 3623636,
       "pending_checks": 541659,
-      "open": 3344946,
+      "open": 3039166,
       "open_invoices": [
         {
           "customer": "אלי אברהמי שיווק בע\"מ",
@@ -200,15 +267,15 @@
           "open": 47979
         }
       ],
-      "open_invoices_more": 175
+      "open_invoices_more": 152
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 7341336,
+      "collected": 7345022,
       "pending_checks": 355219,
-      "open": 582233,
+      "open": 578547,
       "open_invoices": [
         {
           "customer": "טנדט אריה",
@@ -267,15 +334,15 @@
           "open": 18904
         }
       ],
-      "open_invoices_more": 26
+      "open_invoices_more": 25
     },
     {
       "key": "2026-04",
       "label": "אפריל 26",
       "sales": 4990973,
-      "collected": 4758359,
+      "collected": 4782619,
       "pending_checks": 154253,
-      "open": 78361,
+      "open": 54101,
       "open_invoices": [
         {
           "customer": "סיטונאות עבד",
@@ -283,13 +350,6 @@
           "date": "26/04/26",
           "total": 41984,
           "open": 41984
-        },
-        {
-          "customer": "תעשיות עוף והודו ברקת (2003) בע\"מ",
-          "doc": 82560,
-          "date": "28/04/26",
-          "total": 24260,
-          "open": 24260
         },
         {
           "customer": "אדמה אגן בע\"מ",
