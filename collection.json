@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-03 07:07",
+  "generated_at": "2026-09-04 07:07",
   "months": [
     {
       "key": "2026-09",
       "label": "ספטמבר 26",
-      "sales": 1318381,
-      "collected": 1830,
+      "sales": 1411445,
+      "collected": 28282,
       "pending_checks": 0,
-      "open": 1316551,
+      "open": 1383163,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -52,21 +52,21 @@
           "open": 58363
         },
         {
+          "customer": "אם החיטה בע\"מ (הלפרין)",
+          "doc": 84092,
+          "date": "03/09/26",
+          "total": 57631,
+          "open": 57631
+        },
+        {
           "customer": "עבודי פירות קפואים",
           "doc": 84048,
           "date": "01/09/26",
           "total": 57407,
           "open": 57407
-        },
-        {
-          "customer": "דבש יריב בע\"מ",
-          "doc": 84081,
-          "date": "02/09/26",
-          "total": 57112,
-          "open": 57112
         }
       ],
-      "open_invoices_more": 60
+      "open_invoices_more": 64
     },
     {
       "key": "2026-08",
@@ -139,9 +139,9 @@
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 1883995,
+      "collected": 1943423,
       "pending_checks": 1064505,
-      "open": 5206140,
+      "open": 5146712,
       "open_invoices": [
         {
           "customer": "ספקטור שי",
@@ -200,15 +200,15 @@
           "open": 69146
         }
       ],
-      "open_invoices_more": 261
+      "open_invoices_more": 259
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 3791756,
+      "collected": 3860391,
       "pending_checks": 540011,
-      "open": 2872694,
+      "open": 2804059,
       "open_invoices": [
         {
           "customer": "אלי אברהמי שיווק בע\"מ",
@@ -267,15 +267,15 @@
           "open": 40441
         }
       ],
-      "open_invoices_more": 142
+      "open_invoices_more": 138
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 7760487,
+      "collected": 7764274,
       "pending_checks": 352910,
-      "open": 165391,
+      "open": 161604,
       "open_invoices": [
         {
           "customer": "טנדט אריה",
@@ -320,21 +320,21 @@
           "open": 4408
         },
         {
-          "customer": "הרמן פרוג'קט (צ.ח) שיווק והחזקות בע\"מ",
-          "doc": 82797,
-          "date": "17/05/26",
-          "total": 3787,
-          "open": 3787
-        },
-        {
           "customer": "סטרוקם בע\"מ",
           "doc": 82869,
           "date": "24/05/26",
           "total": 2544,
           "open": 2544
+        },
+        {
+          "customer": "נווה התבלין בע\"מ",
+          "doc": 82668,
+          "date": "05/05/26",
+          "total": 2544,
+          "open": 2544
         }
       ],
-      "open_invoices_more": 4
+      "open_invoices_more": 3
     },
     {
       "key": "2026-04",
