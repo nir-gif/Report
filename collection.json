@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05 07:09",
+  "generated_at": "2026-09-06 07:04",
   "months": [
     {
       "key": "2026-09",
@@ -139,8 +139,8 @@
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 1943423,
-      "pending_checks": 1064505,
+      "collected": 2042248,
+      "pending_checks": 965680,
       "open": 5146712,
       "open_invoices": [
         {
@@ -206,8 +206,8 @@
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 3860391,
-      "pending_checks": 540011,
+      "collected": 4128837,
+      "pending_checks": 271565,
       "open": 2804059,
       "open_invoices": [
         {
@@ -273,8 +273,8 @@
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 7764274,
-      "pending_checks": 352910,
+      "collected": 7832098,
+      "pending_checks": 285086,
       "open": 161604,
       "open_invoices": [
         {
@@ -320,16 +320,16 @@
           "open": 4408
         },
         {
-          "customer": "נווה התבלין בע\"מ",
-          "doc": 82668,
-          "date": "05/05/26",
+          "customer": "סטרוקם בע\"מ",
+          "doc": 82869,
+          "date": "24/05/26",
           "total": 2544,
           "open": 2544
         },
         {
           "customer": "נווה התבלין בע\"מ",
-          "doc": 82829,
-          "date": "19/05/26",
+          "doc": 82668,
+          "date": "05/05/26",
           "total": 2544,
           "open": 2544
         }
@@ -340,8 +340,8 @@
       "key": "2026-04",
       "label": "אפריל 26",
       "sales": 4990973,
-      "collected": 4782619,
-      "pending_checks": 154253,
+      "collected": 4784810,
+      "pending_checks": 152062,
       "open": 54101,
       "open_invoices": [
         {
