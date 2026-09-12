@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11 07:14",
+  "generated_at": "2026-09-12 07:13",
   "months": [
     {
       "key": "2026-09",
@@ -66,7 +66,7 @@
           "open": 59507
         }
       ],
-      "open_invoices_more": 129
+      "open_invoices_more": 12
     },
     {
       "key": "2026-08",
@@ -133,7 +133,7 @@
           "open": 67645
         }
       ],
-      "open_invoices_more": 285
+      "open_invoices_more": 12
     },
     {
       "key": "2026-07",
@@ -200,7 +200,7 @@
           "open": 57631
         }
       ],
-      "open_invoices_more": 231
+      "open_invoices_more": 12
     },
     {
       "key": "2026-06",
@@ -267,14 +267,14 @@
           "open": 39082
         }
       ],
-      "open_invoices_more": 67
+      "open_invoices_more": 12
     },
     {
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 7982814,
-      "pending_checks": 231067,
+      "collected": 7994710,
+      "pending_checks": 219171,
       "open": 64907,
       "open_invoices": [
         {
