@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-15 07:12",
+  "generated_at": "2026-09-16 07:10",
   "months": [
     {
       "key": "2026-09",
       "label": "ספטמבר 26",
-      "sales": 3790589,
-      "collected": 738872,
+      "sales": 4014903,
+      "collected": 811116,
       "pending_checks": 4981,
-      "open": 3046736,
+      "open": 3198806,
       "open_invoices": [
         {
           "customer": "שחל - חומרים לבנין בע\"מ",
@@ -59,21 +59,21 @@
           "open": 65402
         },
         {
-          "customer": "רוני רג'ואן ושות' 1986 בע\"מ",
-          "doc": 84157,
-          "date": "09/09/26",
-          "total": 59507,
-          "open": 59507
+          "customer": "פרי הבוסתן בע\"מ",
+          "doc": 84121,
+          "date": "07/09/26",
+          "total": 59000,
+          "open": 59000
         }
       ],
-      "open_invoices_more": 147
+      "open_invoices_more": 155
     },
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
       "sales": 7941711,
-      "collected": 1567294,
-      "pending_checks": 280360,
+      "collected": 1577166,
+      "pending_checks": 270488,
       "open": 6094057,
       "open_invoices": [
         {
@@ -139,9 +139,9 @@
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 2823646,
-      "pending_checks": 950036,
-      "open": 4380958,
+      "collected": 3025710,
+      "pending_checks": 871365,
+      "open": 4257566,
       "open_invoices": [
         {
           "customer": "ספקטור שי",
@@ -200,15 +200,15 @@
           "open": 57631
         }
       ],
-      "open_invoices_more": 230
+      "open_invoices_more": 224
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 5746535,
-      "pending_checks": 391325,
-      "open": 1066601,
+      "collected": 5780079,
+      "pending_checks": 396871,
+      "open": 1027511,
       "open_invoices": [
         {
           "customer": "י.מ.יעקובי סיטונאי מזון בע\"מ",
@@ -267,7 +267,7 @@
           "open": 31064
         }
       ],
-      "open_invoices_more": 58
+      "open_invoices_more": 49
     },
     {
       "key": "2026-05",
