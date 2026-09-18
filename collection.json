@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-17 07:14",
+  "generated_at": "2026-09-18 07:12",
   "months": [
     {
       "key": "2026-09",
       "label": "ספטמבר 26",
-      "sales": 4262879,
+      "sales": 4541740,
       "collected": 822894,
       "pending_checks": 4981,
-      "open": 3435004,
+      "open": 3713865,
       "open_invoices": [
         {
           "customer": "שחל - חומרים לבנין בע\"מ",
@@ -66,15 +66,15 @@
           "open": 59000
         }
       ],
-      "open_invoices_more": 169
+      "open_invoices_more": 181
     },
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
       "sales": 7941711,
-      "collected": 1579835,
-      "pending_checks": 267944,
-      "open": 6093932,
+      "collected": 1584263,
+      "pending_checks": 273312,
+      "open": 6084136,
       "open_invoices": [
         {
           "customer": "קפוא-זן (2024) בע\"מ",
@@ -133,15 +133,15 @@
           "open": 67645
         }
       ],
-      "open_invoices_more": 285
+      "open_invoices_more": 282
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 3025730,
-      "pending_checks": 871365,
-      "open": 4257546,
+      "collected": 3058915,
+      "pending_checks": 880345,
+      "open": 4215381,
       "open_invoices": [
         {
           "customer": "ספקטור שי",
@@ -200,15 +200,15 @@
           "open": 57631
         }
       ],
-      "open_invoices_more": 224
+      "open_invoices_more": 216
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
       "collected": 6073843,
-      "pending_checks": 396871,
-      "open": 733747,
+      "pending_checks": 401613,
+      "open": 729005,
       "open_invoices": [
         {
           "customer": "י.מ.יעקובי סיטונאי מזון בע\"מ",
@@ -267,7 +267,7 @@
           "open": 18904
         }
       ],
-      "open_invoices_more": 38
+      "open_invoices_more": 36
     },
     {
       "key": "2026-05",
