@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19 07:15",
+  "generated_at": "2026-09-20 07:04",
   "months": [
     {
       "key": "2026-09",
@@ -193,9 +193,9 @@
           "open": 65354
         },
         {
-          "customer": "אם החיטה בע\"מ (הלפרין)",
-          "doc": 83276,
-          "date": "01/07/26",
+          "customer": "שפיר תעשיות בע\"מ",
+          "doc": 83344,
+          "date": "06/07/26",
           "total": 57631,
           "open": 57631
         }
@@ -206,8 +206,8 @@
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 6078169,
-      "pending_checks": 397287,
+      "collected": 6092587,
+      "pending_checks": 382869,
       "open": 729005,
       "open_invoices": [
         {
@@ -254,15 +254,15 @@
         },
         {
           "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
-          "doc": 83001,
-          "date": "07/06/26",
+          "doc": 83098,
+          "date": "15/06/26",
           "total": 18904,
           "open": 18904
         },
         {
           "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
-          "doc": 83004,
-          "date": "07/06/26",
+          "doc": 83104,
+          "date": "15/06/26",
           "total": 18904,
           "open": 18904
         }
@@ -273,8 +273,8 @@
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 7999726,
-      "pending_checks": 214155,
+      "collected": 8100928,
+      "pending_checks": 112953,
       "open": 64907,
       "open_invoices": [
         {
@@ -358,8 +358,8 @@
       "key": "2026-03",
       "label": "מרץ 26",
       "sales": 5651517,
-      "collected": 5648037,
-      "pending_checks": 2684,
+      "collected": 5649379,
+      "pending_checks": 1342,
       "open": 796,
       "open_invoices": [
         {
