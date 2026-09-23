@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-22 07:17",
+  "generated_at": "2026-09-23 04:18",
   "months": [
     {
       "key": "2026-09",
       "label": "ספטמבר 26",
-      "sales": 4541740,
-      "collected": 822894,
+      "sales": 4793178,
+      "collected": 838060,
       "pending_checks": 4981,
-      "open": 3713865,
+      "open": 3950137,
       "open_invoices": [
         {
           "customer": "שחל - חומרים לבנין בע\"מ",
@@ -45,6 +45,13 @@
           "open": 82866
         },
         {
+          "customer": "Hatta Company for ice cream &food",
+          "doc": 402,
+          "date": "22/09/26",
+          "total": 67201,
+          "open": 67201
+        },
+        {
           "customer": "שיווק והפצה בני דרום- אגודה חקלאית שיתופית בע\"מ",
           "doc": 84032,
           "date": "01/09/26",
@@ -57,24 +64,17 @@
           "date": "01/09/26",
           "total": 65402,
           "open": 65402
-        },
-        {
-          "customer": "פרי הבוסתן בע\"מ",
-          "doc": 84121,
-          "date": "07/09/26",
-          "total": 59000,
-          "open": 59000
         }
       ],
-      "open_invoices_more": 181
+      "open_invoices_more": 205
     },
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
       "sales": 7941711,
-      "collected": 1584263,
-      "pending_checks": 273312,
-      "open": 6084136,
+      "collected": 1742460,
+      "pending_checks": 263441,
+      "open": 5935810,
       "open_invoices": [
         {
           "customer": "קפוא-זן (2024) בע\"מ",
@@ -89,13 +89,6 @@
           "date": "04/08/26",
           "total": 137144,
           "open": 137144
-        },
-        {
-          "customer": "ביכורי כל בע\"מ",
-          "doc": 84011,
-          "date": "31/08/26",
-          "total": 123900,
-          "open": 123900
         },
         {
           "customer": "עבודי פירות קפואים",
@@ -131,16 +124,23 @@
           "date": "02/08/26",
           "total": 67645,
           "open": 67645
+        },
+        {
+          "customer": "י.מ.יעקובי סיטונאי מזון בע\"מ",
+          "doc": 83665,
+          "date": "02/08/26",
+          "total": 67244,
+          "open": 67119
         }
       ],
-      "open_invoices_more": 282
+      "open_invoices_more": 280
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 3063240,
-      "pending_checks": 876019,
+      "collected": 3141911,
+      "pending_checks": 797348,
       "open": 4215381,
       "open_invoices": [
         {
@@ -193,9 +193,9 @@
           "open": 65354
         },
         {
-          "customer": "אם החיטה בע\"מ (הלפרין)",
-          "doc": 83276,
-          "date": "01/07/26",
+          "customer": "שפיר תעשיות בע\"מ",
+          "doc": 83344,
+          "date": "06/07/26",
           "total": 57631,
           "open": 57631
         }
@@ -206,8 +206,8 @@
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 6092587,
-      "pending_checks": 382869,
+      "collected": 6101839,
+      "pending_checks": 373617,
       "open": 729005,
       "open_invoices": [
         {
@@ -273,8 +273,8 @@
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 8100928,
-      "pending_checks": 112953,
+      "collected": 8105945,
+      "pending_checks": 107936,
       "open": 64907,
       "open_invoices": [
         {
@@ -312,8 +312,8 @@
       "key": "2026-04",
       "label": "אפריל 26",
       "sales": 4990973,
-      "collected": 4901246,
-      "pending_checks": 35626,
+      "collected": 4906561,
+      "pending_checks": 30311,
       "open": 54101,
       "open_invoices": [
         {
