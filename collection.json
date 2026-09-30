@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-29 04:13",
+  "generated_at": "2026-09-30 04:14",
   "months": [
     {
       "key": "2026-09",
       "label": "ספטמבר 26",
-      "sales": 6014752,
+      "sales": 6160518,
       "collected": 923355,
       "pending_checks": 11353,
-      "open": 5080044,
+      "open": 5225810,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -29,6 +29,13 @@
           "date": "01/09/26",
           "total": 130626,
           "open": 130626
+        },
+        {
+          "customer": "ביכורי כל בע\"מ",
+          "doc": 84316,
+          "date": "29/09/26",
+          "total": 127210,
+          "open": 127210
         },
         {
           "customer": "ביכורי כל בע\"מ",
@@ -57,16 +64,9 @@
           "date": "24/09/26",
           "total": 98129,
           "open": 98129
-        },
-        {
-          "customer": "לי-בר קייטרינג יפרח בע\"מ",
-          "doc": 84309,
-          "date": "24/09/26",
-          "total": 89208,
-          "open": 89208
         }
       ],
-      "open_invoices_more": 242
+      "open_invoices_more": 245
     },
     {
       "key": "2026-08",
