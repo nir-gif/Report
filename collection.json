@@ -1,13 +1,80 @@
 {
-  "generated_at": "2026-09-30 04:14",
+  "generated_at": "2026-10-04 07:22",
   "months": [
+    {
+      "key": "2026-10",
+      "label": "אוקטובר 26",
+      "sales": 62236,
+      "collected": 1133,
+      "pending_checks": 0,
+      "open": 61103,
+      "open_invoices": [
+        {
+          "customer": "תבליני טעם וריח בע\"מ",
+          "doc": 84343,
+          "date": "04/10/26",
+          "total": 15141,
+          "open": 15141
+        },
+        {
+          "customer": "קוגל רוזנברג",
+          "doc": 84342,
+          "date": "04/10/26",
+          "total": 9359,
+          "open": 9359
+        },
+        {
+          "customer": "א.ב מאפה משובח בע\"מ",
+          "doc": 84341,
+          "date": "04/10/26",
+          "total": 8003,
+          "open": 8003
+        },
+        {
+          "customer": "ברנדס אנד קו ייבוא מזון בע\"מ",
+          "doc": 84339,
+          "date": "04/10/26",
+          "total": 6938,
+          "open": 6938
+        },
+        {
+          "customer": "קשת יבוא ושיווק מזון בע\"מ",
+          "doc": 84336,
+          "date": "04/10/26",
+          "total": 6514,
+          "open": 6514
+        },
+        {
+          "customer": "תמרה ארטיק בע\"מ",
+          "doc": 84340,
+          "date": "04/10/26",
+          "total": 6505,
+          "open": 6505
+        },
+        {
+          "customer": "פרפל ובנו בע\"מ",
+          "doc": 84337,
+          "date": "04/10/26",
+          "total": 3752,
+          "open": 3752
+        },
+        {
+          "customer": "נטו אברהם",
+          "doc": 84344,
+          "date": "04/10/26",
+          "total": 2457,
+          "open": 2457
+        }
+      ],
+      "open_invoices_more": 1
+    },
     {
       "key": "2026-09",
       "label": "ספטמבר 26",
-      "sales": 6160518,
+      "sales": 6671350,
       "collected": 923355,
       "pending_checks": 11353,
-      "open": 5225810,
+      "open": 5736642,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -66,14 +133,14 @@
           "open": 98129
         }
       ],
-      "open_invoices_more": 245
+      "open_invoices_more": 264
     },
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
       "sales": 7941711,
-      "collected": 1890101,
-      "pending_checks": 263441,
+      "collected": 1923668,
+      "pending_checks": 229874,
       "open": 5788169,
       "open_invoices": [
         {
@@ -139,8 +206,8 @@
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 3244179,
-      "pending_checks": 977718,
+      "collected": 3381843,
+      "pending_checks": 840054,
       "open": 3932743,
       "open_invoices": [
         {
@@ -206,8 +273,8 @@
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 6424029,
-      "pending_checks": 120209,
+      "collected": 6427396,
+      "pending_checks": 116842,
       "open": 660223,
       "open_invoices": [
         {
@@ -247,22 +314,22 @@
         },
         {
           "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
-          "doc": 83001,
-          "date": "07/06/26",
+          "doc": 83189,
+          "date": "23/06/26",
           "total": 18904,
           "open": 18904
         },
         {
           "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
-          "doc": 83004,
-          "date": "07/06/26",
+          "doc": 83211,
+          "date": "24/06/26",
           "total": 18904,
           "open": 18904
         },
         {
           "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
-          "doc": 83041,
-          "date": "09/06/26",
+          "doc": 83237,
+          "date": "29/06/26",
           "total": 18904,
           "open": 18904
         }
@@ -273,8 +340,8 @@
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 8105945,
-      "pending_checks": 113024,
+      "collected": 8113577,
+      "pending_checks": 105392,
       "open": 59819,
       "open_invoices": [
         {
