@@ -1,14 +1,21 @@
 {
-  "generated_at": "2026-10-04 07:22",
+  "generated_at": "2026-10-04 08:35",
   "months": [
     {
       "key": "2026-10",
       "label": "אוקטובר 26",
-      "sales": 62236,
+      "sales": 84073,
       "collected": 1133,
       "pending_checks": 0,
-      "open": 61103,
+      "open": 82940,
       "open_invoices": [
+        {
+          "customer": "חומרי בניין והובלות עראבה בע\"מ",
+          "doc": 84346,
+          "date": "04/10/26",
+          "total": 15598,
+          "open": 15598
+        },
         {
           "customer": "תבליני טעם וריח בע\"מ",
           "doc": 84343,
@@ -52,21 +59,14 @@
           "open": 6505
         },
         {
-          "customer": "פרפל ובנו בע\"מ",
-          "doc": 84337,
+          "customer": "וניליה תעשיות בע\"מ",
+          "doc": 84347,
           "date": "04/10/26",
-          "total": 3752,
-          "open": 3752
-        },
-        {
-          "customer": "נטו אברהם",
-          "doc": 84344,
-          "date": "04/10/26",
-          "total": 2457,
-          "open": 2457
+          "total": 6239,
+          "open": 6239
         }
       ],
-      "open_invoices_more": 1
+      "open_invoices_more": 3
     },
     {
       "key": "2026-09",
