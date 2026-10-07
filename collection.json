@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-06 04:14",
+  "generated_at": "2026-10-07 04:13",
   "months": [
     {
       "key": "2026-10",
       "label": "אוקטובר 26",
-      "sales": 1241484,
-      "collected": 121912,
+      "sales": 1518130,
+      "collected": 146315,
       "pending_checks": 0,
-      "open": 1119572,
+      "open": 1371815,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -31,11 +31,25 @@
           "open": 87438
         },
         {
+          "customer": "רוני רג'ואן ושות' 1986 בע\"מ",
+          "doc": 84407,
+          "date": "06/10/26",
+          "total": 67172,
+          "open": 67172
+        },
+        {
           "customer": "אלי אברהמי שיווק בע\"מ",
           "doc": 84350,
           "date": "04/10/26",
           "total": 63550,
           "open": 63550
+        },
+        {
+          "customer": "פרי טרי ובריא בע\"מ (ארומה)",
+          "doc": 84418,
+          "date": "06/10/26",
+          "total": 55342,
+          "open": 55342
         },
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
@@ -50,31 +64,17 @@
           "date": "04/10/26",
           "total": 37967,
           "open": 37967
-        },
-        {
-          "customer": "עבודי פירות קפואים",
-          "doc": 84390,
-          "date": "05/10/26",
-          "total": 37170,
-          "open": 37170
-        },
-        {
-          "customer": "שחל - חומרים לבנין בע\"מ",
-          "doc": 84370,
-          "date": "04/10/26",
-          "total": 31860,
-          "open": 31860
         }
       ],
-      "open_invoices_more": 47
+      "open_invoices_more": 64
     },
     {
       "key": "2026-09",
       "label": "ספטמבר 26",
       "sales": 6671350,
-      "collected": 1356231,
-      "pending_checks": 11353,
-      "open": 5303766,
+      "collected": 1362470,
+      "pending_checks": 13897,
+      "open": 5294983,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -133,15 +133,15 @@
           "open": 82866
         }
       ],
-      "open_invoices_more": 258
+      "open_invoices_more": 256
     },
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
       "sales": 7941711,
-      "collected": 2309188,
-      "pending_checks": 217545,
-      "open": 5414978,
+      "collected": 2309283,
+      "pending_checks": 256406,
+      "open": 5376022,
       "open_invoices": [
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
@@ -200,15 +200,15 @@
           "open": 63433
         }
       ],
-      "open_invoices_more": 271
+      "open_invoices_more": 268
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 4355482,
+      "collected": 5243696,
       "pending_checks": 736571,
-      "open": 3062587,
+      "open": 2174373,
       "open_invoices": [
         {
           "customer": "עבודי פירות קפואים",
@@ -239,13 +239,6 @@
           "open": 65354
         },
         {
-          "customer": "שפיר תעשיות בע\"מ",
-          "doc": 83344,
-          "date": "06/07/26",
-          "total": 57631,
-          "open": 57631
-        },
-        {
           "customer": "אם החיטה בע\"מ (הלפרין)",
           "doc": 83276,
           "date": "01/07/26",
@@ -260,22 +253,29 @@
           "open": 57596
         },
         {
-          "customer": "ג'ומון יבוא ושיווק מזון בע\"מ",
-          "doc": 83470,
-          "date": "15/07/26",
-          "total": 52569,
-          "open": 52569
+          "customer": "כימוקריט בע\"מ",
+          "doc": 83424,
+          "date": "13/07/26",
+          "total": 51684,
+          "open": 51684
+        },
+        {
+          "customer": "י. כהן בע\"מ",
+          "doc": 83296,
+          "date": "02/07/26",
+          "total": 43896,
+          "open": 43896
         }
       ],
-      "open_invoices_more": 157
+      "open_invoices_more": 108
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 6876876,
+      "collected": 6911399,
       "pending_checks": 108458,
-      "open": 219127,
+      "open": 184604,
       "open_invoices": [
         {
           "customer": "י.מ.יעקובי סיטונאי מזון בע\"מ",
@@ -320,21 +320,21 @@
           "open": 16300
         },
         {
-          "customer": "אדמה אגן בע\"מ",
-          "doc": 83076,
-          "date": "11/06/26",
-          "total": 9912,
-          "open": 9912
+          "customer": "אקסטספיד בע\"מ",
+          "doc": 82987,
+          "date": "04/06/26",
+          "total": 8284,
+          "open": 8284
         },
         {
-          "customer": "אדמה אגן בע\"מ",
-          "doc": 83201,
-          "date": "24/06/26",
-          "total": 9912,
-          "open": 9912
+          "customer": "ל.ג גל סלטים בע\"מ",
+          "doc": 82948,
+          "date": "01/06/26",
+          "total": 4216,
+          "open": 4216
         }
       ],
-      "open_invoices_more": 7
+      "open_invoices_more": 1
     },
     {
       "key": "2026-05",
@@ -358,9 +358,9 @@
       "key": "2026-04",
       "label": "אפריל 26",
       "sales": 4990973,
-      "collected": 4974706,
+      "collected": 4974796,
       "pending_checks": 15945,
-      "open": 322,
+      "open": 232,
       "open_invoices": [
         {
           "customer": "חברת מילחם",
@@ -368,13 +368,6 @@
           "date": "12/04/26",
           "total": 12803,
           "open": 232
-        },
-        {
-          "customer": "חוות הקפואים בע\"מ",
-          "doc": 82384,
-          "date": "13/04/26",
-          "total": 16992,
-          "open": 90
         }
       ],
       "open_invoices_more": 0
