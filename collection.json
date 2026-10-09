@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-08 04:13",
+  "generated_at": "2026-10-09 04:13",
   "months": [
     {
       "key": "2026-10",
       "label": "אוקטובר 26",
-      "sales": 1765021,
-      "collected": 169750,
+      "sales": 2106089,
+      "collected": 172300,
       "pending_checks": 0,
-      "open": 1595271,
+      "open": 1933789,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -66,7 +66,7 @@
           "open": 41630
         }
       ],
-      "open_invoices_more": 68
+      "open_invoices_more": 90
     },
     {
       "key": "2026-09",
@@ -139,9 +139,9 @@
       "key": "2026-08",
       "label": "אוגוסט 26",
       "sales": 7941711,
-      "collected": 2478183,
+      "collected": 2499895,
       "pending_checks": 353114,
-      "open": 5110414,
+      "open": 5088702,
       "open_invoices": [
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
@@ -200,15 +200,15 @@
           "open": 63433
         }
       ],
-      "open_invoices_more": 258
+      "open_invoices_more": 255
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 5542420,
+      "collected": 6041356,
       "pending_checks": 728007,
-      "open": 1884213,
+      "open": 1385277,
       "open_invoices": [
         {
           "customer": "עבודי פירות קפואים",
@@ -230,13 +230,6 @@
           "date": "07/07/26",
           "total": 68195,
           "open": 68195
-        },
-        {
-          "customer": "פרו פרי עיבוד פרי וירק בע\"מ",
-          "doc": 83582,
-          "date": "26/07/26",
-          "total": 65354,
-          "open": 65354
         },
         {
           "customer": "ספקטור שי",
@@ -265,16 +258,23 @@
           "date": "02/07/26",
           "total": 43474,
           "open": 43474
+        },
+        {
+          "customer": "עבודי פירות קפואים",
+          "doc": 83274,
+          "date": "01/07/26",
+          "total": 36344,
+          "open": 36344
         }
       ],
-      "open_invoices_more": 90
+      "open_invoices_more": 69
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 6950345,
-      "pending_checks": 77796,
+      "collected": 6969063,
+      "pending_checks": 59078,
       "open": 176320,
       "open_invoices": [
         {
