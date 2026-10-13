@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-12 04:14",
+  "generated_at": "2026-10-13 04:14",
   "months": [
     {
       "key": "2026-10",
       "label": "אוקטובר 26",
-      "sales": 2921843,
-      "collected": 158162,
+      "sales": 3108233,
+      "collected": 188739,
       "pending_checks": 0,
-      "open": 2763681,
+      "open": 2919494,
       "open_invoices": [
         {
           "customer": "קפוא-זן (2024) בע\"מ",
@@ -66,7 +66,7 @@
           "open": 63550
         }
       ],
-      "open_invoices_more": 114
+      "open_invoices_more": 123
     },
     {
       "key": "2026-09",
@@ -139,9 +139,9 @@
       "key": "2026-08",
       "label": "אוגוסט 26",
       "sales": 7941711,
-      "collected": 2549142,
-      "pending_checks": 309823,
-      "open": 5082746,
+      "collected": 2560430,
+      "pending_checks": 299951,
+      "open": 5081330,
       "open_invoices": [
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
@@ -200,15 +200,15 @@
           "open": 63433
         }
       ],
-      "open_invoices_more": 253
+      "open_invoices_more": 252
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 6196002,
-      "pending_checks": 593820,
-      "open": 1364819,
+      "collected": 6304881,
+      "pending_checks": 614858,
+      "open": 1234901,
       "open_invoices": [
         {
           "customer": "עבודי פירות קפואים",
@@ -223,13 +223,6 @@
           "date": "23/07/26",
           "total": 80063,
           "open": 80063
-        },
-        {
-          "customer": "י. שבי שיווק מזון בע\"מ",
-          "doc": 83361,
-          "date": "07/07/26",
-          "total": 68195,
-          "open": 68195
         },
         {
           "customer": "ספקטור שי",
@@ -265,9 +258,16 @@
           "date": "01/07/26",
           "total": 36344,
           "open": 36344
+        },
+        {
+          "customer": "עבודי פירות קפואים",
+          "doc": 83501,
+          "date": "19/07/26",
+          "total": 36344,
+          "open": 36344
         }
       ],
-      "open_invoices_more": 66
+      "open_invoices_more": 60
     },
     {
       "key": "2026-06",
@@ -444,16 +444,16 @@
       "key": "2025-12",
       "label": "דצמבר 25",
       "sales": 7610386,
-      "collected": 7260759,
+      "collected": 7375159,
       "pending_checks": 0,
-      "open": 349627,
+      "open": 235227,
       "open_invoices": [
         {
           "customer": "מכוורת הר מירון עלם מנל ע\"מ",
           "doc": 81190,
           "date": "11/12/25",
           "total": 396480,
-          "open": 336000
+          "open": 221600
         },
         {
           "customer": "פלומה ים המלח בע\"מ",
