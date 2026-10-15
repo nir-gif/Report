@@ -31,7 +31,7 @@ body{font-family:'Heebo',sans-serif;background:#f0f2f5;color:#1a1a2e;padding:24p
 .tab.act[data-d="teva"]{border-bottom-color:#7030A0;color:#7030A0}
 .tab.act[data-d="sugar"]{border-bottom-color:#C55A11;color:#C55A11}
 .tab.act[data-d="salt"]{border-bottom-color:#548235;color:#548235}
-.tc{display:none}.tc.act{display:block}
+.tc{display:none}.tc.act{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
 table{width:100%;border-collapse:collapse;font-size:13px}
 th{padding:10px 16px;background:#f7f8fa;font-weight:600;color:#5a5a7a;font-size:12px;border-bottom:2px solid #e2e4e9;white-space:nowrap;text-align:center}
 td{padding:10px 16px;border-bottom:1px solid #f0f1f3;text-align:center}
@@ -61,6 +61,7 @@ tr:hover{background:#fafbfc}
 .iv-wrap table{font-size:11px}.iv-wrap th{background:#f8f9fb;font-size:10px}.iv-wrap td{padding:5px 8px}
 .oh{color:#c62828;font-weight:700}.om{color:#e65100;font-weight:600}
 .oo{color:#c62828;font-weight:700}
+.tbl{overflow-x:auto;-webkit-overflow-scrolling:touch}
 .note{padding:10px 20px;font-size:11px;color:#999;border-top:1px solid #e2e4e9}
 .loading{text-align:center;padding:60px;font-size:18px;color:#999}
 .cvs-note{padding:6px 20px 2px;font-size:12px;color:#999}
@@ -70,7 +71,18 @@ tr:hover{background:#fafbfc}
 .cvs-arch select:focus{outline:none;border-color:#7030A0}
 .cvs-mr{cursor:pointer;transition:.15s}.cvs-mr:hover{background:#f5f6f8}
 .cvs-mr.op .ca{transform:rotate(90deg)}
-@media(max-width:768px){.summary{grid-template-columns:1fr}.tab{padding:10px 14px;font-size:13px}body{padding:12px}td,th{padding:8px 8px}.month-select select{font-size:14px}}
+@media(max-width:768px){
+.summary{grid-template-columns:1fr}.tab{padding:10px 14px;font-size:13px}body{padding:12px}
+td,th{padding:8px 8px}.month-select select{font-size:14px}
+.tbl>table,.tc>table{min-width:600px}
+th:first-child,td:first-child:not([colspan]){position:sticky;right:0;z-index:2;background:#fff;box-shadow:-1px 0 0 #eceef1}
+thead th:first-child{background:#f7f8fa;z-index:3}
+tr.dt td:first-child{background:#f7f8fa}
+tr.mr td:first-child{background:#f5f6f8}
+.iv-wrap th:first-child,.iv-wrap td:first-child,.iw th:first-child,.iw td:first-child{position:static;z-index:auto;box-shadow:none}
+.iv-wrap th:first-child,.iw th:first-child{background:#f8f9fb}
+.iv-wrap td:first-child,.iw td:first-child{background:transparent}
+}
 </style>
 </head>
 <body>
@@ -92,7 +104,7 @@ tr:hover{background:#fafbfc}
 <div class="sec">
   <div class="sec-h"><h2>💰 גבייה מול מכירות</h2></div>
   <div class="cvs-note">סכומים באלפי ₪ · לחץ על חודש לפירוט החשבוניות הפתוחות</div>
-  <table>
+  <div class="tbl"><table>
     <thead><tr>
       <th style="width:20%;text-align:right">חודש</th>
       <th style="width:20%">סך מכירות</th>
@@ -102,7 +114,7 @@ tr:hover{background:#fafbfc}
     </tr></thead>
     <tbody id="cvsBody"></tbody>
     <tbody id="cvsArchBody"></tbody>
-  </table>
+  </table></div>
   <div class="cvs-arch">
     <span>ארכיון:</span>
     <select id="cvsArch"></select>
@@ -116,13 +128,13 @@ tr:hover{background:#fafbfc}
 <div class="sec">
   <div class="sec-h"><h2>⚠️ התראות גבייה</h2></div>
   <div style="padding:4px 20px 2px;font-size:12px;color:#999">לחץ על לקוח לפירוט חודשי, ועל חודש לפירוט חשבוניות</div>
-  <table><thead><tr><th style="width:35%;text-align:right">לקוח</th><th style="width:20%">סה"כ חוב</th><th style="width:15%">חשבוניות</th><th style="width:15%">ימים מינ'</th><th style="width:15%">ימים מקס'</th></tr></thead>
-  <tbody id="cb"></tbody></table>
+  <div class="tbl"><table><thead><tr><th style="width:35%;text-align:right">לקוח</th><th style="width:20%">סה"כ חוב</th><th style="width:15%">חשבוניות</th><th style="width:15%">ימים מינ'</th><th style="width:15%">ימים מקס'</th></tr></thead>
+  <tbody id="cb"></tbody></table></div>
 </div>
 <div class="sec">
   <div class="sec-h"><h2>🔴 חריגה מאובליגו</h2></div>
-  <table><thead><tr><th style="width:30%;text-align:right">לקוח</th><th style="width:20%">אובליגו מאושר</th><th style="width:20%">חשבוניות פתוחות</th><th style="width:15%">% ניצול</th><th style="width:15%">סכום חריגה</th></tr></thead>
-  <tbody id="ob"></tbody></table>
+  <div class="tbl"><table><thead><tr><th style="width:30%;text-align:right">לקוח</th><th style="width:20%">אובליגו מאושר</th><th style="width:20%">חשבוניות פתוחות</th><th style="width:15%">% ניצול</th><th style="width:15%">סכום חריגה</th></tr></thead>
+  <tbody id="ob"></tbody></table></div>
   <div class="note">חשיפה = חשבוניות פתוחות בלבד</div>
 </div>
 <div class="loading" id="loadMsg">טוען נתונים...</div>
