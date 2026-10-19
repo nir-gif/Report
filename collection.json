@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-18 04:07",
+  "generated_at": "2026-10-19 04:07",
   "months": [
     {
       "key": "2026-10",
       "label": "אוקטובר 26",
-      "sales": 4282442,
-      "collected": 183473,
+      "sales": 4376060,
+      "collected": 189845,
       "pending_checks": 0,
-      "open": 4098969,
+      "open": 4186215,
       "open_invoices": [
         {
           "customer": "קפוא-זן (2024) בע\"מ",
@@ -66,15 +66,15 @@
           "open": 130626
         }
       ],
-      "open_invoices_more": 158
+      "open_invoices_more": 165
     },
     {
       "key": "2026-09",
       "label": "ספטמבר 26",
       "sales": 6671350,
-      "collected": 1639574,
+      "collected": 1697572,
       "pending_checks": 64937,
-      "open": 4966838,
+      "open": 4908840,
       "open_invoices": [
         {
           "customer": "מתוק וטעים בע\"מ",
@@ -133,15 +133,15 @@
           "open": 67201
         }
       ],
-      "open_invoices_more": 249
+      "open_invoices_more": 246
     },
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
       "sales": 7941711,
-      "collected": 2748293,
+      "collected": 2839513,
       "pending_checks": 351308,
-      "open": 4842110,
+      "open": 4750890,
       "open_invoices": [
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
@@ -200,30 +200,16 @@
           "open": 63433
         }
       ],
-      "open_invoices_more": 242
+      "open_invoices_more": 236
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 6384594,
-      "pending_checks": 674034,
-      "open": 1096012,
+      "collected": 6786510,
+      "pending_checks": 669708,
+      "open": 698422,
       "open_invoices": [
-        {
-          "customer": "עבודי פירות קפואים",
-          "doc": 83444,
-          "date": "14/07/26",
-          "total": 102365,
-          "open": 102365
-        },
-        {
-          "customer": "עבודי פירות קפואים",
-          "doc": 83559,
-          "date": "23/07/26",
-          "total": 80063,
-          "open": 80063
-        },
         {
           "customer": "ספקטור שי",
           "doc": 83289,
@@ -239,42 +225,56 @@
           "open": 51684
         },
         {
-          "customer": "עבודי פירות קפואים",
-          "doc": 83291,
-          "date": "02/07/26",
-          "total": 43474,
-          "open": 43474
-        },
-        {
-          "customer": "עבודי פירות קפואים",
-          "doc": 83274,
-          "date": "01/07/26",
-          "total": 36344,
-          "open": 36344
-        },
-        {
-          "customer": "עבודי פירות קפואים",
-          "doc": 83501,
-          "date": "19/07/26",
-          "total": 36344,
-          "open": 36344
-        },
-        {
           "customer": "עוצמה שיווק מוצרי צריכה בע\"מ",
           "doc": 83360,
           "date": "07/07/26",
           "total": 34909,
           "open": 34909
+        },
+        {
+          "customer": "פאלטאס בע\"מ",
+          "doc": 83622,
+          "date": "29/07/26",
+          "total": 34444,
+          "open": 34444
+        },
+        {
+          "customer": "תעשיות עוף והודו ברקת (2003) בע\"מ",
+          "doc": 83614,
+          "date": "28/07/26",
+          "total": 25960,
+          "open": 25960
+        },
+        {
+          "customer": "תעשיות עוף והודו ברקת (2003) בע\"מ",
+          "doc": 83396,
+          "date": "09/07/26",
+          "total": 24922,
+          "open": 24922
+        },
+        {
+          "customer": "תעשיות עוף והודו ברקת (2003) בע\"מ",
+          "doc": 83464,
+          "date": "15/07/26",
+          "total": 24922,
+          "open": 24922
+        },
+        {
+          "customer": "עמיר שיווק והשקעות בחקלאות בע\"מ",
+          "doc": 83288,
+          "date": "02/07/26",
+          "total": 23895,
+          "open": 23895
         }
       ],
-      "open_invoices_more": 53
+      "open_invoices_more": 42
     },
     {
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 7051181,
-      "pending_checks": 25188,
+      "collected": 7055507,
+      "pending_checks": 20862,
       "open": 128092,
       "open_invoices": [
         {
@@ -326,8 +326,8 @@
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 8183206,
-      "pending_checks": 95359,
+      "collected": 8188223,
+      "pending_checks": 90342,
       "open": 223,
       "open_invoices": [
         {
@@ -344,8 +344,8 @@
       "key": "2026-04",
       "label": "אפריל 26",
       "sales": 4990973,
-      "collected": 4980111,
-      "pending_checks": 10630,
+      "collected": 4985426,
+      "pending_checks": 5315,
       "open": 232,
       "open_invoices": [
         {
