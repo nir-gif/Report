@@ -170,12 +170,15 @@ function renderReport(D){
   const isX=name=>excl.some(e=>name.toLowerCase().includes(e));
 
   const dp=D.date.split('-');
-  const monthNum=parseInt(dp[1]);
+  // Headers name the month being REPORTED (D.month), not the day the file was
+  // generated. An archive rebuilt in a later month used to be mislabelled.
+  const mp=(D.month||D.date).split('-');
+  const monthNum=parseInt(mp[1]);
   const monthName=MONTHS_HE[monthNum]||'';
   document.getElementById('rd').textContent=dp[2]+'/'+dp[1]+'/'+dp[0];
   document.getElementById('ut').textContent='\u05E2\u05D5\u05D3\u05DB\u05DF '+D.time;
-  document.getElementById('salesLabel').textContent='\u05DE\u05DB\u05D9\u05E8\u05D5\u05EA \u05E0\u05D8\u05D5 \u2014 '+monthName+' '+dp[0];
-  document.getElementById('salesHeader').textContent='\uD83D\uDCC8 \u05D4\u05EA\u05E7\u05D3\u05DE\u05D5\u05EA \u05DE\u05DB\u05D9\u05E8\u05D5\u05EA \u05DE\u05D5\u05DC \u05EA\u05DB\u05E0\u05D5\u05DF \u2014 '+monthName+' '+dp[0];
+  document.getElementById('salesLabel').textContent='\u05DE\u05DB\u05D9\u05E8\u05D5\u05EA \u05E0\u05D8\u05D5 \u2014 '+monthName+' '+mp[0];
+  document.getElementById('salesHeader').textContent='\uD83D\uDCC8 \u05D4\u05EA\u05E7\u05D3\u05DE\u05D5\u05EA \u05DE\u05DB\u05D9\u05E8\u05D5\u05EA \u05DE\u05D5\u05DC \u05EA\u05DB\u05E0\u05D5\u05DF \u2014 '+monthName+' '+mp[0];
 
   const depts=Object.keys(D.sales);
   let gt=0;const dt={};
