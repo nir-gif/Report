@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30 05:07",
+  "generated_at": "2026-10-31 05:07",
   "months": [
     {
       "key": "2026-10",
@@ -72,8 +72,8 @@
       "key": "2026-09",
       "label": "ספטמבר 26",
       "sales": 6671350,
-      "collected": 1894909,
-      "pending_checks": 380132,
+      "collected": 1901074,
+      "pending_checks": 373968,
       "open": 4396308,
       "open_invoices": [
         {
@@ -139,8 +139,8 @@
       "key": "2026-08",
       "label": "אוגוסט 26",
       "sales": 7941711,
-      "collected": 3588874,
-      "pending_checks": 510319,
+      "collected": 3656855,
+      "pending_checks": 442339,
       "open": 3842517,
       "open_invoices": [
         {
@@ -206,8 +206,8 @@
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 7224537,
-      "pending_checks": 468116,
+      "collected": 7263363,
+      "pending_checks": 429290,
       "open": 461987,
       "open_invoices": [
         {
@@ -273,8 +273,8 @@
       "key": "2026-06",
       "label": "יוני 26",
       "sales": 7204461,
-      "collected": 7129916,
-      "pending_checks": 14082,
+      "collected": 7132035,
+      "pending_checks": 11963,
       "open": 60463,
       "open_invoices": [
         {
@@ -319,8 +319,8 @@
       "key": "2026-05",
       "label": "מאי 26",
       "sales": 8278788,
-      "collected": 8274026,
-      "pending_checks": 4539,
+      "collected": 8275462,
+      "pending_checks": 3103,
       "open": 223,
       "open_invoices": [
         {
