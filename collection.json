@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-05 05:50",
+  "generated_at": "2026-11-06 05:53",
   "months": [
     {
       "key": "2026-11",
       "label": "נובמבר 26",
-      "sales": 1593444,
-      "collected": 28653,
+      "sales": 1711697,
+      "collected": 76426,
       "pending_checks": 0,
-      "open": 1564791,
+      "open": 1635271,
       "open_invoices": [
         {
           "customer": "קפוא-זן (2024) בע\"מ",
@@ -66,15 +66,15 @@
           "open": 42682
         }
       ],
-      "open_invoices_more": 77
+      "open_invoices_more": 87
     },
     {
       "key": "2026-10",
       "label": "אוקטובר 26",
       "sales": 6482239,
-      "collected": 508689,
-      "pending_checks": 1034744,
-      "open": 4938806,
+      "collected": 595741,
+      "pending_checks": 950149,
+      "open": 4936349,
       "open_invoices": [
         {
           "customer": "קפוא-זן (2024) בע\"מ",
@@ -133,22 +133,22 @@
           "open": 66609
         }
       ],
-      "open_invoices_more": 244
+      "open_invoices_more": 243
     },
     {
       "key": "2026-09",
       "label": "ספטמבר 26",
       "sales": 6671350,
-      "collected": 1927097,
-      "pending_checks": 436933,
-      "open": 4307320,
+      "collected": 1992598,
+      "pending_checks": 487210,
+      "open": 4191542,
       "open_invoices": [
         {
           "customer": "שחל - חומרים לבנין בע\"מ",
           "doc": 84056,
           "date": "01/09/26",
           "total": 141600,
-          "open": 141600
+          "open": 141505
         },
         {
           "customer": "א.ג. טייסטי פוד בע\"מ",
@@ -156,13 +156,6 @@
           "date": "01/09/26",
           "total": 130626,
           "open": 130626
-        },
-        {
-          "customer": "מתוק וטעים בע\"מ",
-          "doc": 84098,
-          "date": "06/09/26",
-          "total": 226560,
-          "open": 115683
         },
         {
           "customer": "גלידן איכות בע\"מ",
@@ -198,17 +191,24 @@
           "date": "30/09/26",
           "total": 62398,
           "open": 62398
+        },
+        {
+          "customer": "פרי הבוסתן בע\"מ",
+          "doc": 84121,
+          "date": "07/09/26",
+          "total": 59000,
+          "open": 59000
         }
       ],
-      "open_invoices_more": 214
+      "open_invoices_more": 213
     },
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
       "sales": 7941711,
-      "collected": 4270532,
-      "pending_checks": 547947,
-      "open": 3123232,
+      "collected": 4451764,
+      "pending_checks": 393381,
+      "open": 3096565,
       "open_invoices": [
         {
           "customer": "עבודי פירות קפואים",
@@ -267,14 +267,14 @@
           "open": 49029
         }
       ],
-      "open_invoices_more": 150
+      "open_invoices_more": 147
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 7875445,
-      "pending_checks": 190258,
+      "collected": 7909566,
+      "pending_checks": 156137,
       "open": 88937,
       "open_invoices": [
         {
