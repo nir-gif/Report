@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06 05:53",
+  "generated_at": "2026-11-08 05:40",
   "months": [
     {
       "key": "2026-11",
@@ -273,8 +273,8 @@
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 7909566,
-      "pending_checks": 156137,
+      "collected": 7932216,
+      "pending_checks": 133487,
       "open": 88937,
       "open_invoices": [
         {
