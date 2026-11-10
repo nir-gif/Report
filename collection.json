@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-09 05:06",
+  "generated_at": "2026-11-10 05:56",
   "months": [
     {
       "key": "2026-11",
       "label": "נובמבר 26",
-      "sales": 2766870,
-      "collected": 95372,
-      "pending_checks": 0,
-      "open": 2671498,
+      "sales": 3109824,
+      "collected": 248581,
+      "pending_checks": 2544,
+      "open": 2858699,
       "open_invoices": [
         {
           "customer": "לי-בר קייטרינג יפרח בע\"מ",
@@ -24,18 +24,25 @@
           "open": 243835
         },
         {
-          "customer": "לי-בר קייטרינג יפרח בע\"מ",
-          "doc": 84773,
-          "date": "08/11/26",
-          "total": 182381,
-          "open": 182381
-        },
-        {
           "customer": "א.ג. טייסטי פוד בע\"מ",
           "doc": 84713,
           "date": "03/11/26",
           "total": 128013,
           "open": 128013
+        },
+        {
+          "customer": "שפיר תעשיות בע\"מ",
+          "doc": 84796,
+          "date": "09/11/26",
+          "total": 70715,
+          "open": 70715
+        },
+        {
+          "customer": "אבשלום הראל ובניו 1992 בע\"מ- תמרה",
+          "doc": 84790,
+          "date": "09/11/26",
+          "total": 67205,
+          "open": 67205
         },
         {
           "customer": "אם החיטה בע\"מ (הלפרין)",
@@ -57,32 +64,18 @@
           "date": "03/11/26",
           "total": 55460,
           "open": 55460
-        },
-        {
-          "customer": "אניטה פרי בע\"מ",
-          "doc": 84695,
-          "date": "03/11/26",
-          "total": 47153,
-          "open": 47153
         }
       ],
-      "open_invoices_more": 108
+      "open_invoices_more": 121
     },
     {
       "key": "2026-10",
       "label": "אוקטובר 26",
       "sales": 6482239,
-      "collected": 696230,
+      "collected": 1050618,
       "pending_checks": 950149,
-      "open": 4835860,
+      "open": 4481472,
       "open_invoices": [
-        {
-          "customer": "קפוא-זן (2024) בע\"מ",
-          "doc": 84456,
-          "date": "11/10/26",
-          "total": 350224,
-          "open": 350224
-        },
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
           "doc": 84424,
@@ -131,17 +124,24 @@
           "date": "20/10/26",
           "total": 66609,
           "open": 66609
+        },
+        {
+          "customer": "אלי אברהמי שיווק בע\"מ",
+          "doc": 84350,
+          "date": "04/10/26",
+          "total": 63550,
+          "open": 63550
         }
       ],
-      "open_invoices_more": 240
+      "open_invoices_more": 238
     },
     {
       "key": "2026-09",
       "label": "ספטמבר 26",
       "sales": 6671350,
-      "collected": 2072302,
-      "pending_checks": 487210,
-      "open": 4111838,
+      "collected": 2078244,
+      "pending_checks": 492787,
+      "open": 4100319,
       "open_invoices": [
         {
           "customer": "שחל - חומרים לבנין בע\"מ",
@@ -200,15 +200,15 @@
           "open": 59000
         }
       ],
-      "open_invoices_more": 210
+      "open_invoices_more": 206
     },
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
       "sales": 7941711,
-      "collected": 6018256,
+      "collected": 6090988,
       "pending_checks": 393381,
-      "open": 1530073,
+      "open": 1457341,
       "open_invoices": [
         {
           "customer": "עבודי פירות קפואים",
@@ -267,44 +267,16 @@
           "open": 46256
         }
       ],
-      "open_invoices_more": 75
+      "open_invoices_more": 68
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 7949430,
+      "collected": 8002797,
       "pending_checks": 133487,
-      "open": 71723,
+      "open": 18356,
       "open_invoices": [
-        {
-          "customer": "מאפית דוידוביץ ובניו בע\"מ",
-          "doc": 83324,
-          "date": "05/07/26",
-          "total": 14304,
-          "open": 14304
-        },
-        {
-          "customer": "מאפית דוידוביץ ובניו בע\"מ",
-          "doc": 83485,
-          "date": "16/07/26",
-          "total": 13076,
-          "open": 13076
-        },
-        {
-          "customer": "מאפית דוידוביץ ובניו בע\"מ",
-          "doc": 83554,
-          "date": "22/07/26",
-          "total": 13076,
-          "open": 13076
-        },
-        {
-          "customer": "מאפית דוידוביץ ובניו בע\"מ",
-          "doc": 83616,
-          "date": "28/07/26",
-          "total": 12911,
-          "open": 12911
-        },
         {
           "customer": "אדמה פתרונות לחקלאות בע\"מ",
           "doc": 83552,
