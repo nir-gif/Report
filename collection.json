@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-10 05:56",
+  "generated_at": "2026-11-11 05:07",
   "months": [
     {
       "key": "2026-11",
       "label": "נובמבר 26",
-      "sales": 3109824,
-      "collected": 248581,
+      "sales": 3276747,
+      "collected": 263756,
       "pending_checks": 2544,
-      "open": 2858699,
+      "open": 3010447,
       "open_invoices": [
         {
           "customer": "לי-בר קייטרינג יפרח בע\"מ",
@@ -29,6 +29,13 @@
           "date": "03/11/26",
           "total": 128013,
           "open": 128013
+        },
+        {
+          "customer": "זאדנא בע\"מ",
+          "doc": 84809,
+          "date": "10/11/26",
+          "total": 101763,
+          "open": 101763
         },
         {
           "customer": "שפיר תעשיות בע\"מ",
@@ -57,24 +64,17 @@
           "date": "01/11/26",
           "total": 56074,
           "open": 56074
-        },
-        {
-          "customer": "ג'ומון יבוא ושיווק מזון בע\"מ",
-          "doc": 84730,
-          "date": "03/11/26",
-          "total": 55460,
-          "open": 55460
         }
       ],
-      "open_invoices_more": 121
+      "open_invoices_more": 125
     },
     {
       "key": "2026-10",
       "label": "אוקטובר 26",
       "sales": 6482239,
-      "collected": 1050618,
+      "collected": 1055417,
       "pending_checks": 950149,
-      "open": 4481472,
+      "open": 4476673,
       "open_invoices": [
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
@@ -133,7 +133,7 @@
           "open": 63550
         }
       ],
-      "open_invoices_more": 238
+      "open_invoices_more": 237
     },
     {
       "key": "2026-09",
@@ -206,9 +206,9 @@
       "key": "2026-08",
       "label": "אוגוסט 26",
       "sales": 7941711,
-      "collected": 6090988,
-      "pending_checks": 393381,
-      "open": 1457341,
+      "collected": 6102273,
+      "pending_checks": 387012,
+      "open": 1452426,
       "open_invoices": [
         {
           "customer": "עבודי פירות קפואים",
@@ -267,14 +267,14 @@
           "open": 46256
         }
       ],
-      "open_invoices_more": 68
+      "open_invoices_more": 67
     },
     {
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 8002797,
-      "pending_checks": 133487,
+      "collected": 8076187,
+      "pending_checks": 60097,
       "open": 18356,
       "open_invoices": [
         {
