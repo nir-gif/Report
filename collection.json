@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-16 05:17",
+  "generated_at": "2026-11-17 05:32",
   "months": [
     {
       "key": "2026-11",
       "label": "נובמבר 26",
-      "sales": 4434161,
-      "collected": 985905,
+      "sales": 4910936,
+      "collected": 985445,
       "pending_checks": 2544,
-      "open": 3445712,
+      "open": 3922947,
       "open_invoices": [
         {
           "customer": "קפוא-זן (2024) בע\"מ",
@@ -17,11 +17,25 @@
           "open": 243835
         },
         {
+          "customer": "מתוק וטעים בע\"מ",
+          "doc": 84872,
+          "date": "16/11/26",
+          "total": 219362,
+          "open": 219362
+        },
+        {
           "customer": "עבודי פירות קפואים",
           "doc": 84845,
           "date": "12/11/26",
           "total": 175230,
           "open": 175230
+        },
+        {
+          "customer": "מתוק וטעים בע\"מ",
+          "doc": 84875,
+          "date": "16/11/26",
+          "total": 172634,
+          "open": 172634
         },
         {
           "customer": "א.ג. טייסטי פוד בע\"מ",
@@ -50,31 +64,17 @@
           "date": "09/11/26",
           "total": 67205,
           "open": 67205
-        },
-        {
-          "customer": "פוליבה בע\"מ",
-          "doc": 84866,
-          "date": "15/11/26",
-          "total": 59000,
-          "open": 59000
-        },
-        {
-          "customer": "אם החיטה בע\"מ (הלפרין)",
-          "doc": 84680,
-          "date": "01/11/26",
-          "total": 57631,
-          "open": 57631
         }
       ],
-      "open_invoices_more": 168
+      "open_invoices_more": 180
     },
     {
       "key": "2026-10",
       "label": "אוקטובר 26",
       "sales": 6482239,
-      "collected": 1161278,
+      "collected": 1167783,
       "pending_checks": 863097,
-      "open": 4457864,
+      "open": 4451359,
       "open_invoices": [
         {
           "customer": "א.מ שרון שיווק (2014) בע\"מ",
@@ -133,15 +133,15 @@
           "open": 63550
         }
       ],
-      "open_invoices_more": 235
+      "open_invoices_more": 234
     },
     {
       "key": "2026-09",
       "label": "ספטמבר 26",
       "sales": 6671350,
-      "collected": 2152275,
+      "collected": 2262002,
       "pending_checks": 473507,
-      "open": 4045567,
+      "open": 3935840,
       "open_invoices": [
         {
           "customer": "שחל - חומרים לבנין בע\"מ",
@@ -200,7 +200,7 @@
           "open": 59000
         }
       ],
-      "open_invoices_more": 201
+      "open_invoices_more": 195
     },
     {
       "key": "2026-08",
@@ -273,8 +273,8 @@
       "key": "2026-07",
       "label": "יולי 26",
       "sales": 8154640,
-      "collected": 8106614,
-      "pending_checks": 29670,
+      "collected": 8114861,
+      "pending_checks": 21423,
       "open": 18356,
       "open_invoices": [
         {
