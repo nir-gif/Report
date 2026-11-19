@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-18 05:56",
+  "generated_at": "2026-11-19 05:55",
   "months": [
     {
       "key": "2026-11",
       "label": "נובמבר 26",
-      "sales": 5122290,
-      "collected": 992896,
+      "sales": 5314563,
+      "collected": 1017845,
       "pending_checks": 2544,
-      "open": 4126850,
+      "open": 4294174,
       "open_invoices": [
         {
           "customer": "קפוא-זן (2024) בע\"מ",
@@ -59,14 +59,14 @@
           "open": 70715
         },
         {
-          "customer": "אבשלום הראל ובניו 1992 בע\"מ- תמרה",
-          "doc": 84790,
-          "date": "09/11/26",
-          "total": 67205,
-          "open": 67205
+          "customer": "שפיר תעשיות בע\"מ",
+          "doc": 84904,
+          "date": "18/11/26",
+          "total": 70715,
+          "open": 70715
         }
       ],
-      "open_invoices_more": 199
+      "open_invoices_more": 206
     },
     {
       "key": "2026-10",
@@ -139,9 +139,9 @@
       "key": "2026-09",
       "label": "ספטמבר 26",
       "sales": 6671350,
-      "collected": 2457071,
+      "collected": 2464157,
       "pending_checks": 509788,
-      "open": 3704490,
+      "open": 3697404,
       "open_invoices": [
         {
           "customer": "שחל - חומרים לבנין בע\"מ",
@@ -200,14 +200,14 @@
           "open": 59000
         }
       ],
-      "open_invoices_more": 180
+      "open_invoices_more": 179
     },
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
       "sales": 7941711,
-      "collected": 6849051,
-      "pending_checks": 336460,
+      "collected": 6880922,
+      "pending_checks": 304589,
       "open": 756199,
       "open_invoices": [
         {
