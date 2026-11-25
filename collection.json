@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-24 05:07",
+  "generated_at": "2026-11-25 05:07",
   "months": [
     {
       "key": "2026-11",
       "label": "נובמבר 26",
-      "sales": 6315993,
-      "collected": 998871,
-      "pending_checks": 2544,
-      "open": 5314578,
+      "sales": 6661593,
+      "collected": 1001019,
+      "pending_checks": 6664,
+      "open": 5653910,
       "open_invoices": [
         {
           "customer": "קפוא-זן (2024) בע\"מ",
@@ -52,21 +52,21 @@
           "open": 123900
         },
         {
+          "customer": "jala food company",
+          "doc": 415,
+          "date": "24/11/26",
+          "total": 89143,
+          "open": 89143
+        },
+        {
           "customer": "שפיר תעשיות בע\"מ",
           "doc": 84796,
           "date": "09/11/26",
           "total": 70715,
           "open": 70715
-        },
-        {
-          "customer": "שפיר תעשיות בע\"מ",
-          "doc": 84904,
-          "date": "18/11/26",
-          "total": 70715,
-          "open": 70715
         }
       ],
-      "open_invoices_more": 263
+      "open_invoices_more": 276
     },
     {
       "key": "2026-10",
@@ -140,8 +140,8 @@
       "label": "ספטמבר 26",
       "sales": 6671350,
       "collected": 2604225,
-      "pending_checks": 369720,
-      "open": 3697404,
+      "pending_checks": 410340,
+      "open": 3656784,
       "open_invoices": [
         {
           "customer": "שחל - חומרים לבנין בע\"מ",
@@ -200,15 +200,15 @@
           "open": 59000
         }
       ],
-      "open_invoices_more": 179
+      "open_invoices_more": 176
     },
     {
       "key": "2026-08",
       "label": "אוגוסט 26",
       "sales": 7941711,
       "collected": 6886957,
-      "pending_checks": 298555,
-      "open": 756199,
+      "pending_checks": 390169,
+      "open": 664585,
       "open_invoices": [
         {
           "customer": "כימוקריט בע\"מ",
@@ -230,13 +230,6 @@
           "date": "20/08/26",
           "total": 32360,
           "open": 32360
-        },
-        {
-          "customer": "עוצמה שיווק מוצרי צריכה בע\"מ",
-          "doc": 83698,
-          "date": "03/08/26",
-          "total": 31084,
-          "open": 31084
         },
         {
           "customer": "Hatta Company for ice cream &food",
@@ -265,9 +258,16 @@
           "date": "19/08/26",
           "total": 19219,
           "open": 19219
+        },
+        {
+          "customer": "עוף הנגב- קורניש חן (1987) בע\"מ",
+          "doc": 83913,
+          "date": "20/08/26",
+          "total": 18904,
+          "open": 18904
         }
       ],
-      "open_invoices_more": 46
+      "open_invoices_more": 40
     },
     {
       "key": "2026-07",
