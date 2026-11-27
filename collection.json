@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-26 05:07",
+  "generated_at": "2026-11-27 05:31",
   "months": [
     {
       "key": "2026-11",
       "label": "נובמבר 26",
-      "sales": 6956497,
-      "collected": 1069246,
+      "sales": 7157670,
+      "collected": 1082034,
       "pending_checks": 11765,
-      "open": 5875486,
+      "open": 6063871,
       "open_invoices": [
         {
           "customer": "קפוא-זן (2024) בע\"מ",
@@ -46,6 +46,13 @@
         },
         {
           "customer": "ביכורי כל בע\"מ",
+          "doc": 85001,
+          "date": "26/11/26",
+          "total": 126821,
+          "open": 126821
+        },
+        {
+          "customer": "ביכורי כל בע\"מ",
           "doc": 84857,
           "date": "15/11/26",
           "total": 123900,
@@ -57,16 +64,9 @@
           "date": "24/11/26",
           "total": 89143,
           "open": 89143
-        },
-        {
-          "customer": "שפיר תעשיות בע\"מ",
-          "doc": 84796,
-          "date": "09/11/26",
-          "total": 70715,
-          "open": 70715
         }
       ],
-      "open_invoices_more": 282
+      "open_invoices_more": 289
     },
     {
       "key": "2026-10",
